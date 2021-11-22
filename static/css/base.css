@@ -102,9 +102,46 @@ body{
     font-size: 1.25rem;
 }
 
-ul .dropdown{
+.nav-links ul li:hover{
+    transform: scale(1.05);
+}
+
+.nav-links ul li a:hover{
+    color: #f68b58;
+}
+
+ul.dropdown-menu{
     display: none;
 }
+
+ul.dropdown-menu.show{
+    border: 2px solid #152238;
+    text-align: center;
+}
+
+ul.dropdown-menu.show .dropdown-divider{
+    border: 1px solid #152238;
+}
+
+a#navbarDropdown.nav-link.dropdown-toggle:hover{
+    color: #f68b58;
+}
+
+a#navbarDropdown.nav-link.dropdown-toggle.show{
+    color: #f68b58;
+}
+
+ul.dropdown-menu.show li{
+    background: none; 
+}
+
+ul.dropdown-menu.show a.dropdown-item:hover{
+    transform: scale(1.05);
+    color: #f68b58;
+    background: none;
+}
+
+/* ----- Footer Styling ----- */
 
 footer{
     background-color: #fafafa;
@@ -114,7 +151,7 @@ footer .quick-links p{
     text-align: center;
     padding: 1rem 0 0.5rem;
     color: #152238;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -127,8 +164,16 @@ footer .quick-links ul{
     margin-bottom: 0;
 }
 
+footer .quick-links ul strong{
+    font-size: 1.5rem;
+}
+
 footer .quick-links ul li{
     padding: 0 1.5rem;
+}
+
+footer .quick-links ul li:hover{
+    transform: scale(1.05);
 }
 
 footer .quick-links ul li a{
@@ -142,35 +187,41 @@ footer .quick-links ul li a:hover{
     color: #f68b58;
 }
 
-footer .social-links ul{
+footer .social-links{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style-type: none;
-    margin-bottom: 0;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
-footer .social-links ul li{
+footer .social-links ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer .social-links li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.75rem 0.5rem;
+}
+
+footer .social-links li a{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #152238;
+    color: #fafafa;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin: 0 1rem;
-}
-
-footer .social-links ul li a{
     text-decoration: none;
-    color: #fafafa;
-    font-size: 1.25rem;
-    font-weight: bold;
 }
 
-footer .social-links ul li a:hover{
-    color: #f68b58;
+footer .social-links li a:hover{
+    background-color: #f68b58;
+    color: #152238;
+    font-weight: bold;
 }
 
 footer .copyright p{

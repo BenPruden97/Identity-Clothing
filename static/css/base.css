@@ -48,7 +48,7 @@ body{
     align-items: center;
     list-style-type: none;
     margin-bottom: 0;
-    margin-right: 5rem;
+    margin-right: 4rem;
 }
 
 .header-icons ul li{
@@ -102,12 +102,12 @@ body{
     font-size: 1.25rem;
 }
 
-.nav-links ul li:hover{
-    transform: scale(1.05);
-}
-
 .nav-links ul li a:hover{
     color: #f68b58;
+}
+
+.dropdown-menu{
+    position: relative;
 }
 
 ul.dropdown-menu{
@@ -236,5 +236,40 @@ footer .copyright p{
     .navigation{
         display: none;
     }
+
+    .header-logo a{
+        font-size: 1.5rem;
+    }
+
+    .header-icons ul{
+        margin-right: 1.5rem;
+    }
+
+    ul.dropdown-menu{
+        display: none;
+    }
+
+    .burger-nav-links ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        list-style-type: none;
+        margin-bottom: 0;
+    }
     
+    .burger-nav-links ul li{
+        padding: 0 1rem;
+    }
+    
+    .burger-nav-links ul li a{
+        text-decoration: none;
+        color: #152238;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    
+    .burger-nav-links ul li a:hover{
+        color: #f68b58;
+    }
 }

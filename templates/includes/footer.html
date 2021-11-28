@@ -1,0 +1,85 @@
+<footer>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="quick-links">
+
+                    <p>Quick Links:</p>
+
+                    <ul>
+
+                        <li><a href="{% url 'home' %}">Home</a></li><strong> |</strong>
+
+                        <li><a href="{% url 'home' %}">Search</a></li><strong> |</strong>
+
+                        <li><a href="{% url 'home' %}">Contact</a></li><strong> |</strong>
+
+                        {% if request.user.is_authenticated %}
+
+                            <li><a href="{% url 'account_logout' %}"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li><strong> |</strong>
+
+                        {% else %}                                             
+
+                            <li><a href="{% url 'account_signup' %}">Sign Up</a></li><strong> |</strong>
+
+                            <li><a href="{% url 'account_login' %}">Sign In</a></li>
+
+                        {% endif %}
+                        
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="social-links">
+
+                    <ul>
+                        <li><a href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ben-pruden-9aa4a8123/" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/BenPruden97" rel="noopener" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+                        <li><a href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="copyright">
+
+                    <p>Copyright <i class="far fa-copyright"></i>  Identity Clothing 2021 - This website was designed for educational purposes only.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>

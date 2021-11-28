@@ -58,7 +58,7 @@
 
                     <div class="header-content">
 
-                        <div class="col-3">
+                        <div class="col-5">
 
                             <div class="header-logo">
 
@@ -68,21 +68,60 @@
 
                         </div>
 
-                        <div class="col-9">
+                        <div class="col-7">
 
                             <div class="header-icons">
 
                                 <ul>
 
-                                    <li><a href="{% url 'home' %}"><i class="fas fa-envelope"></i>Contact</a></li>
-
                                     <li><a href="{% url 'home' %}"><i class="fas fa-search"></i>Search</a></li>
 
-                                    <li><a href="{% url 'home' %}"><i class="fas fa-user-plus"></i>Sign Up</a></li>
+                                    <li><a href="{% url 'home' %}"><i class="fas fa-envelope"></i>Contact</a></li>
 
-                                    <li><a href="{% url 'home' %}"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+                                    {% if request.user.is_authenticated %}
 
-                                    <li><a href="{% url 'home' %}"><i class="fas fa-shopping-cart"></i>Cart</a></li>
+                                        {% if request.user.is_superuser %}
+
+                                            <li><a class="dropdown-item" href="#"><i class="fas fa-tasks"></i>Manage Products</a></li>
+
+                                        {% endif %}
+
+                                            
+                                        <li class="nav-item dropdown">
+
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Account
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i>My Profile</a></li>
+                                                <div class="dropdown-divider"></div>
+                                                <li><a class="dropdown-item" href="{% url 'account_logout' %}"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li>
+
+                                            </ul>
+
+                                        </li>
+
+                                    {% else %}                                             
+
+                                        <li><a href="{% url 'account_signup' %}"><i class="fas fa-user-plus"></i>Sign Up</a></li>
+
+                                        <li><a href="{% url 'account_login' %}"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+
+                                    {% endif %}
+
+                                        <li>
+                                            <a href="{% url 'home' %}"><i class="fas fa-shopping-cart"></i>
+                                                <span>
+                                                    {% if grand_total %}
+                                                        £{{ grand_total|floatformat:2 }}
+                                                    {% else %}
+                                                        £0.00
+                                                    {% endif %}
+                                                </span>                                        
+                                            </a>
+                                        </li>
 
                                 </ul>
 
@@ -96,186 +135,8 @@
 
             </div>
 
-            <div class="container-fluid">
-
-                <div class="row">
-
-                    <div class="navigation">
-
-                        <div class="col-12">
-
-                            <nav class="nav-links">
-
-                                <ul>
-
-                                    <li><a href="{% url 'home' %}">Home</a></li>
-
-                                    <li class="nav-item dropdown">
-
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Men's Clothing
-                                        </a>
-                                        
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                            <li><a class="dropdown-item" href="#">Men's Coats</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Men's Hoodies</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Men's T-shirts</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Men's Shorts</a></li>
-
-                                        </ul>
-
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Women's Clothing
-                                        </a>
-                                        
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                            <li><a class="dropdown-item" href="#">Women's Coats</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Women's Hoodies</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Women's T-shirts</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Women's Shorts</a></li>
-
-                                        </ul>
-
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Kid's Clothing
-                                        </a>
-                                        
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                            <li><a class="dropdown-item" href="#">Kid's Coats</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Kid's Hoodies</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Kid's T-shirts</a></li>
-                                            <div class="dropdown-divider"></div>
-                                            <li><a class="dropdown-item" href="#">Kid's Shorts</a></li>
-
-                                        </ul>
-
-                                    </li>
-
-                                    <li><a href="#">Items On Sale</a></li>
-
-                                </ul>
-
-                            </nav>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="container-fluid">
-
-                <div class="row">
-
-                    <div class="col-12">
-
-                        <nav class="navbar navbar-expand-md navbar-light">
-
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" 
-                            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
-                        </nav>
-
-                        <div class="collapse burger-nav-links" id="navbarToggleExternalContent">
-
-                            <ul>
-
-                                <li><a href="{% url 'home' %}">Home</a></li>
-
-                                <li class="nav-item dropdown">
-
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Men's Clothing
-                                    </a>
-                                    
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                        <li><a class="dropdown-item" href="#">Men's Coats</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Men's Hoodies</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Men's T-shirts</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Men's Shorts</a></li>
-
-                                    </ul>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Women's Clothing
-                                    </a>
-                                    
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                        <li><a class="dropdown-item" href="#">Women's Coats</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Women's Hoodies</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Women's T-shirts</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Women's Shorts</a></li>
-
-                                    </ul>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Kid's Clothing
-                                    </a>
-                                    
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                        <li><a class="dropdown-item" href="#">Kid's Coats</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Kid's Hoodies</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Kid's T-shirts</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li><a class="dropdown-item" href="#">Kid's Shorts</a></li>
-
-                                    </ul>
-
-                                </li>
-
-                                <li><a href="#">Items On Sale</a></li>
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+            {% include 'includes/main_nav.html' %}
+            {% include 'includes/burger_nav.html' %}
 
         </header>
 
@@ -289,81 +150,7 @@
         {% block postloadjs %}
         {% endblock %}
 
-        <footer>
-
-            <div class="container-fluid">
-
-                <div class="row">
-
-                    <div class="col-12">
-
-                        <div class="quick-links">
-
-                            <p>Quick Links:</p>
-
-                            <ul>
-
-                                <li><a href="#">Home</a></li><strong> |</strong>
-                                <li><a href="#">Search</a></li><strong> |</strong>
-                                <li><a href="#">Contact</a></li><strong> |</strong>
-                                <li><a href="#">Sign Up</a></li><strong> |</strong>
-                                <li><a href="#">Sign In</a></li><strong> |</strong>
-                                <li><a href="#">Cart</a></li><strong> |</strong>
-                                <li><a href="#">Log Out</a></li>
-                                
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="container-fluid">
-
-                <div class="row">
-
-                    <div class="col-12">
-
-                        <div class="social-links">
-
-                            <ul>
-                                <li><a href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://twitter.com/" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/ben-pruden-9aa4a8123/" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://github.com/BenPruden97" rel="noopener" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-                                <li><a href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="container-fluid">
-
-                <div class="row">
-
-                    <div class="col-12">
-
-                        <div class="copyright">
-
-                            <p>Copyright <i class="far fa-copyright"></i>  Identity Clothing 2021 - This website was designed for educational purposes only.</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </footer>
+        {% include 'includes/footer.html' %}
 
     </body>
 

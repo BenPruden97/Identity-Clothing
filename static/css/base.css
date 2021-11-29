@@ -288,7 +288,7 @@ span.carousel-control-prev-icon {
     font-size: 1.25rem;
 }
 
-/* ----- Shop For Men Styling ----- */
+/* ----- Shop For Women Styling ----- */
 
 .shop-for-women-image{
     background: url(/images/shop-for-women.jpg) no-repeat center center;
@@ -339,6 +339,65 @@ span.carousel-control-prev-icon {
 }
 
 .shop-for-women-content a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    color: #152238;
+    font-size: 1.25rem;
+}
+
+/* ----- Items On Sale Styling ----- */
+
+.items-on-sale-image{
+    background: url(/images/items-on-sale.jpg) no-repeat center center;
+    width: 100%;
+    height: 450px;
+    border-top: 2px solid #152238;
+    border-bottom: 2px solid #152238;
+}
+
+.items-on-sale-heading h1{
+    background: #fafafa;
+    text-align: center;
+    padding: 4rem 0 1rem;
+    margin: 0;
+}
+
+.items-on-sale-heading h1::after{
+    content: '';
+    display: block;
+    background-color: #152238;
+    width: 50px;
+    height: 10px;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.items-on-sale-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    background-color: #fafafa;
+    border-top: 2px solid #152238;
+    border-bottom: 2px solid #152238;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.items-on-sale-content h1{
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.items-on-sale-content h4{
+    padding-bottom: 1.5rem;
+}
+
+.items-on-sale-content a{
     text-decoration: none;
     border: 2px solid #152238;
     border-radius: 20px;

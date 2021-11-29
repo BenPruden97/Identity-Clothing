@@ -193,6 +193,41 @@ ul.dropdown-menu.show a.dropdown-item:hover{
     font-size: 1.5rem;
 }
 
+/* ----- Carousel Styling ----- */
+
+.carousel-heading h1{
+    background: #fafafa;
+    text-align: center;
+    padding: 4rem 0 1rem;
+    margin: 0;
+}
+
+.carousel-heading h1::after{
+    content: '';
+    display: block;
+    background-color: #152238;
+    width: 50px;
+    height: 10px;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+div#carouselExampleIndicators.carousel.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel{
+    background: #fafafa;
+}
+
+span.carousel-control-next-icon,
+span.carousel-control-prev-icon {
+    background-color: #152238;
+}
+
 /* ----- Footer Styling ----- */
 
 footer{

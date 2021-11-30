@@ -354,7 +354,6 @@ span.carousel-control-prev-icon {
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;
-    border-bottom: 2px solid #152238;
 }
 
 .items-on-sale-heading h1{
@@ -383,7 +382,6 @@ span.carousel-control-prev-icon {
     height: 450px;
     background-color: #fafafa;
     border-top: 2px solid #152238;
-    border-bottom: 2px solid #152238;
     padding: 0 3rem;
     text-align: center;
 }
@@ -406,15 +404,95 @@ span.carousel-control-prev-icon {
     font-size: 1.25rem;
 }
 
+/* ----- Allauth Header Styling ----- */
+
+.allauth-page-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #152238;
+}
+
+hr{
+    margin: auto;
+    border: 1px solid #152238;
+    opacity: 1;
+    width: 700px;
+}
+
+.sign-in-form-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0 1rem;
+}
+
+.sign-in-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-forgot a{
+    color: #152238;
+}
+
+.sign-in-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.sign-in-button button{
+    background: transparent;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+}
+
+button.primaryAction{
+    margin: 0;
+}
+
+.new-customer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-customer-content h2{
+    padding: 1.5rem 0 0.5rem;
+}
+
+.new-customer-content h4{
+    padding: 0 0 1rem;
+}
+
+.new-customer-content a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
 /* ----- Footer Styling ----- */
 
 footer{
+    border-top: 2px solid #152238;
     background-color: #fafafa;
 }
 
 footer .quick-links p{
     text-align: center;
-    padding: 1rem 0 1.25rem;
+    padding: 1rem 0 1.5rem;
     color: #152238;
     font-size: 1.5rem;
     font-weight: bold;

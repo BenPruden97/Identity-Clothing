@@ -1,1 +1,46 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="allauth-page-header">
+
+                    <h1>
+
+                        {% block head_title %}
+                        {% endblock %}
+
+                    </h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="account-inner-content">
+
+                    {% block inner_content %}
+                    {% endblock %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

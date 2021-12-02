@@ -436,6 +436,29 @@ hr{
     align-items: center;
 }
 
+.sign-in-form p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign-in-form p label{
+    font-size: 1.25rem;
+    color: #152238;
+}
+
+.sign-in-form p input{
+    width: 550px;
+    padding: 0.25rem;
+    border: 2px solid #152238;
+    border-radius: 5px;
+}
+
+.sign-in-form p input::placeholder{
+    color: #152238;
+}
+
 .sign-in-forgot a{
     color: #152238;
 }

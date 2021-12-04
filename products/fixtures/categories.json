@@ -1,0 +1,98 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+        "name": "mens_hoodies",
+        "friendly_name": "Men's Hoodies"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+        "name": "mens_tshirts",
+        "friendly_name": "Men's T-Shirts"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+        "name": "mens_shorts",
+        "friendly_name": "Men's Shorts"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+        "name": "womens_hoodies",
+        "friendly_name": "Women's Hoodies"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+        "name": "womens_tshirts",
+        "friendly_name": "Women's T-Shirts"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+        "name": "womens_shorts",
+        "friendly_name": "Women's Shorts"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+        "name": "mens_hoodies_sale",
+        "friendly_name": "Men's Hoodies on Sale"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+        "name": "mens_tshirts_sale",
+        "friendly_name": "Men's T-Shirts on Sale"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+        "name": "mens_shorts_sale",
+        "friendly_name": "Men's Shorts on Sale"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+        "name": "womens_hoodies_sale",
+        "friendly_name": "Women's Hoodies on Sale"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+        "name": "womens_tshirts_sale",
+        "friendly_name": "Women's T-Shirts on Sale"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.category",
+        "fields": {
+        "name": "womens_shorts_sale",
+        "friendly_name": "Women's Shorts on Sale"
+        }
+    }
+]

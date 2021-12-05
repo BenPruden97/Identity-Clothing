@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+.container-fluid{
+    padding: 0;
+}
+
 .row>*{
     padding: 0;
+}
+
+.row{
+    --bs-gutter-x: 0;
 }
 
 body{
@@ -528,6 +536,63 @@ button.primaryAction{
     color: #152238;
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
+}
+
+/* ----- Products Page Styling ----- */
+
+.product-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem 0rem;
+}
+
+.product-item-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-image-card{
+    height: 302px;
+    width: 302px;
+    border: 1px solid #152238;
+}
+
+.product-image-name{
+    width: 302px;
+    border-right: 1px solid #152238;
+    border-left: 1px solid #152238;
+}
+
+.product-image-name h6{
+    padding-top: 0.75rem;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.product-image-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 302px;
+    padding: 0.75rem 0 1rem;
+    border-right: 1px solid #152238;
+    border-left: 1px solid #152238;
+    border-bottom: 1px solid #152238;
+}
+
+.product-image-content h6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0;
+}
+
+div hr{
+    border: 1px solid #152238;
+    width: 90%;
 }
 
 /* ----- Footer Styling ----- */

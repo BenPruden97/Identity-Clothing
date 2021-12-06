@@ -9,7 +9,7 @@
 
             {% for product in products %}
 
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 
                     <div class="product-item">
 
@@ -17,11 +17,11 @@
 
                             <div>                   
                                 {% if product.image %}
-                                    <a href="#">
+                                    <a href="{% url 'product_detail' product.id %}">
                                         <img src="/images/{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
                                 {% else %}
-                                    <a href="#">
+                                    <a href="{% url 'product_detail' product.id %}">
                                         <img src="{{ IMAGES_URL}}{{noimage.png }}" alt="{{ product.name }}">
                                     </a>
                                 {% endif %}
@@ -66,7 +66,13 @@
                 {% endif %}
 
                 {% if forloop.counter|divisibleby:3 %}
-                    <div class="col-12 d-none d-lg-block">
+                    <div class="col-12 d-none d-lg-block d-xl-none">
+                        <hr>
+                    </div>
+                {% endif %}
+
+                {% if forloop.counter|divisibleby:4 %}
+                    <div class="col-12 d-none d-xl-block">
                         <hr>
                     </div>
                 {% endif %}

@@ -595,6 +595,48 @@ div hr{
     width: 90%;
 }
 
+/* ----- Product Detail Page Styling ----- */
+
+.product-detail-item{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 2.5rem 4rem 2.5rem 0rem;
+}
+
+.product-detail-item-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.product-detail-item-content div{
+    margin-top: 5rem;
+}
+
+.product-detail-item-content h6{
+    font-size: 1.5rem;
+    padding: 0.25rem 0;
+}
+
+.product-detail-item-content p{
+    font-size: 1.5rem;
+}
+
+.product-detail-image-card{
+    height: 502px;
+    width: 502px;
+    border: 1px solid #152238;
+}
+
+.product-detail-image-card img{
+    width: 500px;
+    height: 500px;
+}
+
 /* ----- Footer Styling ----- */
 
 footer{

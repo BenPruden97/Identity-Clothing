@@ -32,7 +32,6 @@ class Migration(migrations.Migration):
             name='Product',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('Product_id', models.CharField(blank=True, max_length=254, null=True)),
                 ('name', models.CharField(max_length=254)),
                 ('description', models.TextField()),
                 ('price', models.DecimalField(decimal_places=2, max_digits=6)),

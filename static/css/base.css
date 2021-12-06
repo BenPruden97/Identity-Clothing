@@ -101,7 +101,8 @@ body{
 }
 
 .nav-links ul li{
-    padding: 0 2rem;
+    padding: 0 3rem;
+    text-align: center;
 }
 
 .nav-links ul li a{

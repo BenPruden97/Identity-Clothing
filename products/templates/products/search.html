@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="search-header">
+
+                    <h2>Search</h2>
+            
+                </div>
+            
+            </div>
+
+            <div class="col-12">
+
+                <form>
+                    <input class="search-bar" type="search" name="q" placeholder="Search for a clothing item">
+                    <button class="search-button" type="submit">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            {% for product in products %}
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+
+                    <div class="product-item">
+
+                        <div class="product-image-card">
+
+                            <div>                
+                                {% if product.image %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img src="/images/{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
+                                {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img src="{{ IMAGES_URL}}{{noimage.png }}" alt="{{ product.name }}">
+                                    </a>
+                                {% endif %}
+                            </div>
+
+                        </div>
+
+                        <div class="row product-item-content">
+
+                            <div class="product-image-name">
+
+                                <h6><strong>{{ product.name }}</strong></h6>
+
+                            </div>
+
+                            <div class="product-image-content">
+
+                                <h6>Price: £{{ product.price }}</h6>
+
+                                {% if product.product_rating %}
+                                    <h6>Rating: <i class="fas fa-star"></i> {{ product.product_rating }}/5</h6>
+                                {% else %}
+                                    <h6>No Rating</h6>
+                                {% endif %}
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 d-sm-none">
+                    <hr>
+                </div>
+
+                {% if forloop.counter|divisibleby:2 %}
+                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
+                        <hr>
+                    </div>
+                {% endif %}
+
+                {% if forloop.counter|divisibleby:3 %}
+                    <div class="col-12 d-none d-lg-block d-xl-none">
+                        <hr>
+                    </div>
+                {% endif %}
+
+                {% if forloop.counter|divisibleby:4 %}
+                    <div class="col-12 d-none d-xl-block">
+                        <hr>
+                    </div>
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+{% endblock %}

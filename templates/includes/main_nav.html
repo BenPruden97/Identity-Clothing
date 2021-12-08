@@ -20,13 +20,13 @@
                             
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <li><a class="dropdown-item" href="#">Men's Hoodies</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=mens_hoodies">Men's Hoodies</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Men's T-shirts</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=mens_tshirts">Men's T-shirts</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Men's Shorts</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=mens_shorts">Men's Shorts</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">View All</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=mens_hoodies,mens_shorts,mens_tshirts">View All</a></li>
 
                             </ul>
 
@@ -40,13 +40,13 @@
                             
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <li><a class="dropdown-item" href="#">Women's Hoodies</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=womens_hoodies">Women's Hoodies</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Women's T-shirts</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=womens_tshirts">Women's T-shirts</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Women's Shorts</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=womens_shorts">Women's Shorts</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">View All</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=womens_hoodies,womens_shorts,womens_tshirts">View All</a></li>
 
                             </ul>
 
@@ -60,11 +60,19 @@
                             
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <li><a class="dropdown-item" href="#">Men's Clothing</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=mens_hoodies_sale">Men's Hoodies On Sale</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Women's Clothing</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=mens_tshirts_sale">Men's T-Shirts On Sale</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">View All</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=mens_shorts_sale">Men's Shorts On Sale</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=womens_hoodies_sale">Women's Hoodies On Sale</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=womens_tshirts_sale">Women's T-Shirts On Sale</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=womens_shorts_sale">Women's Shorts On Sale</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=womens_hoodies_sale,womens_shorts_sale,womens_tshirts_sale,mens_hoodies_sale,mens_shorts_sale,mens_tshirts_sale">View All</a></li>
 
                             </ul>
 

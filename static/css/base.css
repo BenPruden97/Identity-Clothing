@@ -628,14 +628,14 @@ div hr{
 }
 
 .product-detail-image-card{
-    height: 502px;
-    width: 502px;
+    height: 452px;
+    width: 452px;
     border: 1px solid #152238;
 }
 
 .product-detail-image-card img{
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
 }
 
 /* ----- Footer Styling ----- */

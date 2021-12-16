@@ -11,7 +11,7 @@
 
                 <div class="current-category-header">
 
-                    <h1>Title</h1>
+                    <h1>{{ product.name }}</h1>
 
                     <hr>
 
@@ -43,7 +43,37 @@
 
                     {% endfor %}
 
-                    <a href="{% url 'products' %}?category=mens_hoodies,mens_shorts,mens_tshirts">View All</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="dropdown">
+
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter Clothing Items
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=product_rating&direction=desc">By Rating</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="{% url 'products' %}">View All Clothing Items</a></li>
+
+                    </ul>
 
                 </div>
 

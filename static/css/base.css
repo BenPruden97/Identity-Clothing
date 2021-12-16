@@ -541,6 +541,59 @@ button.primaryAction{
 
 /* ----- Products Page Styling ----- */
 
+.current-category-header{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    flex-direction: column;
+    margin: 2.5rem 0 1rem;
+}
+
+.current-category-header h1{
+    margin-left: 5%;
+    font-size: 3rem;
+    color: #152238;
+    text-align: left;
+    width: 90%;
+}
+
+.category-name-buttons-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.category-name-buttons-section a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    margin: 0 0.5rem;
+    padding: 0.35rem 1rem;
+    color: #152238;
+    font-size: 1rem;
+}
+
+.category-name-buttons-section a:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
+.category-name-buttons a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #152238;
+    font-size: 1rem;
+}
+
+.category-name-buttons a:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
 .product-item{
     display: flex;
     justify-content: center;
@@ -560,12 +613,24 @@ button.primaryAction{
     height: 302px;
     width: 302px;
     border: 1px solid #152238;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.product-image-card img{
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
 }
 
 .product-image-name{
     width: 302px;
     border-right: 1px solid #152238;
     border-left: 1px solid #152238;
+}
+
+.product-image-name a{
+    text-decoration: none;
+    color: #152238;
 }
 
 .product-image-name h6{
@@ -581,6 +646,8 @@ button.primaryAction{
     width: 302px;
     padding: 0.75rem 0 1rem;
     border-right: 1px solid #152238;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     border-left: 1px solid #152238;
     border-bottom: 1px solid #152238;
 }
@@ -589,6 +656,10 @@ button.primaryAction{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     margin: 0;
+}
+
+.product-image-content i{
+    color: #efc501;
 }
 
 div hr{
@@ -621,6 +692,11 @@ div hr{
 .product-detail-item-content h6{
     font-size: 1.5rem;
     padding: 0.25rem 0;
+    margin: 0;
+}
+
+.product-detail-item-content i{
+    color: #efc501;
 }
 
 .product-detail-item-content p{

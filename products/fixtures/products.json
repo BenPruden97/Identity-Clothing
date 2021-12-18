@@ -7,7 +7,7 @@
         "description":"Soft material black & grey Adidas overhead hoodie for Men",
         "price":"34.99",
         "category":1,
-        "product_rating":4,
+        "rating":4,
         "image":"men-adidas-hoodie.jpg"
         }
     },
@@ -19,7 +19,7 @@
         "description":"Soft material beige overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "product_rating":3,
+        "rating":3,
         "image":"men-beige-hoodie.jpg"
         }
     },
@@ -31,7 +31,7 @@
         "description":"Soft material black overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "product_rating":4,
+        "rating":4,
         "image":"men-black-hoodie.jpg"
         }
     },
@@ -43,7 +43,7 @@
         "description":"Soft material grey overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "product_rating":5,
+        "rating":5,
         "image":"men-grey-hoodie.jpg"
         }
     },
@@ -55,7 +55,7 @@
         "description":"Soft material light blue overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "product_rating":2,
+        "rating":2,
         "image":"men-light-blue-hoodie.jpg"
         }
     },
@@ -67,7 +67,7 @@
         "description":"Soft material pink overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "product_rating":2,
+        "rating":2,
         "image":"men-pink-hoodie.jpg"
         }
     },
@@ -79,7 +79,7 @@
         "description":"Soft material purple overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "product_rating":3,
+        "rating":3,
         "image":"men-purple-hoodie.jpg"
         }
     },
@@ -91,7 +91,7 @@
         "description":"Soft material red overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "product_rating":5,
+        "rating":5,
         "image":"men-red-hoodie.jpg"
         }
     },
@@ -103,7 +103,7 @@
         "description":"Soft material star wars overhead hoodie for Men",
         "price":"34.99",
         "category":1,
-        "product_rating":5,
+        "rating":5,
         "image":"men-star-wars-hoodie.jpg"
         }
     },
@@ -115,7 +115,7 @@
         "description":"Soft material striped overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "product_rating":1,
+        "rating":1,
         "image":"men-striped-hoodie.jpg"
         }
     },
@@ -127,7 +127,7 @@
         "description":"Soft material white overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "product_rating":2,
+        "rating":2,
         "image":"men-white-hoodie.jpg"
         }
     },
@@ -139,7 +139,7 @@
         "description":"Soft material yellow overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "product_rating":1,
+        "rating":1,
         "image":"men-yellow-hoodie.jpg"
         }
     },
@@ -151,7 +151,7 @@
         "description":"Soft material red Adidas t-shirt for Men",
         "price":"19.99",
         "category":2,
-        "product_rating":4,
+        "rating":4,
         "image":"men-adidas-tshirt.jpg"
         }
     },
@@ -163,7 +163,7 @@
         "description":"Soft material black t-shirt for Men",
         "price":"16.99",
         "category":2,
-        "product_rating":3,
+        "rating":3,
         "image":"men-black-tshirt.jpg"
         }
     },
@@ -175,7 +175,7 @@
         "description":"Soft material blue t-shirt for Men",
         "price":"14.99",
         "category":2,
-        "product_rating":4,
+        "rating":4,
         "image":"men-blue-tshirt.jpg"
         }
     },
@@ -187,7 +187,7 @@
         "description":"Soft material grey t-shirt for Men",
         "price":"16.99",
         "category":2,
-        "product_rating":5,
+        "rating":5,
         "image":"men-grey-tshirt.jpg"
         }
     },
@@ -199,7 +199,7 @@
         "description":"Soft material black nike t-shirt for Men",
         "price":"24.99",
         "category":2,
-        "product_rating":2,
+        "rating":2,
         "image":"men-nike-tshirt.jpg"
         }
     },
@@ -211,7 +211,7 @@
         "description":"Soft material pink nike t-shirt for Men",
         "price":"24.99",
         "category":2,
-        "product_rating":2,
+        "rating":2,
         "image":"men-pink-nike-tshirt.jpg"
         }
     },
@@ -223,7 +223,7 @@
         "description":"Soft material pink t-shirt for Men",
         "price":"14.99",
         "category":2,
-        "product_rating":3,
+        "rating":3,
         "image":"men-pink-tshirt.jpg"
         }
     },
@@ -235,7 +235,7 @@
         "description":"Soft material navy spartan t-shirt for Men",
         "price":"19.99",
         "category":2,
-        "product_rating":5,
+        "rating":5,
         "image":"men-spartan-tshirt.jpg"
         }
     },
@@ -247,7 +247,7 @@
         "description":"Soft material white srsly t-shirt for Men",
         "price":"24.99",
         "category":2,
-        "product_rating":5,
+        "rating":5,
         "image":"men-srsly-tshirt.jpg"
         }
     },
@@ -259,7 +259,7 @@
         "description":"Soft material striped t-shirt for Men",
         "price":"14.99",
         "category":2,
-        "product_rating":1,
+        "rating":1,
         "image":"men-striped-tshirt.jpg"
         }
     },
@@ -271,7 +271,7 @@
         "description":"Soft material white lacoste t-shirt for Men",
         "price":"34.99",
         "category":2,
-        "product_rating":2,
+        "rating":2,
         "image":"men-white-lacoste-tshirt.jpg"
         }
     },
@@ -283,7 +283,7 @@
         "description":"Soft material white t-shirt for Men",
         "price":"9.99",
         "category":2,
-        "product_rating":1,
+        "rating":1,
         "image":"men-white-tshirt.jpg"
         }
     },{
@@ -294,7 +294,7 @@
         "description":"Soft material grey Adidas shorts for Men",
         "price":"29.99",
         "category":3,
-        "product_rating":4,
+        "rating":4,
         "image":"men-adidas-shorts.jpg"
         }
     },
@@ -306,7 +306,7 @@
         "description":"Soft material black shorts for Men",
         "price":"17.99",
         "category":3,
-        "product_rating":3,
+        "rating":3,
         "image":"men-black-shorts.jpg"
         }
     },
@@ -318,7 +318,7 @@
         "description":"Khaki cargo camouflage shorts for Men",
         "price":"29.99",
         "category":3,
-        "product_rating":4,
+        "rating":4,
         "image":"men-camouflage-shorts.jpg"
         }
     },
@@ -330,7 +330,7 @@
         "description":"Floral cargo shorts for Men",
         "price":"19.99",
         "category":3,
-        "product_rating":5,
+        "rating":5,
         "image":"men-flower-shorts.jpg"
         }
     },
@@ -342,7 +342,7 @@
         "description":"Soft material green shorts for Men",
         "price":"17.99",
         "category":3,
-        "product_rating":2,
+        "rating":2,
         "image":"men-green-shorts.jpg"
         }
     },
@@ -354,7 +354,7 @@
         "description":"Soft material grey shorts for Men",
         "price":"22.99",
         "category":3,
-        "product_rating":2,
+        "rating":2,
         "image":"men-grey-shorts.jpg"
         }
     },
@@ -366,7 +366,7 @@
         "description":"Blue jean material shorts for Men",
         "price":"27.99",
         "category":3,
-        "product_rating":3,
+        "rating":3,
         "image":"men-jean-shorts.jpg"
         }
     },
@@ -378,7 +378,7 @@
         "description":"Soft material green nike shorts for Men",
         "price":"32.99",
         "category":3,
-        "product_rating":5,
+        "rating":5,
         "image":"men-nike-shorts.jpg"
         }
     },
@@ -390,7 +390,7 @@
         "description":"Soft material red shorts for Men",
         "price":"22.99",
         "category":3,
-        "product_rating":5,
+        "rating":5,
         "image":"men-red-shorts.jpg"
         }
     },
@@ -402,7 +402,7 @@
         "description":"Soft material striped shorts for Men",
         "price":"27.99",
         "category":3,
-        "product_rating":1,
+        "rating":1,
         "image":"men-striped-shorts.jpg"
         }
     },
@@ -414,7 +414,7 @@
         "description":"White jean material shorts for Men",
         "price":"32.99",
         "category":3,
-        "product_rating":2,
+        "rating":2,
         "image":"men-white-shorts.jpg"
         }
     },
@@ -426,7 +426,7 @@
         "description":"Yellow silk material shorts for Men",
         "price":"19.99",
         "category":3,
-        "product_rating":1,
+        "rating":1,
         "image":"men-yellow-shorts.jpg"
         }
     },
@@ -438,7 +438,7 @@
         "description":"Soft material grey Adidas overhead hoodie for Women",
         "price":"34.99",
         "category":4,
-        "product_rating":4,
+        "rating":4,
         "image":"women-adidas-hoodie.jpg"
         }
     },
@@ -450,7 +450,7 @@
         "description":"Soft material beige overhead hoodie for Women",
         "price":"29.99",
         "category":4,
-        "product_rating":3,
+        "rating":3,
         "image":"women-beige-hoodie.jpg"
         }
     },
@@ -462,7 +462,7 @@
         "description":"Soft material black overhead hoodie for Women",
         "price":"29.99",
         "category":4,
-        "product_rating":4,
+        "rating":4,
         "image":"women-black-hoodie.jpg"
         }
     },
@@ -474,7 +474,7 @@
         "description":"Soft material blue overhead hoodie for Women",
         "price":"29.99",
         "category":4,
-        "product_rating":5,
+        "rating":5,
         "image":"women-blue-hoodie.jpg"
         }
     },
@@ -486,7 +486,7 @@
         "description":"Soft material yellow dog lover overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "product_rating":2,
+        "rating":2,
         "image":"women-dog-lover-hoodie.jpg"
         }
     },
@@ -498,7 +498,7 @@
         "description":"Soft material green overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "product_rating":2,
+        "rating":2,
         "image":"women-green-hoodie.jpg"
         }
     },
@@ -510,7 +510,7 @@
         "description":"Soft material grey overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "product_rating":3,
+        "rating":3,
         "image":"women-grey-hoodie.jpg"
         }
     },
@@ -522,7 +522,7 @@
         "description":"Soft material yellow overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "product_rating":5,
+        "rating":5,
         "image":"women-yellow-hoodie.jpg"
         }
     },
@@ -534,7 +534,7 @@
         "description":"Soft material pink overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "product_rating":5,
+        "rating":5,
         "image":"women-pink-hoodie.jpg"
         }
     },
@@ -546,7 +546,7 @@
         "description":"Soft material purple overhead hoodie for Women",
         "price":"22.99",
         "category":4,
-        "product_rating":1,
+        "rating":1,
         "image":"women-purple-hoodie.jpg"
         }
     },
@@ -558,7 +558,7 @@
         "description":"Soft material red overhead hoodie for Women",
         "price":"27.99",
         "category":4,
-        "product_rating":2,
+        "rating":2,
         "image":"women-red-hoodie.jpg"
         }
     },
@@ -570,7 +570,7 @@
         "description":"Soft material white overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "product_rating":1,
+        "rating":1,
         "image":"women-white-hoodie.jpg"
         }
     },
@@ -582,7 +582,7 @@
         "description":"Soft material white Aquas t-shirt for Women",
         "price":"19.99",
         "category":5,
-        "product_rating":4,
+        "rating":4,
         "image":"women-aquas-tshirt.jpg"
         }
     },
@@ -594,7 +594,7 @@
         "description":"Soft material black t-shirt for women",
         "price":"16.99",
         "category":5,
-        "product_rating":3,
+        "rating":3,
         "image":"women-black-tshirt.jpg"
         }
     },
@@ -606,7 +606,7 @@
         "description":"Soft material blue t-shirt for Women",
         "price":"14.99",
         "category":5,
-        "product_rating":4,
+        "rating":4,
         "image":"women-blue-tshirt.jpg"
         }
     },
@@ -618,7 +618,7 @@
         "description":"Soft material grey t-shirt for Women",
         "price":"16.99",
         "category":5,
-        "product_rating":5,
+        "rating":5,
         "image":"women-grey-tshirt.jpg"
         }
     },
@@ -630,7 +630,7 @@
         "description":"Soft material white New York t-shirt for women",
         "price":"24.99",
         "category":5,
-        "product_rating":2,
+        "rating":2,
         "image":"women-new-york-tshirt.jpg"
         }
     },
@@ -642,7 +642,7 @@
         "description":"Soft material black Oakley t-shirt for Women",
         "price":"24.99",
         "category":5,
-        "product_rating":2,
+        "rating":2,
         "image":"women-oakley-tshirt.jpg"
         }
     },
@@ -654,7 +654,7 @@
         "description":"Soft material orange t-shirt for Women",
         "price":"14.99",
         "category":5,
-        "product_rating":3,
+        "rating":3,
         "image":"women-orange-tshirt.jpg"
         }
     },
@@ -666,7 +666,7 @@
         "description":"Soft material pink t-shirt for Women",
         "price":"19.99",
         "category":5,
-        "product_rating":5,
+        "rating":5,
         "image":"women-pink-tshirt.jpg"
         }
     },
@@ -678,7 +678,7 @@
         "description":"Soft material purple t-shirt for Women",
         "price":"24.99",
         "category":5,
-        "product_rating":5,
+        "rating":5,
         "image":"women-purple-tshirt.jpg"
         }
     },
@@ -690,7 +690,7 @@
         "description":"Soft material yellow stop t-shirt for Women",
         "price":"14.99",
         "category":5,
-        "product_rating":1,
+        "rating":1,
         "image":"Women-stop-tshirt.jpg"
         }
     },
@@ -702,7 +702,7 @@
         "description":"Soft material striped t-shirt for Women",
         "price":"34.99",
         "category":5,
-        "product_rating":2,
+        "rating":2,
         "image":"women-striped-tshirt.jpg"
         }
     },
@@ -714,7 +714,7 @@
         "description":"Soft material white t-shirt for Women",
         "price":"9.99",
         "category":5,
-        "product_rating":1,
+        "rating":1,
         "image":"women-white-tshirt.jpg"
         }
     },
@@ -726,7 +726,7 @@
         "description":"Soft material black Adidas shorts for Women",
         "price":"29.99",
         "category":6,
-        "product_rating":4,
+        "rating":4,
         "image":"women-adidas-shorts.jpg"
         }
     },
@@ -738,7 +738,7 @@
         "description":"Beige cargo material shorts for Women",
         "price":"17.99",
         "category":6,
-        "product_rating":3,
+        "rating":3,
         "image":"women-beige-shorts.jpg"
         }
     },
@@ -750,7 +750,7 @@
         "description":"soft material black shorts for Women",
         "price":"29.99",
         "category":6,
-        "product_rating":4,
+        "rating":4,
         "image":"women-black-shorts.jpg"
         }
     },
@@ -762,7 +762,7 @@
         "description":"Brown cargo material shorts for Women",
         "price":"19.99",
         "category":6,
-        "product_rating":5,
+        "rating":5,
         "image":"women-brown-shorts.jpg"
         }
     },
@@ -774,7 +774,7 @@
         "description":"Silk material blue floral shorts for Women",
         "price":"17.99",
         "category":6,
-        "product_rating":2,
+        "rating":2,
         "image":"men-flower-shorts.jpg"
         }
     },
@@ -786,7 +786,7 @@
         "description":"Blue jean material shorts for Women",
         "price":"22.99",
         "category":6,
-        "product_rating":2,
+        "rating":2,
         "image":"women-jean-shorts.jpg"
         }
     },
@@ -798,7 +798,7 @@
         "description":"Black silk material Nike shorts for Women",
         "price":"27.99",
         "category":6,
-        "product_rating":3,
+        "rating":3,
         "image":"women-nike-shorts.jpg"
         }
     },
@@ -810,7 +810,7 @@
         "description":"Orange jean material shorts for Women",
         "price":"32.99",
         "category":6,
-        "product_rating":5,
+        "rating":5,
         "image":"women-orange-shorts.jpg"
         }
     },
@@ -822,7 +822,7 @@
         "description":"Pink shorts for Women",
         "price":"22.99",
         "category":6,
-        "product_rating":5,
+        "rating":5,
         "image":"women-pink-shorts.jpg"
         }
     },
@@ -834,7 +834,7 @@
         "description":"Red cargo material shorts for Women",
         "price":"27.99",
         "category":6,
-        "product_rating":1,
+        "rating":1,
         "image":"women-red-shorts.jpg"
         }
     },
@@ -846,7 +846,7 @@
         "description":"Blue ripped jean material shorts for Women",
         "price":"32.99",
         "category":6,
-        "product_rating":2,
+        "rating":2,
         "image":"women-ripped-jean-shorts.jpg"
         }
     },
@@ -858,7 +858,7 @@
         "description":"White Jean material shorts for Women",
         "price":"19.99",
         "category":6,
-        "product_rating":1,
+        "rating":1,
         "image":"women-white-shorts.jpg"
         }
     },
@@ -870,7 +870,7 @@
         "description":"Soft material green overhead hoodie for Men currently on sale",
         "price":"29.99",
         "category":7,
-        "product_rating":4,
+        "rating":4,
         "product_sale":10,
         "image":"men-green-hoodie-sale.jpg"
         }
@@ -883,7 +883,7 @@
         "description":"Soft material grey overhead hoodie for Men currently on sale",
         "price":"29.99",
         "category":7,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"men-grey-hoodie-sale.jpg"
         }
@@ -896,7 +896,7 @@
         "description":"Soft material light blue overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"men-light-blue-hoodie-sale.jpg"
         }
@@ -909,7 +909,7 @@
         "description":"Soft material black Nike overhead hoodie for Men currently on sale",
         "price":"34.99",
         "category":7,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"men-nike-hoodie-sale.jpg"
         }
@@ -922,7 +922,7 @@
         "description":"Soft material red overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"men-red-hoodie-sale.jpg"
         }
@@ -935,7 +935,7 @@
         "description":"Soft material yellow overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"men-yellow-hoodie-sale.jpg"
         }
@@ -948,7 +948,7 @@
         "description":"Soft material black ripped t-shirt for Men currently on sale",
         "price":"14.99",
         "category":8,
-        "product_rating":4,
+        "rating":4,
         "product_sale":10,
         "image":"men-black-tshirt-sale.jpg"
         }
@@ -961,7 +961,7 @@
         "description":"Soft material blue Nike t-shirt for Men currently on sale",
         "price":"16.99",
         "category":8,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"men-blue-nike-tshirt-sale.jpg"
         }
@@ -974,7 +974,7 @@
         "description":"Soft material grey t-shirt for Men currently on sale",
         "price":"24.99",
         "category":8,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"men-grey-tshirt-sale.jpg"
         }
@@ -987,7 +987,7 @@
         "description":"Soft material orange t-shirt for Men currently on sale",
         "price":"24.99",
         "category":8,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"men-orange-tshirt-sale.jpg"
         }
@@ -1000,7 +1000,7 @@
         "description":"Soft material pink Just Culture t-shirt for Men currently on sale",
         "price":"14.99",
         "category":8,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"men-pink-tshirt-sale.jpg"
         }
@@ -1013,7 +1013,7 @@
         "description":"Soft material white t-shirt for Men currently for sale",
         "price":"19.99",
         "category":8,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"men-white-tshirt-sale.jpg"
         }
@@ -1026,7 +1026,7 @@
         "description":"Silk material black Puma shorts for Men currently on sale",
         "price":"28.99",
         "category":9,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"men-black-puma-shorts-sale.jpg"
         }
@@ -1039,7 +1039,7 @@
         "description":"Soft material black shorts for Men currently on sale",
         "price":"22.99",
         "category":9,
-        "product_rating":4,
+        "rating":4,
         "product_sale":10,
         "image":"men-black-shorts-sale.jpg"
         }
@@ -1052,7 +1052,7 @@
         "description":"Soft material blue Fila shorts for Men currently on sale",
         "price":"19.99",
         "category":9,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"men-blue-fila-shorts-sale.jpg"
         }
@@ -1065,7 +1065,7 @@
         "description":"Soft material blue shorts for Men currently on sale",
         "price":"17.99",
         "category":9,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"men-blue-shorts-sale.jpg"
         }
@@ -1078,7 +1078,7 @@
         "description":"Soft material grey shorts for Men currently on sale",
         "price":"22.99",
         "category":9,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"men-grey-shorts-sale.jpg"
         }
@@ -1091,7 +1091,7 @@
         "description":"White Cargo material shorts for Men currently on sale",
         "price":"21.99",
         "category":9,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"men-white-shorts-sale.jpg"
         }
@@ -1104,7 +1104,7 @@
         "description":"Soft material black overhead hoodie for Women currently on sale",
         "price":"27.99",
         "category":10,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"women-black-hoodie-sale.jpg"
         }
@@ -1117,7 +1117,7 @@
         "description":"Soft material brown overhead hoodie for Women currently on sale",
         "price":"23.99",
         "category":10,
-        "product_rating":4,
+        "rating":4,
         "product_sale":10,
         "image":"women-brown-hoodie-sale.jpg"
         }
@@ -1130,7 +1130,7 @@
         "description":"Soft material grey overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"women-grey-hoodie-sale.jpg"
         }
@@ -1143,7 +1143,7 @@
         "description":"Soft material orange overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"women-orange-hoodie-sale.jpg"
         }
@@ -1156,7 +1156,7 @@
         "description":"Soft material pink overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"women-pink-hoodie-sale.jpg"
         }
@@ -1169,7 +1169,7 @@
         "description":"Soft material white overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"women-white-hoodie-sale.jpg"
         }
@@ -1182,7 +1182,7 @@
         "description":"Soft material black t-shirt for women currently on sale",
         "price":"17.99",
         "category":11,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"women-black-tshirt-sale.jpg"
         }
@@ -1195,7 +1195,7 @@
         "description":"Soft material brown t-shirt for Women currently on sale",
         "price":"19.99",
         "category":11,
-        "product_rating":2,
+        "rating":2,
         "product_sale":10,
         "image":"women-brown-tshirt-sale.jpg"
         }
@@ -1208,7 +1208,7 @@
         "description":"Soft material grey t-shirt for Women currently on sale",
         "price":"14.99",
         "category":11,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"women-grey-culprit-tshirt-sale.jpg"
         }
@@ -1221,7 +1221,7 @@
         "description":"Soft material red t-shirt for Women currently on sale",
         "price":"12.99",
         "category":11,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"women-red-tshirt-sale.jpg"
         }
@@ -1234,7 +1234,7 @@
         "description":"Soft material white t-shirt for Women currently on sale",
         "price":"24.99",
         "category":11,
-        "product_rating":4,
+        "rating":4,
         "product_sale":10,
         "image":"women-white-tshirt-sale.jpg"
         }
@@ -1247,7 +1247,7 @@
         "description":"Soft material white Vogue t-shirt for Women currently on sale",
         "price":"29.99",
         "category":11,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"women-white-vogue-tshirt-sale.jpg"
         }
@@ -1260,7 +1260,7 @@
         "description":"Soft material black shorts for Women currently on sale",
         "price":"19.99",
         "category":12,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"women-black-shorts-sale.jpg"
         }
@@ -1273,7 +1273,7 @@
         "description":"Soft material green shorts for Women currently on sale",
         "price":"22.99",
         "category":12,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"women-green-shorts-sale.jpg"
         }
@@ -1286,7 +1286,7 @@
         "description":"Soft material grey shorts for Women currently on sale",
         "price":"17.99",
         "category":12,
-        "product_rating":5,
+        "rating":5,
         "product_sale":10,
         "image":"women-grey-shorts-sale.jpg"
         }
@@ -1299,7 +1299,7 @@
         "description":"Blue jean material shorts for Women currently on sale",
         "price":"24.99",
         "category":12,
-        "product_rating":1,
+        "rating":1,
         "product_sale":10,
         "image":"women-jean-shorts-sale.jpg"
         }
@@ -1312,7 +1312,7 @@
         "description":"Soft material red shorts for Women currently on sale",
         "price":"17.99",
         "category":12,
-        "product_rating":3,
+        "rating":3,
         "product_sale":10,
         "image":"women-red-shorts-sale.jpg"
         }
@@ -1325,7 +1325,7 @@
         "description":"White Jean material shorts for Women currently on sale",
         "price":"19.99",
         "category":12,
-        "product_rating":1,
+        "rating":1,
         "product_sale":10,
         "image":"women-white-shorts-sale.jpg"
         }

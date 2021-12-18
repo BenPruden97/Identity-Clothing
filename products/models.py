@@ -32,7 +32,7 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    product_rating = models.DecimalField(max_digits=2, decimal_places=0, null=True, blank=True)
+    rating = models.DecimalField(max_digits=2, decimal_places=0, null=True, blank=True)
     product_sale = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     product_option = models.ManyToManyField('ProductSize', blank=True)
     image = models.ImageField(null=True, blank=True)

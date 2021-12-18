@@ -11,7 +11,7 @@
 
                 <div class="current-category-header">
 
-                    <h1>{{ product.name }}</h1>
+                    <h1>Clothing Items</h1>
 
                     <hr>
 
@@ -55,29 +55,51 @@
 
         <div class="row">
 
-            <div class="col-12">
+            <div class="col-6">
 
-                <div class="dropdown">
+                <div class="product-number">
 
-                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Filter Clothing Items
-                    </button>
-
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
-                        <div class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=product_rating&direction=desc">By Rating</a></li>
-                        <div class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
-                        <div class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="{% url 'products' %}">View All Clothing Items</a></li>
-
-                    </ul>
+                    {% if search_term or current_categories or current_sorting != 'None_None' %}
+                        <span><a href="{% url 'products' %}">All Products</a> | </span>
+                    {% endif %}
+                    {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
 
                 </div>
 
             </div>
+
+            <div class="col-6">
+
+                <div class="product-filters">
+
+                    <select id="sort-selector" class="{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+
+                        <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                        </option>
+
+                        <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
+                            (low to high)</option>
+
+                        <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                            (high to low)</option>
+
+                        <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>
+                            Rating (low to high)</option>
+
+                        <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>
+                            Rating (high to low)</option>
+
+                        <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                            (A-Z)</option>
+
+                        <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
+                            (Z-A)</option>
+
+                    </select>
+
+                </div>
+
+            </div>           
 
         </div>
 
@@ -123,13 +145,13 @@
 
                                 <h6>Price: £{{ product.price }}</h6>
 
-                                {% if product.product_rating == 1%}
+                                {% if product.rating == 1%}
                                     <h6><i class="fas fa-star"></i></h6>
-                                {% elif product.product_rating == 2 %}
+                                {% elif product.rating == 2 %}
                                     <h6><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                {% elif product.product_rating == 3 %}
+                                {% elif product.rating == 3 %}
                                     <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                {% elif product.product_rating == 4 %}
+                                {% elif product.rating == 4 %}
                                     <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
                                 {% else %}
                                     <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
@@ -170,5 +192,34 @@
         </div>
 
     </div>
+
+{% endblock %}
+
+
+{% block postloadjs %}
+
+    {{ block.super }}
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if (selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
 
 {% endblock %}

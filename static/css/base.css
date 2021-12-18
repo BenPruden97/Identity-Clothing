@@ -521,6 +521,7 @@ button.primaryAction{
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .category-name-buttons-section a{
@@ -553,65 +554,33 @@ button.primaryAction{
     transition: 0.5s;
 }
 
-button#dropdownMenuButton1.dropdown-toggle{
-    margin: 0;
+.product-number{
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+    font-size: 1.1rem;
 }
 
-.dropdown{
+.product-number a{
+    color: #152238;
+}
+
+.product-filters{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 5%;
+    margin-right: 5rem;
 }
 
-.dropdown button{
+select{
     border: 2px solid #152238;
+    border-radius: 0;
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
     background-color: #fafafa;
     color: #152238;
     font-size: 1rem;
     width: 250px;
-}
-
-.dropdown button:hover{
-    background-color: #152238;
-    color: #fafafa;
-    transition: 0.5s;
-}
-
-ul.dropdown-menu.show{
-    border: 2px solid #152238;
-    text-align: center;
-    width: 250px;
-    padding: 0;
-    border-radius: 0;
-}
-
-ul.dropdown-menu.show .dropdown-divider{
-    border: 1px solid #152238;
-    width: 100%;
-}
-
-ul.dropdown-menu.show li{
-    background: none; 
-}
-
-a.dropdown-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem !important;
-    height: 40px;
-}
-
-.dropdown-divider{
-    margin: 0;
-}
-
-ul.dropdown-menu.show a.dropdown-item:hover{
-    color: #fafafa;
-    background: #152238;
+    cursor: pointer;
 }
 
 .product-item{

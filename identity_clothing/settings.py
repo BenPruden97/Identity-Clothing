@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.template.context_processors.media',
                 'django.contrib.messages.context_processors.messages',
+                'bag.context.bag_contents',
             ],
         },
     },
@@ -154,6 +155,9 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 IMAGES_URL = '/images/'
 IMAGES_ROOT = os.path.join(BASE_DIR, 'images')
+
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

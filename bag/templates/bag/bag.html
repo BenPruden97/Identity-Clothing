@@ -5,4 +5,44 @@
     
     <h1>Hello</h1>
 
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <h1>Shopping Cart</h1>
+
+                <hr>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                {% if bag_items %}
+                    <div class="table-responsive rounded"></div>
+                {% else %}
+                    <p class="lead mb-5">Your Shopping Cart is empty</p>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div>
+
 {% endblock %}

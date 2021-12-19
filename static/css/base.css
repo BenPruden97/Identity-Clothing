@@ -16,6 +16,10 @@
     --bs-gutter-x: 0;
 }
 
+.row-color{
+    background-color: #fafafa;
+}
+
 body{
     font-family: "Cabin", sans-serif;
 }
@@ -672,6 +676,7 @@ div hr{
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
+    margin-top: 2.5rem;
 }
 
 .product-detail-item-content div{
@@ -701,6 +706,83 @@ div hr{
 .product-detail-image-card img{
     width: 450px;
     height: 450px;
+}
+
+div.product-detail-form,
+div.col-12{
+    margin-top: 0;
+}
+
+div.product-detail-quantity{
+    margin-top: 0;
+}
+
+div.product-detail-quantity p{
+    margin-bottom: 0.5rem;
+}
+
+div.product-detail-quantity input{
+    border: 2px solid #152238;
+    background-color: #fafafa;
+    color: #152238;
+    padding: 0.25rem;
+    width: 300px;
+    padding-left: 0.5rem;
+}
+
+div.product-detail-quantity input::placeholder{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+div.product-detail-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 400px;
+}
+
+div.col-6{
+    margin-top: 1.5rem;
+}
+
+div.product-detail-buttons a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.85rem 1.5rem;
+    color: #152238;
+    font-size: 1rem;
+}
+
+div.product-detail-buttons a:hover{
+    transition: 0.5s;
+    background-color: #152238;
+    color: #fafafa;
+}
+
+div.product-detail-buttons input{
+    border: 2px solid #152238;
+    padding: 0.75rem 2.5rem;
+    background-color: #fafafa;
+    color: #152238;
+    font-size: 1rem;
+}
+
+div.product-detail-buttons input:hover{
+    transition: 0.5s;
+    background-color: #152238;
+    color: #fafafa;
+}
+
+/* ----- Bag Page Styling ----- */
+
+.shopping-cart-header h1{
+    margin-left: 5%;
+    font-size: 3rem;
+    color: #152238;
+    text-align: left;
+    width: 90%;
 }
 
 /* ----- Footer Styling ----- */

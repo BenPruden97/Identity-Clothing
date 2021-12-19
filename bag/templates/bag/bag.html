@@ -5,7 +5,7 @@
     
     <div class="container-fluid">
 
-        <div class="row">
+        <div class="row row-color">
 
             <div class="col-12">
 
@@ -25,20 +25,127 @@
 
     <div class="container-fluid">
 
-        <div class="row">
+        <div class="row row-color">
 
             <div class="col-12">
 
                 {% if bag_items %}
-                    <div class="table-responsive rounded"></div>
+
+                    <div class="shopping-cart-table">
+                        
+                        <table class="table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Product Image</th>
+                                    <th>Product Info</th>
+                                    <th>Product Price</th>
+                                    <th>Product Size</th>
+                                    <th>Product Qty</th>
+                                    <th>Subtotal</th>
+
+
+                                </tr>
+
+                            </thead>
+
+                            {% for item in bag_items %}
+
+                                <tr>
+
+                                    <td>
+                                        <img src="/images/{{ item.product.image.url }}" alt="">
+                                    </td>
+
+                                    <td>
+                                        <p><strong>Product Name:</strong> {{ item.product.name }}</p>
+                                        <p><strong>Product ID Number:</strong> {{ item.product.pk|upper }}</p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>£{{ item.product.price }}</strong></p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong></strong></p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>{{ item.quantity }}</strong></p>
+                                    </td>
+
+                                    <td>
+                                        <p><strong>£{{ item.product.price }}</strong></p>
+                                    </td>
+
+                                </tr>
+                                
+                            {% endfor %}
+
+                        </table>
+
+                    </div>
+
+                    <div class="shopping-cart-total">
+
+                        <tr>
+
+                            <td>
+
+                                <h4>Shopping Cart Total: £{{ total|floatformat:2 }}</h6>
+
+                                <hr>
+
+                                <h4>Delivery: £{{ delivery|floatformat:2 }}</h6>
+
+                                <hr>
+
+                                <h3>Grand Total: £{{ grand_total|floatformat:2 }}</h4>
+
+                                {% if free_delivery_delta > 0 %}
+                                    <p>
+                                        You can get FREE delivery with your purchase by spending just £{{ free_delivery_delta }} more!
+                                    </p>
+                                {% endif %}
+
+                            </td>
+
+                        </tr>
+
+                    </div>
+
+                    <div class="shopping-cart-buttons">
+
+                        <a href="{% url 'products' %}">
+
+                            <span><i class="fas fa-chevron-left"></i></span>
+
+                            Keep Shopping
+
+                        </a>
+
+                        <a href="#">
+
+                            Checkout Securely
+
+                            <span><i class="fas fa-lock"></i></span>
+
+                        </a>
+
+                    </div>
+
                 {% else %}
+
                     <p class="lead mb-5">Your Shopping Cart is empty</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
+
+                    <a href="{% url 'products' %}">
+
                         <span class="text-uppercase">Keep Shopping</span>
+
                     </a>
+
                 {% endif %}
 
             </div>

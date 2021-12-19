@@ -747,6 +747,10 @@ div.col-6{
     margin-top: 1.5rem;
 }
 
+div.product-detail-buttons i{
+    color: #f68b58;
+}
+
 div.product-detail-buttons a{
     text-decoration: none;
     border: 2px solid #152238;
@@ -761,7 +765,7 @@ div.product-detail-buttons a:hover{
     color: #fafafa;
 }
 
-div.product-detail-buttons input{
+div.product-detail-buttons button{
     border: 2px solid #152238;
     padding: 0.75rem 2.5rem;
     background-color: #fafafa;
@@ -769,13 +773,21 @@ div.product-detail-buttons input{
     font-size: 1rem;
 }
 
-div.product-detail-buttons input:hover{
+div.product-detail-buttons button:hover{
     transition: 0.5s;
     background-color: #152238;
     color: #fafafa;
 }
 
 /* ----- Bag Page Styling ----- */
+
+.shopping-cart-header{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    flex-direction: column;
+    margin: 2.5rem 0 3rem;
+}
 
 .shopping-cart-header h1{
     margin-left: 5%;
@@ -784,6 +796,72 @@ div.product-detail-buttons input:hover{
     text-align: left;
     width: 90%;
 }
+
+.shopping-cart-table{
+    margin: auto;
+    width: 90%;
+}
+
+.shopping-cart-table table{
+    border: 2px solid #152238;
+    background-color: #fafafa;
+    color: #152238;
+}
+
+.shopping-cart-table th, td{
+    border-right: 2px solid #152238;
+    border-bottom: 2px solid #152238;
+    border-top: 2px solid #152238;
+    vertical-align: middle;
+}
+
+.shopping-cart-table img{
+    height: 150px;
+    width: 150px;
+}
+
+.shopping-cart-total{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 5%;
+}
+
+.shopping-cart-total hr{
+    width: 325px !important;
+    margin-right: 0px;
+    margin-bottom: 0.5rem;
+}
+
+.shopping-cart-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.shopping-cart-buttons i{
+    color: #f68b58;
+}
+
+.shopping-cart-buttons a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    margin-top: 2rem;
+    padding: 0.85rem 6rem;
+    color: #152238;
+    font-size: 1rem;
+}
+
+.shopping-cart-buttons a:hover{
+    transition: 0.5s;
+    background-color: #152238;
+    color: #fafafa;
+}
+
 
 /* ----- Footer Styling ----- */
 

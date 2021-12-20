@@ -691,10 +691,12 @@ div hr{
 
 .product-detail-item-content i{
     color: #efc501;
+    padding: 0 0 0.25rem;
 }
 
 .product-detail-item-content p{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
 }
 
 .product-detail-image-card{
@@ -713,8 +715,25 @@ div.col-12{
     margin-top: 0;
 }
 
+div.product-detail-size{
+    margin-top: 0rem;
+}
+
+div.product-detail-size select{
+    margin: 0;
+    border: 2px solid #152238;
+    background-color: #fafafa;
+    color: #152238;
+    width: 300px;
+    padding-left: 0.5rem;
+}
+
+div.product-detail-size p{
+    margin-bottom: 0.5rem;
+}
+
 div.product-detail-quantity{
-    margin-top: 0;
+    margin-top: 1rem;
 }
 
 div.product-detail-quantity p{
@@ -727,7 +746,7 @@ div.product-detail-quantity input{
     color: #152238;
     padding: 0.25rem;
     width: 300px;
-    padding-left: 0.5rem;
+    padding-left: 0.75rem;
 }
 
 div.product-detail-quantity input::placeholder{
@@ -740,7 +759,7 @@ div.product-detail-buttons{
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
-    width: 400px;
+    width: 450px;
 }
 
 div.col-6{
@@ -754,7 +773,7 @@ div.product-detail-buttons i{
 div.product-detail-buttons a{
     text-decoration: none;
     border: 2px solid #152238;
-    padding: 0.85rem 1.5rem;
+    padding: 0.85rem 2.5rem;
     color: #152238;
     font-size: 1rem;
 }
@@ -767,7 +786,7 @@ div.product-detail-buttons a:hover{
 
 div.product-detail-buttons button{
     border: 2px solid #152238;
-    padding: 0.75rem 2.5rem;
+    padding: 0.75rem 3.5rem;
     background-color: #fafafa;
     color: #152238;
     font-size: 1rem;

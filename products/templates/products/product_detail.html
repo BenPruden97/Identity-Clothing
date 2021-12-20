@@ -63,14 +63,32 @@
 
                                 <div class="col-12">
 
+                                    <div class="product-detail-size">
+
+                                        <p><strong>Size:</strong></p>
+
+                                        <select>
+                                            
+                                            {% for key, value in product.SIZE_CHOICES  %}
+                                                <option value="{{ key }}">{{ value }}</option>
+                                            {% endfor %}
+
+                                        </select>
+
+                                    </div>
+                                       
+                                </div>
+
+                                <div class="col-12">
+
                                     <div class="product-detail-quantity">
 
                                         <p><strong>Quantity:</strong></p>
 
-                                        <input type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                        <input type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" required>
 
                                     </div>
-                                       
+
                                 </div>
     
                                 <div class="product-detail-buttons">

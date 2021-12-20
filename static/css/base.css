@@ -740,18 +740,48 @@ div.product-detail-quantity p{
     margin-bottom: 0.5rem;
 }
 
-div.product-detail-quantity input{
-    border: 2px solid #152238;
-    background-color: #fafafa;
-    color: #152238;
-    padding: 0.25rem;
+div.input-group{
+    margin-top: 0.5rem;
     width: 300px;
-    padding-left: 0.75rem;
+    height: 50px;
 }
 
-div.product-detail-quantity input::placeholder{
-    font-weight: bold;
-    font-size: 1.1rem;
+div.input-group-prepend,
+div.input-group-append{
+    margin-top: 0;
+}
+
+div.input-group input{
+    border: 2px solid #152238;
+    height: 40px;
+}
+
+div.input-group button{
+    background-color: #fafafa;
+    padding: 0.5rem;
+    height: 40px;
+}
+
+div.input-group button:hover{
+    background-color: #152238;
+}
+
+div.input-group button i{
+    color: #f68b58;
+}
+
+.decrement-qty{
+    border-top: 2px solid #152238;
+    border-left: 2px solid #152238;
+    border-bottom: 2px solid #152238;
+    border-right: none;
+}
+
+.increment-qty{
+    border-top: 2px solid #152238;
+    border-right: 2px solid #152238;
+    border-bottom: 2px solid #152238;
+    border-left: none;
 }
 
 div.product-detail-buttons{

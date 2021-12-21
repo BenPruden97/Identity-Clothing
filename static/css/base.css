@@ -858,7 +858,6 @@ div.product-detail-buttons button:hover{
 }
 
 .shopping-cart-table th, td{
-    border-right: 2px solid #152238;
     border-bottom: 2px solid #152238;
     border-top: 2px solid #152238;
     vertical-align: middle;
@@ -911,6 +910,25 @@ div.product-detail-buttons button:hover{
     color: #fafafa;
 }
 
+.shopping-cart-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding-top: 0.5rem;
+}
+
+.update-link,
+.update-link:hover{
+    color: #152238;
+    cursor: pointer;
+}
+
+.remove-item,
+.remove-item:hover{
+    color: #152238;
+    cursor: pointer;
+}
 
 /* ----- Footer Styling ----- */
 

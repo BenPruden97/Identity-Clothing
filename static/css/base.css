@@ -20,6 +20,8 @@
     background-color: #fafafa;
 }
 
+/* ----- Bootstrap Toast Messages Styling ----- */
+
 .message-container{
     position: fixed;
     top: 72px;
@@ -35,9 +37,31 @@
     height: 2px;
 }
 
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid #152238;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+.bag-notification-wrapper{
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* ----- Body Styling ----- */
+
 body{
     font-family: "Cabin", sans-serif;
 }
+
+/* ----- Navigation Menu Styling ----- */
 
 .header-content{
     display: flex;

@@ -18,8 +18,71 @@
 
     <div class="toast-body bg-white">
 
-        {{ message }}   
+        <div class="row">
+
+            <div class="col-12">
+
+                {{ message }}  
+                
+                <hr>
+
+            </div>
+
+        </div>
+        {% if grand_total %}
+
+            <p>Your Shopping Bag ({{ product_count }})</p>
+
+            <div class="bag-notification-wrapper">
+
+                {% for item in bag_items %}
+                    <div class="col-3">
+
+                        <img src="{{ item.product.image.url }}">
+
+                    </div>
+
+                    <div class="col-9">
+
+                        <p>Product Name: {{ item.product.name }}</p>
+                        <p>Product Size: {{ item.product_size|upper }}</p>
+                        <p>Product Qty: {{ item.quantity }}</p>
+
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p>
+                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
+                        <span>£{{ total|floatformat:2 }}</span>
+                    </p>
+                    {% if free_delivery_delta > 0 %}
+                        <p>
+                            Spend £{{ free_delivery_delta }} more to get free next day delivery
+                        </p>
+                    {% endif %}
+                    <a href="{% url 'view_bag' %}">
+                        
+                        Checkout Securely
+
+                        <span><i class="fas fa-lock"></i></span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        {% endif %}
+
+
 
     </div>
-    
+
 </div>

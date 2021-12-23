@@ -32,13 +32,10 @@
 
         {% block corejs %}
 
-        <!-- jQuery Link
+        <!-- jQuery Link -->
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        -->
-        
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
         <!-- Bootstrap Javascript Links -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
@@ -138,13 +135,30 @@
         </header>
 
         {% if messages %}
-            <div class="messages"></div>
+            <div class="messages">
+                {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+            </div>
         {% endif %} 
 
         {% block content %}
         {% endblock %}
 
         {% block postloadjs %}
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
         {% endblock %}
 
         {% include 'includes/footer.html' %}

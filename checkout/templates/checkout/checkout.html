@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
+{% endblock %}
+
+{% block content %}
+    
+    <div class="container-fluid">
+
+        <div class="row row-color">
+
+            <div class="col-12">
+
+                <div class="checkout-header">
+
+                    <h1>Checkout</h1>
+
+                    <hr>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row row-color">
+
+            <div class="col-12 col-lg-5 order-lg-last">
+
+                <div class="order-summary-header">
+
+                    <p>Order Summary: ({{ product_count }} Clothing Items Selected)</p>
+
+                </div>
+
+                <div class="row product-summary-headings">
+
+                    <div class="col-7">
+
+                        <p>Product Item Summary</p>
+
+                    </div>
+
+                    <div class="col-5">
+
+                        <p>Subtotal</p>
+
+                    </div>
+
+                </div>
+
+                {% for item in bag_items %}
+
+                    <div class="row product-summary-row">
+
+                        <div class="col-4 order-summary-image">
+
+                            <img src="/images/{{ item.product.image.url }}" alt="">
+
+                        </div>
+
+                        <div class="col-6 product-order-summary">
+
+                            <p>{{ item.product.name }}</p>
+                            <p>Product Size: {{ item.product_size }}</p>
+                            <p>Product Qty: {{ item.quantity }}</p>
+
+                        </div>
+
+                        <div class="col-2">
+
+                            <p>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-summary-hr">
+                
+                        <hr>
+    
+                    </div>
+
+                {% endfor %}
+
+                <div class="row">
+
+                    <div class="col-9">
+
+                        <p>Order Total:</p>
+                        <p>Delivery:</p>
+                        <p>Grand Total:</p>
+
+                    </div>
+
+                    <div class="col-3">
+
+                        <p>£{{ total | floatformat:2 }}</p>
+                        <p>£{{ delivery | floatformat:2 }}</p>
+                        <p>£{{ grand_total | floatformat:2 }}</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-5 checkout-form">
+
+                <p>Please fill out the form below to complete your order</p>
+
+                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                    {% csrf_token %}
+
+                    <fieldset>
+
+                        <legend>Personal Details</legend>
+                        {{ order_form.full_name | as_crispy_field }}
+                        {{ order_form.email | as_crispy_field }}
+
+                    </fieldset>
+
+                    <hr>
+
+                    <fieldset>
+
+                        <legend>Delivery Details</legend>
+                        {{ order_form.phone_number | as_crispy_field }}
+                        {{ order_form.country | as_crispy_field }}
+                        {{ order_form.postcode | as_crispy_field }}
+                        {{ order_form.town_or_city | as_crispy_field }}
+                        {{ order_form.street_address1 | as_crispy_field }}
+                        {{ order_form.street_address2 | as_crispy_field }}
+                        {{ order_form.county | as_crispy_field }}
+
+                        <div class="save-delivery-info">
+
+                            {% if user.is_authenticated %}
+                                <label for="id-save-info">Save this delivery information to my profile</label>
+                                <input type="checkbox" id="id-save-info" name="save-info" checked>
+                            {% else %}
+                                <label for="id-save-info">
+                                    <a href="{% url 'account_signup' %}">Create an account</a>
+                                    <a href="{% url ' account_signin' %}">Login</a> to save this information
+                                </label>
+                            {% endif %}
+
+                        </div>
+
+                    </fieldset>
+
+                    <hr>
+
+                    <fieldset>
+
+                        <legend>Payment</legend>
+
+                        <!-- A Stripe card element will go here -->
+                        <div id="card-element"></div>
+
+                        <!-- Used to display form errors -->
+                        <div id="card-errors"></div>
+                    
+                        <div class="payment-p">
+
+                            <p>
+    
+                                <span><i class="fas fa-exclamation"></i></span>
+    
+                                Your card will be charged the following amount £{{ grand_total|floatformat:2 }}
+    
+                            </p>
+    
+                        </div>
+    
+                        <div class="checkout-buttons">
+    
+                            <a href="{% url 'view_bag' %}">
+    
+                                <span><i class="fas fa-chevron-left"></i></span>
+    
+                                Edit Shopping Bag
+    
+                            </a>
+    
+                            <button id="submit-button">
+    
+                                Complete Your Order
+    
+                                <span><i class="fas fa-lock"></i></span>
+    
+                            </button>
+    
+                        </div>
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

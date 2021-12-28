@@ -4,9 +4,9 @@
 
 {% block content %}
     
-    <div class="container-fluid">
+    <div class="container">
 
-        <div class="row row-color">
+        <div class="row">
 
             <div class="col-12">
 
@@ -24,7 +24,7 @@
 
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row row-color">
 
@@ -187,13 +187,17 @@
 
                 {% else %}
 
-                    <p class="lead mb-5">Your Shopping Cart is empty</p>
+                    <div class="shopping-cart-empty">
 
-                    <a href="{% url 'products' %}">
+                        <p>Your Shopping Cart is currently empty</p>
 
-                        <span class="text-uppercase">Keep Shopping</span>
+                        <a href="{% url 'products' %}">
 
-                    </a>
+                            <span>Shop For Some Clothing Items</span>
+
+                        </a>
+
+                    </div>
 
                 {% endif %}
 

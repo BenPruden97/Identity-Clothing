@@ -27,14 +27,14 @@
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% endblock %}
 
-        {% block extra_corecss %}
+        {% block extra_css %}
         {% endblock %}
 
         {% block corejs %}
 
         <!-- jQuery Link -->
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
         <!-- Bootstrap Javascript Links -->
@@ -45,10 +45,13 @@
 
         <!----- Font Awesome ----->
         <script src="https://kit.fontawesome.com/e8142a821e.js" crossorigin="anonymous"></script>
+
+        <!----- Stripe Payments ----->
+        <script src="https://js.stripe.com/v3/"></script>
         
         {% endblock %}
 
-        {% block extra_corejs %}
+        {% block extra_js %}
         {% endblock %}
 
         <title>Identity Clothing - {% block extra_title %}{% endblock %}</title>

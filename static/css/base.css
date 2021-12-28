@@ -38,6 +38,7 @@
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -864,21 +865,6 @@ div.product-detail-buttons button:hover{
     color: #fafafa;
 }
 
-div.col-9,
-div.col-3{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-}
-
-div.col-9 p,
-div.col-3 p{
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
 /* ----- Bag Page Styling ----- */
 
 .shopping-cart-header{
@@ -937,10 +923,11 @@ div.col-3 p{
 
 .shopping-cart-buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-right: 5%;
     margin-left: 5%;
+    margin-bottom: 2rem;
 }
 
 .shopping-cart-buttons i{
@@ -954,6 +941,7 @@ div.col-3 p{
     padding: 0.85rem 6rem;
     color: #152238;
     font-size: 1rem;
+    margin-left: 2rem;
 }
 
 .shopping-cart-buttons a:hover{
@@ -996,8 +984,12 @@ div.col-3 p{
 }
 
 .checkout-form{
-    margin-left: 5%;
-    margin-right: 6.5%;
+    padding-left: 5%;
+    padding-right: 2.5%;
+}
+
+.order-lg-last{
+    padding-right: 5%;
 }
 
 .checkout-form fieldset{
@@ -1036,8 +1028,9 @@ div.col-3 p{
 
 .checkout-buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .checkout-buttons i{
@@ -1047,7 +1040,7 @@ div.col-3 p{
 .checkout-buttons a{
     text-decoration: none;
     border: 2px solid #152238;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     color: #152238;
     font-size: 1rem;
 }
@@ -1060,10 +1053,11 @@ div.col-3 p{
 
 .checkout-buttons button{
     border: 2px solid #152238;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     background-color: #fafafa;
     color: #152238;
     font-size: 1rem;
+    margin-left: 1.5rem;
 }
 
 .checkout-buttons button:hover{
@@ -1073,14 +1067,18 @@ div.col-3 p{
 }
 
 .payment-p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     border-top: 2px solid #f68b58;
     border-bottom: 2px solid #f68b58;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     margin-bottom: 1rem;
 }
 
 .payment-p p{
     margin-bottom: 0;
+    font-size: 0.9rem;
 }
 
 .order-summary-header{
@@ -1112,6 +1110,10 @@ div.col-5{
     width: 125px;
 }
 
+.product-order-summary{
+    padding-left: 1.5rem;
+}
+
 .product-order-summary p{
     font-weight: bold;
     margin-bottom: 0.75rem;
@@ -1132,10 +1134,83 @@ div.col-2 p{
     margin-bottom: 1rem;
 }
 
+div.col-8,
+div.col-4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+div.col-8 p,
+div.col-4 p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.checkout-delivery{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #f68b58;
+    padding: 0 0 0.5rem;
+}
+
+.checkout-delivery p{
+    margin-bottom: 0;
+}
+
+/* -- Card Styling -- */
+
+#card-element{
+    margin-bottom: 1rem;
+}
+
+.StripeElement,
+.stripe-style-input {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: #fafafa;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+    border: 2px solid #f68b58 !important;
+    box-shadow: none; 
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #152238 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #152238 !important;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #152238;
+    border: 2px solid #152238;
+}
+
 /* ----- Footer Styling ----- */
 
 footer{
     background-color: #fafafa;
+    border-top: 2px solid #152238
 }
 
 footer .quick-links p{

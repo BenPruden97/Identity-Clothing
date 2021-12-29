@@ -190,3 +190,50 @@ div.col-4 p{
 .checkout-delivery p{
     margin-bottom: 0;
 }
+
+/* -- Card Styling -- */
+
+#card-element{
+    margin-bottom: 1rem;
+}
+
+.StripeElement,
+.stripe-style-input {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: #fafafa;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+    border: 2px solid #f68b58 !important;
+    box-shadow: none; 
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #152238 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #152238 !important;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #152238;
+    border: 2px solid #152238;
+}
+
+#card-errors{
+    color: #df4759;
+    margin-bottom: 1rem;
+}

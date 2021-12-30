@@ -237,3 +237,105 @@ div.col-4 p{
     color: #df4759;
     margin-bottom: 1rem;
 }
+
+/* ----- Checkout Success Page Styling ----- */
+
+.order-confirmation-header{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    flex-direction: column;
+    margin: 2.5rem 0 3rem;
+}
+
+.order-confirmation-header h1{
+    font-size: 3rem;
+    color: #152238;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.order-confirmation-email h3{
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+}
+
+.order-confirmation-email p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+
+.order-confirmation-section{
+    border: 1px solid #152238;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: #152238;
+}
+
+.order-confirmation-section h4{
+    margin: 1.5rem 0 1rem;
+    text-transform: uppercase;
+}
+
+.order-info-section{
+    border: 2px solid #152238;
+}
+
+.order-info-section h5{
+    margin: 0.75rem;
+    font-weight: bold;
+}
+
+.order-info-section p{
+    margin: 0.75rem 1.5rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+.order-details-section{
+    border-top: 2px solid #152238;
+    border-left: 2px solid #152238;
+    border-right: 2px solid #152238;
+}
+
+.order-details-section h6{
+    margin: 0.75rem;
+    font-weight: bold;
+}
+
+.order-details-section p{
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.delivery-to-section{
+    border: 2px solid #152238;
+}
+
+.delivery-to-section h5{
+    margin: 0.75rem;
+    font-weight: bold;
+}
+
+.delivery-to-section p{
+    margin: 0.75rem 1.5rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+.billing-info-section{
+    border: 2px solid #152238;
+}
+
+.billing-info-section h5{
+    margin: 0.75rem;
+    font-weight: bold;
+}
+
+.billing-info-section p{
+    margin: 0.75rem 1.5rem;
+    text-align: right;
+    font-weight: bold;
+}

@@ -7,6 +7,26 @@
 
 {% block inner_content %}
 
+  <div class="container">
+
+      <div class="row">
+
+          <div class="col-12">
+
+              <div class="account-header">
+
+                  <h1>{% trans 'Sign In' %}</h1>
+
+                  <hr>
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}
@@ -37,7 +57,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
       <div class="sign-in-form-header">
 
-        <h2>Existing Cutomer</h2>
+        <h1>Existing Customer</h1>
 
       </div>
 
@@ -46,20 +66,16 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
         <form class="login" method="POST" action="{% url 'account_login' %}">
 
           {% csrf_token %}
-          {{ form.as_p }}
+          {{ form|crispy }}
           {% if redirect_field_value %}
 
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
 
           {% endif %}
 
-          <div class="col-12">
+          <div class="sign-in-forgot">
 
-            <div class="sign-in-forgot">
-
-              <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-
-            </div>
+            <a class="button" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
 
           </div>
 
@@ -89,7 +105,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
       <div class="new-customer-content">
 
-        <h2>New Customer</h2>
+        <h1>New Customer</h1>
 
         <h4>Don't have an account with us? Sign up for one today!</h4>
 

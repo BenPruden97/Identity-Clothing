@@ -5,7 +5,26 @@
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Verify Your E-mail Address" %}</h1>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="account-header">
+
+                    <h1>{% trans 'Verify Your Email Address' %}</h1>
+
+                    <hr>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 {% url 'account_email' as email_url %}
 

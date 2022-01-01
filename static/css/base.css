@@ -443,14 +443,19 @@ span.carousel-control-prev-icon {
 
 /* ----- Allauth Header Styling ----- */
 
-.allauth-page-header{
+.account-header{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+    align-items: centre;
+    flex-direction: column;
+    margin: 2.5rem 0 1rem;
+}
+
+.account-header h1{
+    font-size: 3rem;
     color: #152238;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 hr{
@@ -460,11 +465,15 @@ hr{
     width: 700px;
 }
 
+/* ----- Allauth Sign In Form Styling ----- */
+
 .sign-in-form-header{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.5rem 0 1rem;
+    text-transform: uppercase;
+    color: #152238;
 }
 
 .sign-in-form{
@@ -473,26 +482,38 @@ hr{
     align-items: center;
 }
 
-.sign-in-form p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.sign-in-form p label{
+.sign-in-form label{
     font-size: 1.25rem;
     color: #152238;
 }
 
-.sign-in-form p input{
-    width: 550px;
-    padding: 0.25rem;
+.sign-in-form input{
+    width: 750px;
+    padding: 0.5rem 0.5rem;
     border: 2px solid #152238;
-    border-radius: 5px;
+    outline: none;
+    border-radius: 0;
 }
 
-.sign-in-form p input::placeholder{
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+    width: 0;
+    height: 20px;
+    margin-right: 0.25rem;
+    margin-bottom: 0;
+}
+
+div#div_id_remember.mb-3{
+    margin-bottom: 0 !important;
+}
+
+.sign-in-form input:focus,
+.sign-in-form input:active {
+    border: 2px solid #f68b58 !important;
+    box-shadow: none; 
+}
+
+.sign-in-form input::placeholder{
     color: #152238;
 }
 
@@ -515,8 +536,19 @@ hr{
     font-size: 1.25rem;
 }
 
+.sign-in-button button:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
 button.primaryAction{
     margin: 0;
+}
+
+.sign-in-forgot{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .new-customer-content{
@@ -526,12 +558,15 @@ button.primaryAction{
     flex-direction: column;
 }
 
-.new-customer-content h2{
-    padding: 1.5rem 0 0.5rem;
+.new-customer-content h1{
+    padding: 2.5rem 0 0.5rem;
+    text-transform: uppercase;
+    color: #152238;
 }
 
 .new-customer-content h4{
     padding: 0 0 1rem;
+    color: #152238;
 }
 
 .new-customer-content a{
@@ -541,6 +576,36 @@ button.primaryAction{
     color: #152238;
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
+}
+
+.new-customer-content a:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
+/* ----- Allauth Sign Up Form Styling ----- */
+
+.sign-up-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.sign-up-button button{
+    background: transparent;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+}
+
+.sign-up-button button:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
 }
 
 /* ----- Search Page Styling ----- */

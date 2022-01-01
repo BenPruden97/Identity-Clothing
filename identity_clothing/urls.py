@@ -25,4 +25,5 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('bag/', include('bag.urls')),
     path('checkout/', include('checkout.urls')),
+    path('profile/', include('profiles.urls')),
 ] + static(settings.IMAGES_URL, document_root=settings.IMAGES_ROOT)

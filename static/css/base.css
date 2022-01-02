@@ -608,6 +608,201 @@ button.primaryAction{
     transition: 0.5s;
 }
 
+/* ----- Allauth Sign Out Styling ----- */
+
+.sign-out-section{
+    height: 60vh;
+}
+
+.sign-out p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.sign-out button{
+    background: transparent;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+}
+
+.sign-out button:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
+/* ----- Allauth Reset Password Styling ----- */
+
+.reset-password-section{
+    height: 65vh;
+}
+
+.reset-password input#id_email{
+    width: 750px;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid #152238;
+    outline: none;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+
+.reset-password input#id_email:hover{
+    color: #152238;
+    background-color: #fafafa;
+}
+
+.reset-password input{
+    width: 225px;
+    padding: 0.75rem 0.5rem;
+    border: 2px solid #152238;
+    background-color: #fafafa;
+    outline: none;
+    border-radius: 0;
+    color: #152238;
+    font-size: 1.1rem;
+}
+
+.reset-password input:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
+.reset-password input:focus,
+.reset-password input:active {
+    border: 2px solid #f68b58 !important;
+    box-shadow: none; 
+}
+
+.reset-password input::placeholder{
+    color: #152238;
+}
+
+.reset-password p{
+    color: #152238;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.reset-password-button p{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.reset-password-button a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.reset-password-button a:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
+/* ----- Allauth Password Reset Done Styling ----- */
+
+.password-reset-done-section{
+    height: 60vh;
+}
+
+.password-reset-done-section p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.password-reset-done-section a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.password-reset-done-section a:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
+/* ----- Allauth Verify Email Styling ----- */
+
+.verify-email-section{
+    height: 60vh;
+}
+
+.verify-email p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #152238;
+}
+
+.verify-email a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.verify-email a:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
+.account-inactive-section{
+    height: 67vh;
+}
+
+.account-inactive-section p{
+    color: #152238;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ----- Allauth Confirm Email Address Styling ----- */
+
+.issue-new-email-section{
+    height: 70vh;
+}
+
+.issue-new-email-section p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #152238;
+    margin-bottom: 2rem;
+}
+
+.issue-new-email-section a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.issue-new-email-section a:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
 /* ----- Search Page Styling ----- */
 
 .search-header{
@@ -640,7 +835,7 @@ button.primaryAction{
     padding: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 91.5%;
+    width: 92.5%;
 }
 
 .search-bar:focus,

@@ -26,6 +26,26 @@
 
     </div>
 
-    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+    <div class="container verify-email-section">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="verify-email">
+
+                    <p>{% blocktrans %}We have sent a verification email to you. Please follow the link provided to finalize the signup process.</p>
+
+                    <p>Please contact us if you do not receive a verification email within a few minutes.{% endblocktrans %}</p>
+            
+                    <a href="{% url 'home' %}">Contact Us</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 {% endblock %}

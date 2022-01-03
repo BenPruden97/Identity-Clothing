@@ -82,3 +82,43 @@
 .profile-form-input::placeholder {
     color: #152238 !important;
 }
+
+/* ----- Profile Page Order History Styling ----- */
+
+.profile-order-history{
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.profile-order-history p{
+    color: #152238;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.profile-order-history ul{
+    padding-top: 0.5rem;
+    padding-left: 0;
+}
+
+.profile-order-history ul li{
+    list-style-type: none;
+    padding: 0.25rem 0;
+}
+
+.profile-order-number{
+    width: 125px;
+}
+
+.profile-order-date{
+    width: 175px;
+}
+
+.profile-order-items{
+    width: 250px;
+}
+
+.profile-order-total{
+    text-align: right;
+    width: 100px;
+}

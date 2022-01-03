@@ -352,6 +352,51 @@ div.col-4 p{
     font-weight: bold;
 }
 
+.from-profile{
+    margin-bottom: 3rem;
+}
+
+.from-profile a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.75rem 2.5rem;
+    color: #152238;
+    font-size: 1rem;
+}
+
+.from-profile a:hover{
+    transition: 0.5s;
+    background-color: #152238;
+    color: #fafafa;
+}
+
+.from-profile i{
+    color: #f68b58;
+}
+
+.shop-again{
+    margin-bottom: 3rem;
+}
+
+.shop-again a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.75rem 2.5rem;
+    color: #152238;
+    font-size: 1rem;
+}
+
+.shop-again a:hover{
+    transition: 0.5s;
+    background-color: #152238;
+    color: #fafafa;
+}
+
+.shop-again i{
+    color: #f68b58;
+    padding-right: 0.75rem;
+}
+
 /* ----- Loading Spinner Styling ----- */
 
 #loading-overlay {

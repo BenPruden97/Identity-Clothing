@@ -398,6 +398,44 @@
 
         </div>
 
+        <div class="row">
+
+            <div class="col-12">
+
+                {% if from_profile %}
+
+                    <div class="from-profile">
+
+                        <a href="{% url 'profile' %}">
+
+                            <span><i class="fas fa-chevron-left"></i></span>
+        
+                            Back To Your Profile
+
+                        </a>
+
+                    </div>
+
+                {% else %}
+
+                    <div class="shop-again">
+
+                        <a href="{% url 'products' %}">
+
+                            <span><i class="fas fa-shopping-cart"></i></span>
+
+                            Shop For Another Order
+
+                        </a>
+
+                    </div>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
     </div>
 
 {% endblock %}

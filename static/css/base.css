@@ -803,6 +803,33 @@ button.primaryAction{
     transition: 0.5s;
 }
 
+.confirmation-email-section{
+    height: 70vh;
+}
+
+.confirmation-email-section p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #152238;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.confirmation-email-section button{
+    background-color: #fafafa;
+    border: 2px solid #152238;
+    padding: 0.75rem 4rem;
+    color: #152238;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.confirmation-email-section button:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
 /* ----- Search Page Styling ----- */
 
 .search-header{

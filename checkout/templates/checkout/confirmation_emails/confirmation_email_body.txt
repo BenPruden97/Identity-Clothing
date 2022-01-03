@@ -1,0 +1,23 @@
+Hello {{ order.full_name }}!
+
+This is a confirmation email for your order at Identity Clothing. Your order information is listed below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: {{ order.order_total }}
+Order Delivery: {{ order.delivery_cost }}
+Grand Total: {{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+We have got your current phone number on file as {{ order.phone_number }}.
+
+If you have any questions, please feel free to contact us at {{ contact_email }}
+
+Thank you for your order and we hope you shop with us again!
+
+Yours Sincerely,
+
+Identity Clothing
+

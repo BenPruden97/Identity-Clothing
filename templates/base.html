@@ -92,7 +92,7 @@
 
                                         {% if request.user.is_superuser %}
 
-                                            <li><a href="#"><i class="fas fa-tasks"></i>Products</a></li>
+                                            <li><a href="{% url 'add_product' %}"><i class="fas fa-tasks"></i>Products</a></li>
 
                                         {% endif %}                                                  
 

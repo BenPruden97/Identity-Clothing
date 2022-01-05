@@ -57,7 +57,11 @@
                                 <tr>
 
                                     <td>
-                                        <img src="/images/{{ item.product.image.url }}" alt="">
+                                        {% if item.product.image %}
+                                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                        {% else %}
+                                            <img src="{{ IMAGES_URL }}noimage.png" alt="{{ item.product.name }}">
+                                        {% endif %}
                                     </td>
 
                                     <td>

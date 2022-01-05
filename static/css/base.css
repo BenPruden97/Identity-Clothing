@@ -1124,6 +1124,10 @@ div.product-detail-quantity p{
     margin-bottom: 0.5rem;
 }
 
+div.product-detail-quantity div.input-group{
+    border: none !important;
+}
+
 div.input-group{
     margin-top: 0.5rem;
     width: 300px;
@@ -1299,6 +1303,28 @@ div.product-detail-buttons button:hover{
     color: #fafafa;
     background-color: #152238;
     transition: 0.5s;
+}
+
+div.input-group{
+    width: 425px;
+    height: 60px;
+    background-color: #fafafa;
+    border: 2px solid #152238;
+    margin-bottom: 2rem !important;
+}
+
+div.input-group span.text-break{
+    padding-top: 0.75rem;
+}
+
+div.input-group input#image-clear_id{
+    border: 2px solid #152238;
+    width: 15px;
+    height: 15px;
+}
+
+div.input-group label{
+    margin: 0;
 }
 
 .product-management-form-input {

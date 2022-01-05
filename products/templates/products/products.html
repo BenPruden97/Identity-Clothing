@@ -159,6 +159,16 @@
 
                             </div>
 
+                            <div class="product-super-user-buttons">
+
+                                {% if request.user.is_superuser %}
+                                    <a class="edit-button-product" href="{% url 'edit_product' product.id %}">Edit Clothing Item</a>
+                                    <a class="delete-button-product" href="{% url 'delete_product' product.id %}">Delete Clothing Item</a>
+                                {% endif %}
+
+                            </div>
+
+
                         </div>
 
                     </div>

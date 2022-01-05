@@ -143,6 +143,14 @@
 
                                 </div>
 
+                                <div class="edit-delete-buttons">
+
+                                    {% if request.user.is_superuser %}
+                                        <a class="edit-button" href="{% url 'edit_product' product.id %}">Edit Clothing Item</a>
+                                        <a class="delete-button" href="{% url 'delete_product' product.id %}">Delete Clothing Item</a>
+                                    {% endif %}
+
+                                </div>
 
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
 

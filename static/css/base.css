@@ -1371,7 +1371,6 @@ div.input-group{
     width: 425px;
     height: 60px;
     background-color: #fafafa;
-    border: 2px solid #152238;
     margin-bottom: 2rem !important;
 }
 
@@ -1383,10 +1382,12 @@ div.input-group input#image-clear_id{
     border: 2px solid #152238;
     width: 15px;
     height: 15px;
+    margin-top: 0.35rem;
 }
 
 div.input-group label{
     margin: 0;
+    font-size: 1.1rem;
 }
 
 .product-management-form-input {

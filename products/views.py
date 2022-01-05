@@ -123,8 +123,8 @@ def edit_product(request, product_id):
     Edit a clothing item from the store
     """
     if not request.user.is_superuser:
-            messages.error(request, 'Sorry, only store owners can access this page.')
-            return redirect(reverse('home'))
+        messages.error(request, 'Sorry, only store owners can access this page.')
+        return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
@@ -154,8 +154,8 @@ def delete_product(request, product_id):
     Delete a product from the store
     """
     if not request.user.is_superuser:
-            messages.error(request, 'Sorry, only store owners can access this page.')
-            return redirect(reverse('home'))
+        messages.error(request, 'Sorry, only store owners can access this page.')
+        return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()

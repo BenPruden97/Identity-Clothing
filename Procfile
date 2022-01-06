@@ -1,0 +1,1 @@
+web: gunicorn identity_clothing.wsgi:application

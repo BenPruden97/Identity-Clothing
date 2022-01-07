@@ -128,6 +128,68 @@
 
                     </div>
 
+                    <div class="header-content-mobile">
+
+                        <div class="col-12">
+
+                            <div class="header-logo">
+
+                                <a href="{% url 'home' %}">Identity <span>Clothing</span></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+
+                            <div class="header-icons">
+
+                                <ul>
+
+                                    <li><a href="{% url 'search' %}"><i class="fas fa-search"></i>Search</a></li>
+
+                                    <li><a href="{% url 'home' %}"><i class="fas fa-envelope"></i>Contact</a></li>
+
+                                    {% if request.user.is_authenticated %}
+
+                                        {% if request.user.is_superuser %}
+
+                                            <li><a href="{% url 'add_product' %}"><i class="fas fa-tasks"></i>Products</a></li>
+
+                                        {% endif %}                                                  
+
+                                        <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i>My Profile</a></li>
+                                
+                                        <li><a href="{% url 'account_logout' %}"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li>
+
+                                    {% else %}                                             
+
+                                        <li><a href="{% url 'account_signup' %}"><i class="fas fa-user-plus"></i>Sign Up</a></li>
+
+                                        <li><a href="{% url 'account_login' %}"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+
+                                    {% endif %}
+
+                                        <li>
+                                            <a href="{% url 'view_bag' %}"><i class="fas fa-shopping-cart"></i>
+                                                <span>
+                                                    {% if grand_total %}
+                                                        £{{ grand_total|floatformat:2 }}
+                                                    {% else %}
+                                                        £0.00
+                                                    {% endif %}
+                                                </span>                                        
+                                            </a>
+                                        </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>

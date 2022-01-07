@@ -35,6 +35,26 @@
 
             </div>
 
+            {% if search_term %}
+
+                <div class="display-none"></div>
+
+            {% else %}
+
+            <div class="col-12">
+
+                <div class="search-bar-text">
+
+                    <h4>Please search for a clothing item within our database</h4>
+
+                    <p>Alternatively, you can select a clothing category below:</p>
+
+                </div>
+
+            </div>
+
+            {% endif %}
+
         </div>
 
     </div>
@@ -43,45 +63,165 @@
 
         <div class="row">
 
-            {% for product in products %}
+            {% if search_term %}
 
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                {% if products|length < 1 %}
 
-                    <div class="product-item">
+                    <div class="col-12">
 
-                        <div class="product-image-card">
+                        <div class="no-results">
 
-                            <div>                
-                                {% if product.image %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img src="{{ product.image.url }}" alt="{{ product.name }}">
-                                    </a>
-                                {% else %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img src="{{ MEDIA_URL}}{{noimage.png }}" alt="{{ product.name }}">
-                                    </a>
-                                {% endif %}
+                            <h2>We're Sorry!</h2>
+
+                            <h4>We were not able to find any results matching your search query: "{{ search_term }}"</h4>
+
+                            <p>
+                                Please search again or select a clothing category below:
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                {% else %}
+
+                    {% for product in products %}
+
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+
+                            <div class="product-item">
+
+                                <div class="product-image-card">
+
+                                    <div>                
+                                        {% if product.image %}
+                                            <a href="{% url 'product_detail' product.id %}">
+                                                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                                            </a>
+                                        {% else %}
+                                            <a href="{% url 'product_detail' product.id %}">
+                                                <img src="{{ MEDIA_URL}}{{noimage.png }}" alt="{{ product.name }}">
+                                            </a>
+                                        {% endif %}
+                                    </div>
+
+                                </div>
+
+                                <div class="row product-item-content">
+
+                                    <div class="product-image-name">
+
+                                        <h6><strong>{{ product.name }}</strong></h6>
+
+                                    </div>
+
+                                    <div class="product-image-content">
+
+                                        <h6>Price: £{{ product.price }}</h6>
+
+                                        {% if product.product_rating %}
+                                            <h6>Rating: <i class="fas fa-star"></i> {{ product.product_rating }}/5</h6>
+                                        {% else %}
+                                            <h6>No Rating</h6>
+                                        {% endif %}
+
+                                    </div>
+
+                                </div>
+
                             </div>
 
                         </div>
 
-                        <div class="row product-item-content">
+                        <div class="col-12 d-sm-none">
+                            <hr>
+                        </div>
 
-                            <div class="product-image-name">
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
+                                <hr>
+                            </div>
+                        {% endif %}
 
-                                <h6><strong>{{ product.name }}</strong></h6>
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block d-xl-none">
+                                <hr>
+                            </div>
+                        {% endif %}
+
+                        {% if forloop.counter|divisibleby:4 %}
+                            <div class="col-12 d-none d-xl-block">
+                                <hr>
+                            </div>
+                        {% endif %}
+
+                    {% endfor %}
+
+                {% endif %}
+
+            {% endif %}
+
+            {% if not search_term or products|length < 1 %}
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-12 col-lg-4">
+
+                            <div class="search-men-category-image">
+
+                                <a href="{% url 'products' %}?category=mens_hoodies,mens_shorts,mens_tshirts">
+                                    <img src="/media/shop-for-men-300.jpg" height="300" width="300" alt="">
+                                </a>
 
                             </div>
 
-                            <div class="product-image-content">
+                            <div class="search-category-buttons">
 
-                                <h6>Price: £{{ product.price }}</h6>
+                                <a href="{% url 'products' %}?category=mens_hoodies,mens_shorts,mens_tshirts">
+                                    View Men's Clothing
+                                </a>
 
-                                {% if product.product_rating %}
-                                    <h6>Rating: <i class="fas fa-star"></i> {{ product.product_rating }}/5</h6>
-                                {% else %}
-                                    <h6>No Rating</h6>
-                                {% endif %}
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+
+                            <div class="search-women-category-image">
+
+                                <a href="{% url 'products' %}?category=womens_hoodies,womens_shorts,womens_tshirts">
+                                    <img src="/media/shop-for-women-300.jpg" height="300" width="300" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="search-category-buttons">
+
+                                <a href="{% url 'products' %}?category=womens_hoodies,womens_shorts,womens_tshirts">
+                                    View Women's Clothing
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+
+                            <div class="search-sale-category-image">
+
+                                <a href="{% url 'products' %}?category=womens_hoodies_sale,womens_shorts_sale,womens_tshirts_sale,mens_hoodies_sale,mens_shorts_sale,mens_tshirts_sale">
+                                    <img src="/media/items-on-sale-300.jpg" height="300" width="300" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="search-category-buttons">
+
+                                <a href="{% url 'products' %}?category=womens_hoodies_sale,womens_shorts_sale,womens_tshirts_sale,mens_hoodies_sale,mens_shorts_sale,mens_tshirts_sale">
+                                    View Clothing Items On Sale
+                                </a>
 
                             </div>
 
@@ -91,29 +231,7 @@
 
                 </div>
 
-                <div class="col-12 d-sm-none">
-                    <hr>
-                </div>
-
-                {% if forloop.counter|divisibleby:2 %}
-                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
-                        <hr>
-                    </div>
-                {% endif %}
-
-                {% if forloop.counter|divisibleby:3 %}
-                    <div class="col-12 d-none d-lg-block d-xl-none">
-                        <hr>
-                    </div>
-                {% endif %}
-
-                {% if forloop.counter|divisibleby:4 %}
-                    <div class="col-12 d-none d-xl-block">
-                        <hr>
-                    </div>
-                {% endif %}
-
-            {% endfor %}
+            {% endif %}
 
         </div>
 

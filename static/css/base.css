@@ -72,6 +72,10 @@ body{
     border-bottom: 2px solid #152238;
 }
 
+.header-content-mobile{
+    display: none;
+}
+
 .header-content .col-5{
     display: flex;
     justify-content: flex-start;
@@ -146,7 +150,7 @@ body{
 }
 
 .nav-links ul li{
-    padding: 0 3rem;
+    padding: 0 2rem;
     text-align: center;
 }
 
@@ -898,6 +902,110 @@ button.primaryAction{
     color: #fafafa;
     transition: 0.5s;
 }
+
+.search-bar-text{
+    margin: 1rem 0 1.5rem;
+}
+
+.search-bar-text h4{
+    color: #152238;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.search-bar-text p{
+    color: #152238;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.no-results{
+    margin: 1rem 0 1.5rem;
+}
+
+.no-results h2{
+    color: #152238;
+    text-transform: uppercase;
+}
+
+.no-results h4{
+    color: #152238;
+    margin-bottom: 1rem;
+}
+
+.no-results p{
+    color: #152238;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.search-men-category-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-men-category-image img{
+    border: 2px solid #152238;
+}
+
+.search-women-category-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-women-category-image img{
+    border: 2px solid #152238;
+}
+
+.search-sale-category-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-sale-category-image img{
+    border: 2px solid #152238;
+}
+
+.search-all-category-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-all-category-image img{
+    border: 2px solid #152238;
+}
+
+.search-category-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-category-buttons a{
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    margin: 1.5rem 0 2.5rem;
+    color: #152238;
+    border: 2px solid #152238;
+    padding: 0.5rem;
+}
+
+.search-category-buttons a:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
 
 /* ----- Products Page Styling ----- */
 
@@ -1684,6 +1792,14 @@ nav.navbar.navbar-expand-lg.navbar-light{
     display: none;
 }
 
+@media screen and (max-width: 992px) {
+
+    .header-icons ul {
+        margin-right: 2rem;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
     .navigation{
@@ -1694,15 +1810,27 @@ nav.navbar.navbar-expand-lg.navbar-light{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
 
     .header-logo a{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .header-icons ul{
-        margin-right: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .header-icons ul li{
+        width: 75px;
+    }
+
+    .header-icons ul li a{
+        font-size: 1rem;
+    }
+
+    .header-icons ul li a i{
+        font-size: 1.5rem;
     }
 
     nav.navbar.navbar-expand-lg.navbar-light{
@@ -1768,6 +1896,60 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     .burger-nav-links ul li a:hover{
         color: #f68b58;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .header-content{
+        display: none;
+    }
+
+    .header-content-mobile{
+        display: block;
+    }
+
+    .header-content-mobile .header-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0;
+        border-bottom: 2px solid #152238;
+    }
+
+    .header-content-mobile .header-icons{
+        padding: 0.75rem 0;
+        border-bottom: 2px solid #152238;
+    }
+
+    .header-content-mobile .header-icons ul{
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .header-content-mobile .header-icons ul li{
+        width: 75px;
+    }
+
+    .header-content-mobile .header-icons ul li a{
+        font-size: 0.75rem;
+    }
+
+    .header-content-mobile .header-icons ul li a i{
+        font-size: 1rem;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light button.navbar-toggler{
+        width: 4rem;
+        height: 2.5rem;
+        padding: 0;
+        border: 1px solid #152238;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light button.navbar-toggler span.fas.fa-bars::before{
+        font-size: 1.5rem;
     }
 
 }

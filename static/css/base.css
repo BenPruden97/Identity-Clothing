@@ -834,6 +834,118 @@ button.primaryAction{
     transition: 0.5s;
 }
 
+/* ----- Contact Page Styling ----- */
+
+.contact-header{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    flex-direction: column;
+    margin: 2.5rem 0 1rem;
+}
+
+.contact-header h1{
+    font-size: 3rem;
+    color: #152238;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.customer-contact-text{
+    margin-bottom: 2rem;
+}
+
+.customer-contact-text h4{
+    color: #152238;
+    padding-bottom: 0.5rem;
+}
+
+.customer-contact-text h6{
+    color: #152238;
+}
+
+.customer-contact-text a{
+    font-weight: bold;
+}
+
+.technical-contact-text{
+    margin-bottom: 2rem;
+}
+
+.technical-contact-text h4{
+    color: #152238;
+    padding-bottom: 0.5rem;
+}
+
+.technical-contact-text h6{
+    color: #152238;
+}
+
+.technical-contact-text a{
+    font-weight: bold;
+}
+
+.contact-form-text{
+    margin-top: 1.5rem;
+    color: #152238;
+}
+
+.contact-form form{
+    width: 750px;
+}
+
+.contact-form form label{
+    color: #152238;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-form form input{
+    width: 750px;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid #152238;
+    outline: none;
+    border-radius: 0;
+}
+
+.contact-form form textarea{
+    width: 750px;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid #152238;
+    outline: none;
+    border-radius: 0;
+}
+
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder{
+    color: #152238;
+}
+
+.contact-form form button{
+    background-color: #fafafa;
+    border: 2px solid #152238;
+    padding: 0.75rem 2.5rem;
+    color: #152238;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-form form button:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
+}
+
 /* ----- Search Page Styling ----- */
 
 .search-header{

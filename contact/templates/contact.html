@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="contact-header">
+
+                    <h1>Contact Us</h1>
+
+                    <hr>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="customer-contact-text">
+
+                    <h4>Identity Clothing - Customer Service & Sales Department</h4>
+
+                    <h6><strong>Have a question about a clothing item?</strong> Call our Sales department on <a href="tel:0123 456 7890">+44 123 456 7890</a> 
+                        or send us an email at <a href="mailto:sales@identityclothing.com">sales@indentityclothing.com</a></h6>
+
+                    <h6><Strong>Need some help with an order?</Strong> Call our Customer Service Deparment on <a href="tel:0213 456 7890">+44 213 456 7890</a> 
+                        or send us an email at <a href="mailto:customerservice@identityclothing.com">customerservice@indentityclothing.com</a></h6>
+                    
+
+                </div>
+
+                <div class="technical-contact-text">
+
+                    <h4>Identity Clothing - Technical Support</h4>
+
+                    <h6><strong>Having a problem online?</strong> Call our Technical Support Team on <a href="tel:0321 456 7890">+44 321 456 7890</a>
+                        or send us an email at <a href="mailto:technicalsupport@identityclothing.com">technicalsupport@indentityclothing.com</a></h6>
+
+                </div>
+
+                <hr>
+
+                <div class="contact-form-text">
+
+                    <h4>For General Enquiries - Please fill in the contact form below</h4>
+
+                </div>
+
+                <div class="contact-form">
+
+                    <form action="#">
+
+                        <label for="name">Enter Your Name:</label>
+                        <input id="name" name="name" type="text" minlength="3" maxlength="20" placeholder="Name*" required>
+
+                        <label for="email">Enter Your Email Address:</label>
+                        <input id="email" name="email" type="email" placeholder="Email Address*" required>
+
+                        <label for="phone">Enter Your Phone Number:</label>
+                        <input id="phone" name="phone" type="tel" pattern="[0-9]{11}" placeholder="Phone Number*" required>
+
+                        <label for="message">Enter Your Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message*" rows="7" cols="35" required></textarea>
+
+                        <button type="submit">Submit Message</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

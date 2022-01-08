@@ -14,9 +14,9 @@
 
                         <li><a href="{% url 'home' %}">Home</a></li><strong> |</strong>
 
-                        <li><a href="{% url 'home' %}">Search</a></li><strong> |</strong>
+                        <li><a href="{% url 'search' %}">Search</a></li><strong> |</strong>
 
-                        <li><a href="{% url 'home' %}">Contact</a></li><strong> |</strong>
+                        <li><a href="{% url 'view_contact' %}">Contact</a></li><strong> |</strong>
 
                         {% if request.user.is_authenticated %}
 

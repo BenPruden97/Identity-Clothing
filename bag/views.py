@@ -2,9 +2,12 @@ from django.shortcuts import render, redirect, reverse, HttpResponse, get_object
 from django.contrib import messages
 
 from products.models import Product
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+
+@login_required
 def view_bag(request):
     """
     View to return the bag.html page
@@ -51,6 +54,7 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
 
 
+@login_required()
 def adjust_bag(request, item_id):
     """
     Adjust quantity of clothing item in shopping bag
@@ -84,6 +88,7 @@ def adjust_bag(request, item_id):
     return redirect(reverse('view_bag'))
 
 
+@login_required()
 def remove_from_bag(request, item_id):
     """
     Remove clothing item from shopping bag

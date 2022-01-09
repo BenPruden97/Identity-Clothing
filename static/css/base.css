@@ -600,7 +600,8 @@ div#div_id_remember.mb-3{
 .sign-in-button button{
     background: transparent;
     border: 2px solid #152238;
-    padding: 0.75rem 4rem;
+    width: 300px;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1.25rem;
 }
@@ -625,6 +626,7 @@ button.primaryAction{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .new-customer-content h1{
@@ -641,7 +643,8 @@ button.primaryAction{
 .new-customer-content a{
     text-decoration: none;
     border: 2px solid #152238;
-    padding: 0.75rem 4rem;
+    width: 300px;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
@@ -958,6 +961,7 @@ button.primaryAction{
 }
 
 .contact-form-text{
+    text-align: center;
     margin-top: 1.5rem;
     color: #152238;
 }
@@ -998,7 +1002,8 @@ button.primaryAction{
 .contact-form form button{
     background-color: #fafafa;
     border: 2px solid #152238;
-    padding: 0.75rem 2.5rem;
+    width: 300px;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1.25rem;
     margin-top: 1rem;
@@ -1971,6 +1976,16 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
 @media screen and (max-width: 1200px) {
 
+    /* ----- Header/ Navbar Styling for Laptop Devices ----- */
+
+    .nav-links ul li{
+        padding: 1rem;
+    }
+
+    .nav-links ul li a{
+        font-size: 1rem;
+    }
+
     /* ----- Home Page Styling for Laptop Devices ----- */
 
     .hero-image-content h1{
@@ -2006,6 +2021,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
 @media screen and (max-width: 768px){
 
     /* ----- Burger Menu Styling for Tablet Devices ----- */
+
+    div.col-12.nav-links-small{
+        display: none;
+    }
     
     nav.navbar.navbar-expand-lg.navbar-light{
         display: flex;
@@ -2078,7 +2097,53 @@ nav.navbar.navbar-expand-lg.navbar-light{
         background-position: right;
     }
 
-}
+    /* ----- Sign In & Sigg Up Page Styling for Tablet Devices ----- */
+
+    .sign-in-form input{
+        width: 550px;
+    }
+
+    /* ----- Contact Page Styling for Tablet Devices ----- */
+
+    .customer-contact-text h6{
+        font-size: 0.9rem;
+    }
+
+    .technical-contact-text h6{
+        font-size: 0.9rem;
+    }
+
+    .contact-form form{
+        width: 550px;
+    }
+
+    .contact-form form input{
+        width: 550px;
+    }
+
+    .contact-form form textarea{
+        width: 550px;
+    }
+
+    /* ----- Products Page Styling ----- */
+
+    .category-name-buttons-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .category-name-buttons{
+        margin: 0.75rem;
+    }
+
+    .category-name-buttons-section a{
+        padding: 0.5rem 4rem;
+    }
 
 @media screen and (max-width: 767px) {
 
@@ -2195,6 +2260,83 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     nav.navbar.navbar-expand-lg.navbar-light button.navbar-toggler span.fas.fa-bars::before{
         font-size: 1.5rem;
+    }
+
+    /* ----- Sign In & Sing Up Form Styling ----- */
+
+    .sign-in-form input{
+    width: 300px;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid #152238;
+    outline: none;
+    border-radius: 0;
+    }
+
+    .sign-in-form-header{
+        text-align: center;
+    }
+    
+    .form-check-input[type=checkbox] {
+        border-radius: 0;
+        width: 15px !important;
+        height: 15px !important;
+        margin-right: 0.25rem;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    label.form-check-label{
+        font-size: 1rem;
+    }
+
+    .sign-in-forgot{
+        font-size: 1rem;
+    }
+
+    /* ----- Contact Page Styling for Tablet Devices ----- */
+
+    .customer-contact-text h4{
+        font-size: 1rem;
+    }
+
+    .customer-contact-text h6{
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .technical-contact-text h4{
+        font-size: 1rem;
+    }
+
+    .technical-contact-text h6{
+        font-size: 0.75rem;
+    }
+
+    .contact-form form{
+        width: 300px;
+    }
+
+    .contact-form form input{
+        width: 300px;
+    }
+
+    .contact-form form textarea{
+        width: 300px;
+    }
+
+    /* ----- Search Page Styling ----- */
+
+    .search-bar::placeholder{
+        color: #152238;
+        font-size: 0.9rem;
+    }
+
+    .search-bar-text h4{
+        font-size: 1.1rem;
+    }
+
+    .search-bar-text p{
+        font-size: 0.8rem;
     }
 
     /* ----- Footer Styling for Mobile Devices ----- */

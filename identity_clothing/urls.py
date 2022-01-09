@@ -18,6 +18,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
+# Project URLs
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
@@ -28,3 +30,10 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+#Project Error Handlers
+handler400 = 'identity_clothing.views.error_400'
+handler403 = 'identity_clothing.views.error_403'
+handler404 = 'identity_clothing.views.error_404'
+handler500 = 'identity_clothing.views.error_500'

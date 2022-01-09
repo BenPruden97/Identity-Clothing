@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-12">
+
+            <div class="error-message">
+
+                <h1>500</h1>
+
+                <h1>INTERNAL SERVER ERROR</h1>
+
+                <h2>Sorry, Something Went Wrong With Our Servers!</h2>
+
+                <h3>Please Try Again Later!</h3>
+
+                <h3>If this issues persists, please report this error to us via our <a href="{% url 'contact' %}">Contact Page</a></h3>
+
+                <h4>Or You Can Go Back To The Identity Clothing Website</h4>
+
+                <a href="{% url 'home' %}">Back To Home Page</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

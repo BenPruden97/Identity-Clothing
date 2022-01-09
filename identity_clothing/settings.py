@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
-
-
+    # Project Apps
     'home',
     'contact',
     'products',
@@ -51,12 +50,12 @@ INSTALLED_APPS = [
     'profiles',
     'checkout',
 
-    # Allauth
+    # Allauth Apps
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
 
-    # Other
+    # Other Apps
     'crispy_forms',
     'crispy_bootstrap5',
     'storages',

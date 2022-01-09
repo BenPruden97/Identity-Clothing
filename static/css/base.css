@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+ul{
+    padding-left: 0;
+}
+
 .container-fluid{
     padding: 0;
 }
@@ -184,7 +188,9 @@ body{
 }
 
 .hero-image-content h1{
-    font-size: 6rem;
+    padding: 0 2rem;
+    font-size: 5rem;
+    text-align: center;
 }
 
 .hero-image-content span{
@@ -192,19 +198,20 @@ body{
 }
 
 .hero-image-content h4{
-    font-size: 3.5rem;
-    padding: 1.5rem;
+    font-size: 3rem;
+    padding: 1.5rem 2.5rem 1rem;
+    text-align: center;
 }
 
 .hero-image-content h6{
     font-size: 1.5rem;
-    padding: 1rem 1.5rem 2.5rem;
+    padding: 1rem 2rem 2.5rem;
+    text-align: center;
 }
 
 .hero-image-content a{
     text-decoration: none;
     border: 2px solid #152238;
-    border-radius: 20px;
     padding: 1.5rem 4rem;
     color: #152238;
     font-size: 1.5rem;
@@ -236,19 +243,80 @@ body{
     margin-bottom: 2rem;
 }
 
-div#carouselExampleIndicators.carousel.slide{
+.swiper {
+    width: 750px;
+    height: 525px;
+    margin-bottom: 2rem;
+}
+
+.swiper-slide{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 750px;
+    height: 525px;
 }
 
-.carousel{
-    background: #fafafa;
+div.swiper-slide.swiper-slide-active{
+    width: 750px;
+    height: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-span.carousel-control-next-icon,
-span.carousel-control-prev-icon {
+.swiper-info{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem 0;
+}
+
+.swiper-info i{
+    color: #efc501;
+}
+
+.swiper-slide button{
+    padding: 0.5rem;
+    width: 300px;
+    border: 2px solid #152238;
+    background-color: #fafafa;
+    color: #152238;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.swiper-slide button:hover{
     background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
+div.swiper-button-next{
+    color: #152238;
+}
+
+div.swiper-button-prev{
+    color: #152238;
+}
+
+div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
+    margin-bottom: 2rem;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #152238;
+}
+
+div.swiper-scrollbar{
+    margin-bottom: 1rem;
+    background: rgba(21, 34, 56, 0.5)
+}
+
+div.swiper-scrollbar-drag{
+    background: #152238 !important;
 }
 
 /* ----- Shop For Men Styling ----- */
@@ -305,7 +373,6 @@ span.carousel-control-prev-icon {
 .shop-for-men-content a{
     text-decoration: none;
     border: 2px solid #152238;
-    border-radius: 20px;
     padding: 1rem 2rem;
     color: #152238;
     font-size: 1.25rem;
@@ -370,7 +437,6 @@ span.carousel-control-prev-icon {
 .shop-for-women-content a{
     text-decoration: none;
     border: 2px solid #152238;
-    border-radius: 20px;
     padding: 1rem 2rem;
     color: #152238;
     font-size: 1.25rem;
@@ -433,7 +499,6 @@ span.carousel-control-prev-icon {
 .items-on-sale-content a{
     text-decoration: none;
     border: 2px solid #152238;
-    border-radius: 20px;
     padding: 1rem 2rem;
     color: #152238;
     font-size: 1.25rem;
@@ -1904,47 +1969,44 @@ nav.navbar.navbar-expand-lg.navbar-light{
     display: none;
 }
 
+@media screen and (max-width: 1200px) {
+
+    /* ----- Home Page Styling for Laptop Devices ----- */
+
+    .hero-image-content h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .hero-image-content h4{
+        font-size: 2.75rem;
+        text-align: center;
+    }
+
+    .hero-image-content h6{
+        text-align: center;
+    }
+
+}
+
 @media screen and (max-width: 992px) {
 
     .header-icons ul {
         margin-right: 2rem;
     }
 
+    /* ----- Home Page Styling ----- */
+
+    .shop-for-men-image{
+        background-position: right;
+    }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
 
-    .navigation{
-        display: none;
-    }
-
-    .header-content .col-5{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding-left: 1rem;
-    }
-
-    .header-logo a{
-        font-size: 1.25rem;
-    }
-
-    .header-icons ul{
-        margin-right: 0.5rem;
-    }
-
-    .header-icons ul li{
-        width: 75px;
-    }
-
-    .header-icons ul li a{
-        font-size: 1rem;
-    }
-
-    .header-icons ul li a i{
-        font-size: 1.5rem;
-    }
-
+    /* ----- Burger Menu Styling for Tablet Devices ----- */
+    
     nav.navbar.navbar-expand-lg.navbar-light{
         display: flex;
         justify-content: flex-start;
@@ -2010,9 +2072,80 @@ nav.navbar.navbar-expand-lg.navbar-light{
         color: #f68b58;
     }
 
+    /* ----- Home Page Styling ----- */
+
+    .shop-for-men-image{
+        background-position: right;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    /* ----- Header/ Navbar Styling for Tablet Devices ----- */
+
+    .navigation{
+        display: none;
+    }
+
+    .header-content .col-5{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    .header-logo a{
+        font-size: 1.25rem;
+    }
+
+    .header-icons ul{
+        margin-right: 0.5rem;
+    }
+
+    .header-icons ul li{
+        width: 75px;
+    }
+
+    .header-icons ul li a{
+        font-size: 1rem;
+    }
+
+    .header-icons ul li a i{
+        font-size: 1.5rem;
+    }
+
+    /* ----- Home Page Styling for Tablet Devices ----- */
+
+    .hero-image-content h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .hero-image-content h4{
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero-image-content h6{
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .shop-for-men-content{
+        border-top: none;
+    }
+
+    .shop-for-women-content{
+        border-bottom: none;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
+
+    /* ----- Header/ Navbar Styling for Mobile Devices ----- */
 
     .header-content{
         display: none;
@@ -2062,6 +2195,50 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     nav.navbar.navbar-expand-lg.navbar-light button.navbar-toggler span.fas.fa-bars::before{
         font-size: 1.5rem;
+    }
+
+    /* ----- Footer Styling for Mobile Devices ----- */
+
+    /* ----- Footer Styling ----- */
+
+    footer .quick-links ul strong{
+        font-size: 0.75rem;
+    }
+
+    footer .quick-links ul li{
+        padding: 0 0.5rem;
+    }
+
+    footer .quick-links ul li:hover{
+        transform: scale(1.05);
+    }
+
+    footer .quick-links ul li a{
+        font-size: 0.8rem;
+    }
+
+    footer .quick-links ul li a:hover{
+        color: #f68b58;
+    }
+
+    footer .social-links{
+        padding: 0.5rem;
+    }
+
+    footer .social-links li{
+        padding: 0.5rem 0;
+    }
+
+    footer .social-links li a{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin: 0 0.25rem;
+    }
+
+    footer .copyright p{
+        font-size: 0.75rem;
+        padding: 0 1rem 1rem;
     }
 
 }

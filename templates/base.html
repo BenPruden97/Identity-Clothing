@@ -95,7 +95,7 @@
 
                                     <li><a href="{% url 'search' %}"><i class="fas fa-search"></i>Search</a></li>
 
-                                    <li><a href="{% url 'home' %}"><i class="fas fa-envelope"></i>Contact</a></li>
+                                    <li><a href="{% url 'contact' %}"><i class="fas fa-envelope"></i>Contact</a></li>
 
                                     {% if request.user.is_authenticated %}
 
@@ -157,7 +157,7 @@
 
                                     <li><a href="{% url 'search' %}"><i class="fas fa-search"></i>Search</a></li>
 
-                                    <li><a href="{% url 'view_contact' %}"><i class="fas fa-envelope"></i>Contact</a></li>
+                                    <li><a href="{% url 'contact' %}"><i class="fas fa-envelope"></i>Contact</a></li>
 
                                     {% if request.user.is_authenticated %}
 

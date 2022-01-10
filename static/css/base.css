@@ -2099,8 +2099,13 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     /* ----- Sign In & Sigg Up Page Styling for Tablet Devices ----- */
 
+    .sign-in-form{
+        display: block;
+        width: 100%;
+    }
+
     .sign-in-form input{
-        width: 550px;
+        width: 100%;
     }
 
     /* ----- Contact Page Styling for Tablet Devices ----- */
@@ -2265,7 +2270,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
     /* ----- Sign In & Sing Up Form Styling ----- */
 
     .sign-in-form input{
-    width: 300px;
+    width: 100%;
     padding: 0.5rem 0.5rem;
     border: 2px solid #152238;
     outline: none;
@@ -2313,15 +2318,15 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     .contact-form form{
-        width: 300px;
+        width: 100%;
     }
 
     .contact-form form input{
-        width: 300px;
+        width: 100%;
     }
 
     .contact-form form textarea{
-        width: 300px;
+        width: 100%;
     }
 
     /* ----- Search Page Styling ----- */

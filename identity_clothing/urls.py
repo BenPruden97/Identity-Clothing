@@ -32,7 +32,7 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-#Project Error Handlers
+# Project Error Handlers
 handler400 = 'identity_clothing.views.error_400'
 handler403 = 'identity_clothing.views.error_403'
 handler404 = 'identity_clothing.views.error_404'

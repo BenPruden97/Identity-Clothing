@@ -1,6 +1,22 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_js %}
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+
+        (function() {
+            emailjs.init("user_8vBZjxGRThwYy1BQa2nqH");
+        })();
+
+    </script>
+
+{% endblock %}
+
 {% block content %}
     
     <div class="container">
@@ -61,7 +77,7 @@
 
                 <div class="contact-form">
 
-                    <form action="#">
+                    <form id="contact-form">
 
                         <label for="name">Enter Your Name:</label>
                         <input id="name" name="name" type="text" minlength="3" maxlength="20" placeholder="Name*" required>
@@ -87,4 +103,9 @@
 
     </div>
 
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'contact/js/contact.js' %}"></script>
 {% endblock %}

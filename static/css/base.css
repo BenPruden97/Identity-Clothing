@@ -33,6 +33,79 @@ ul{
     z-index: 99999999999;
 }
 
+.message-container button{
+    border: none;
+    color: #152238;
+    font-size: 2rem;
+    background-color: #fafafa;
+}
+
+.message-container button span{
+    background-color: #fafafa;
+}
+
+.message-container button span{
+    margin-left: 235px;
+}
+
+.toast-header strong{
+    font-size: 1.1rem;
+}
+
+.shopping-bag-message{
+    margin: 0.5rem 0;
+    color: #152238;
+    font-weight: bold;
+}
+
+.shopping-bag-count{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #152238;
+    margin-top: 1rem;
+}
+
+.bag-notification-wrapper p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    color: #152238;
+}
+
+.shopping-bag-total{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.shopping-bag-total p{
+    color: #152238;
+    margin-bottom: 0.5rem;
+}
+
+.shopping-bag-spend p{
+    color: #152238;
+    margin-bottom: 1rem;
+}
+
+.shopping-bag-button{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.shopping-bag-button a{
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.5rem 6rem;
+    color: #152238;
+}
+
+.shopping-bag-button a:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
 .custom-toast{
     overflow: visible;
 }
@@ -55,7 +128,7 @@ ul{
 }
 
 .bag-notification-wrapper{
-    height: 100px;
+    height: 125px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -174,7 +247,7 @@ body{
 /* ----- Header Image Styling ----- */
 
 .hero-image{
-    background: url(/media/hero-image.jpg) no-repeat center center;
+    background: url(../../media/hero-image.jpg) no-repeat center center;
     width: 100%;
     height: 800px;
 }
@@ -322,7 +395,7 @@ div.swiper-scrollbar-drag{
 /* ----- Shop For Men Styling ----- */
 
 .shop-for-men-image{
-    background: url(/media/shop-for-men.jpg) no-repeat center center;
+    background: url(../../media/shop-for-men.jpg) no-repeat center center;
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;
@@ -387,7 +460,7 @@ div.swiper-scrollbar-drag{
 /* ----- Shop For Women Styling ----- */
 
 .shop-for-women-image{
-    background: url(/media/shop-for-women.jpg) no-repeat center center;
+    background: url(../../media/shop-for-women.jpg) no-repeat center center;
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;

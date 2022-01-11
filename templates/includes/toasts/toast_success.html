@@ -1,4 +1,4 @@
-<div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
+<div class="toast custom-toast" data-autohide="false">
 
     <div class="arrow-up arrow-success"></div>
 
@@ -8,7 +8,7 @@
 
         <strong class="mr-auto">Success!</strong>
 
-        <button type="button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
+        <button type="button" class="close" data-dismiss="toast" aria-label="Close">
 
             <span aria-hidden="true">&times;</span>
 
@@ -22,37 +22,49 @@
 
             <div class="col-12">
 
-                {{ message }}  
+                <div class="shopping-bag-message">
+
+                    {{ message }}  
                 
+                </div>
+
                 <hr>
 
             </div>
 
         </div>
+
         {% if grand_total and not on_profile_page %}
 
-            <p>Your Shopping Bag ({{ product_count }})</p>
+            <p class="shopping-bag-count">Your Shopping Bag ({{ product_count }})</p>
 
             <div class="bag-notification-wrapper">
 
-                {% for item in bag_items %}
-                    <div class="col-3">
-                        {% if item.product.image %}
-                        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                        {% else %}
-                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                        {% endif %}
-                    </div>
+                <div class="row">
 
-                    <div class="col-9">
+                    {% for item in bag_items %}
 
-                        <p>Product Name: {{ item.product.name }}</p>
-                        <p>Product Size: {{ item.product_size|upper }}</p>
-                        <p>Product Qty: {{ item.quantity }}</p>
+                        <div class="col-3 mb-2 mt-2">
+                            {% if item.product.image %}
+                            <img src="{{ item.product.image.url }}" height="75" width="75" alt="{{ item.product.name }}">
+                            {% else %}
+                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                            {% endif %}
+                        </div>
 
-                    </div>
+                        <div class="col-9">
 
-                {% endfor %}
+                            <p><strong>Product Name:</strong> {{ item.product.name }}</p>
+                            <p><strong>Product Size:</strong> {{ item.product_size|upper }}</p>
+                            <p><strong>Product Qty:</strong> {{ item.quantity }}</p>
+
+                        </div>
+
+                        <hr>
+
+                    {% endfor %}
+
+                </div>
 
             </div>
 
@@ -60,22 +72,36 @@
 
                 <div class="col-12">
 
-                    <p>
-                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
-                        <span>£{{ total|floatformat:2 }}</span>
-                    </p>
-                    {% if free_delivery_delta > 0 %}
+                    <div class="shopping-bag-total">
+
                         <p>
-                            Spend £{{ free_delivery_delta }} more to get free next day delivery
+                            <strong>Total</strong>{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
+                            <span>£{{ total|floatformat:2 }}</span>
                         </p>
-                    {% endif %}
-                    <a href="{% url 'view_bag' %}">
-                        
-                        Checkout Securely
 
-                        <span><i class="fas fa-lock"></i></span>
+                        <div class="shopping-bag-spend">
 
-                    </a>
+                            {% if free_delivery_delta > 0 %}
+                                <p>
+                                    Spend £{{ free_delivery_delta }} more to get free next day delivery
+                                </p>
+                            {% endif %}
+
+                        </div>
+
+                        <div class="shopping-bag-button">
+
+                            <a href="{% url 'view_bag' %}">
+                            
+                                Checkout Securely
+    
+                                <span><i class="fas fa-lock"></i></span>
+    
+                            </a>
+
+                        </div>
+
+                    </div>
 
                 </div>
 

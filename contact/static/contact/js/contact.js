@@ -24,6 +24,8 @@ form.addEventListener("submit", function() {
             timer: 3500
         });
 
+        form.reset()
+
     }, function(error) {
 
         swal({
@@ -33,6 +35,8 @@ form.addEventListener("submit", function() {
             button: false,
             timer: 3500
         });
+
+        form.reset()
 
     });
 

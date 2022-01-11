@@ -209,7 +209,7 @@
         </header>
 
         {% if messages %}
-            <div class="messages">
+            <div class="message-container">
                 {% for message in messages %}
                 {% with message.level as level %}
                     {% if level == 40 %}
@@ -222,7 +222,7 @@
                         {% include 'includes/toasts/toast_info.html' %}
                     {% endif %}
                 {% endwith %}
-            {% endfor %}
+                {% endfor %}
             </div>
         {% endif %} 
 
@@ -230,9 +230,21 @@
         {% endblock %}
 
         {% block postloadjs %}
-        <script type="text/javascript">
-            $('.toast').toast('show');
-        </script>
+            <script type="text/javascript">
+
+                // document.getElementById("toastbtn").onclick = function() {
+                    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                    var toastList = toastElList.map(function(toastEl) {
+                    // Creates an array of toasts (it only initializes them)
+                    return new bootstrap.Toast(toastEl) // No need for options; use the default options
+                    });
+                    toastList.forEach(toast => toast.show()); // This show them
+            
+                    console.log(toastList); // Testing to see if it works
+                // };
+
+                // $('.toast').toast('show');
+            </script>
         {% endblock %}
 
         {% include 'includes/footer.html' %}

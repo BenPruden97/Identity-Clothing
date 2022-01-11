@@ -4,7 +4,7 @@
         "pk":1,
         "fields":{
         "name":"Men's Adidas Overhead Hoodie",
-        "description":"Soft material black & grey Adidas overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Black & grey Adidas overhead hoodie for Men",
         "price":"34.99",
         "category":1,
         "rating":4,
@@ -16,7 +16,7 @@
         "pk":2,
         "fields":{
         "name":"Men's Beige Overhead Hoodie",
-        "description":"Soft material beige overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Beige overhead hoodie for Men",
         "price":"29.99",
         "category":1,
         "rating":3,
@@ -28,7 +28,7 @@
         "pk":3,
         "fields":{
         "name":"Men's Black Overhead Hoodie",
-        "description":"Soft material black overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Black overhead hoodie for Men",
         "price":"29.99",
         "category":1,
         "rating":4,
@@ -40,7 +40,7 @@
         "pk":4,
         "fields":{
         "name":"Men's Grey Overhead Hoodie",
-        "description":"Soft material grey overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Grey overhead hoodie for Men",
         "price":"29.99",
         "category":1,
         "rating":5,
@@ -52,7 +52,7 @@
         "pk":5,
         "fields":{
         "name":"Men's Light Blue Overhead Hoodie",
-        "description":"Soft material light blue overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Light blue overhead hoodie for Men",
         "price":"24.99",
         "category":1,
         "rating":2,
@@ -64,7 +64,7 @@
         "pk":6,
         "fields":{
         "name":"Men's Pink Overhead Hoodie",
-        "description":"Soft material pink overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Pink overhead hoodie for Men",
         "price":"24.99",
         "category":1,
         "rating":2,
@@ -76,7 +76,7 @@
         "pk":7,
         "fields":{
         "name":"Men's Purple Overhead Hoodie",
-        "description":"Soft material purple overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Purple overhead hoodie for Men",
         "price":"24.99",
         "category":1,
         "rating":3,
@@ -88,7 +88,7 @@
         "pk":8,
         "fields":{
         "name":"Men's Red Overhead Hoodie",
-        "description":"Soft material red overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Red overhead hoodie for Men",
         "price":"24.99",
         "category":1,
         "rating":5,
@@ -100,7 +100,7 @@
         "pk":9,
         "fields":{
         "name":"Men's Star Wars Overhead Hoodie",
-        "description":"Soft material star wars overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Star wars overhead hoodie for Men",
         "price":"34.99",
         "category":1,
         "rating":5,
@@ -112,7 +112,7 @@
         "pk":10,
         "fields":{
         "name":"Men's Striped Overhead Hoodie",
-        "description":"Soft material striped overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Striped overhead hoodie for Men",
         "price":"29.99",
         "category":1,
         "rating":1,
@@ -124,7 +124,7 @@
         "pk":11,
         "fields":{
         "name":"Men's White Overhead Hoodie",
-        "description":"Soft material white overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. White overhead hoodie for Men",
         "price":"29.99",
         "category":1,
         "rating":2,
@@ -136,7 +136,7 @@
         "pk":12,
         "fields":{
         "name":"Men's Yellow Overhead Hoodie",
-        "description":"Soft material yellow overhead hoodie for Men",
+        "description":"Mens hoodie made of soft material. Yellow overhead hoodie for Men",
         "price":"24.99",
         "category":1,
         "rating":1,
@@ -148,7 +148,7 @@
         "pk":13,
         "fields":{
         "name":"Men's Adidas T-Shirt",
-        "description":"Soft material red Adidas t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Red Adidas t-shirt for Men",
         "price":"19.99",
         "category":2,
         "rating":4,
@@ -160,7 +160,7 @@
         "pk":14,
         "fields":{
         "name":"Men's Black T-Shirt",
-        "description":"Soft material black t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Black t-shirt for Men",
         "price":"16.99",
         "category":2,
         "rating":3,
@@ -172,7 +172,7 @@
         "pk":15,
         "fields":{
         "name":"Men's Blue T-Shirt",
-        "description":"Soft material blue t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Blue t-shirt for Men",
         "price":"14.99",
         "category":2,
         "rating":4,
@@ -184,7 +184,7 @@
         "pk":16,
         "fields":{
         "name":"Men's Grey T-Shirt",
-        "description":"Soft material grey t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Grey t-shirt for Men",
         "price":"16.99",
         "category":2,
         "rating":5,
@@ -196,7 +196,7 @@
         "pk":17,
         "fields":{
         "name":"Men's Black Nike T-Shirt",
-        "description":"Soft material black nike t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Black nike t-shirt for Men",
         "price":"24.99",
         "category":2,
         "rating":2,
@@ -208,7 +208,7 @@
         "pk":18,
         "fields":{
         "name":"Men's Pink Nike T-Shirt",
-        "description":"Soft material pink nike t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Pink nike t-shirt for Men",
         "price":"24.99",
         "category":2,
         "rating":2,
@@ -220,7 +220,7 @@
         "pk":19,
         "fields":{
         "name":"Men's Pink T-Shirt",
-        "description":"Soft material pink t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Pink t-shirt for Men",
         "price":"14.99",
         "category":2,
         "rating":3,
@@ -232,7 +232,7 @@
         "pk":20,
         "fields":{
         "name":"Men's Navy Spartan T-Shirt",
-        "description":"Soft material navy spartan t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Navy spartan t-shirt for Men",
         "price":"19.99",
         "category":2,
         "rating":5,
@@ -244,7 +244,7 @@
         "pk":21,
         "fields":{
         "name":"Men's White SRSLY T-Shirt",
-        "description":"Soft material white srsly t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. White srsly t-shirt for Men",
         "price":"24.99",
         "category":2,
         "rating":5,
@@ -256,7 +256,7 @@
         "pk":22,
         "fields":{
         "name":"Men's Striped T-Shirt",
-        "description":"Soft material striped t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. Striped t-shirt for Men",
         "price":"14.99",
         "category":2,
         "rating":1,
@@ -268,7 +268,7 @@
         "pk":23,
         "fields":{
         "name":"Men's White Lacoste T-Shirt",
-        "description":"Soft material white lacoste t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. White lacoste t-shirt for Men",
         "price":"34.99",
         "category":2,
         "rating":2,
@@ -280,7 +280,7 @@
         "pk":24,
         "fields":{
         "name":"Men's White T-Shirt",
-        "description":"Soft material white t-shirt for Men",
+        "description":"Mens t-shirt made of soft material. White t-shirt for Men",
         "price":"9.99",
         "category":2,
         "rating":1,
@@ -291,7 +291,7 @@
         "pk":25,
         "fields":{
         "name":"Men's Grey Adidas Shorts",
-        "description":"Soft material grey Adidas shorts for Men",
+        "description":"Mens t-shirt made of soft material. Grey Adidas shorts for Men",
         "price":"29.99",
         "category":3,
         "rating":4,
@@ -303,7 +303,7 @@
         "pk":26,
         "fields":{
         "name":"Men's Black Shorts",
-        "description":"Soft material black shorts for Men",
+        "description":"Mens shorts made of soft material. Black shorts for Men",
         "price":"17.99",
         "category":3,
         "rating":3,
@@ -315,7 +315,7 @@
         "pk":27,
         "fields":{
         "name":"Men's Camouflage Shorts",
-        "description":"Khaki cargo camouflage shorts for Men",
+        "description":"Mens shorts made from cargo material. Khaki camouflage shorts for Men",
         "price":"29.99",
         "category":3,
         "rating":4,
@@ -327,7 +327,7 @@
         "pk":28,
         "fields":{
         "name":"Men's Floral Shorts",
-        "description":"Floral cargo shorts for Men",
+        "description":"Mens shorts made from cargo. Floral cargo shorts for Men",
         "price":"19.99",
         "category":3,
         "rating":5,
@@ -339,7 +339,7 @@
         "pk":29,
         "fields":{
         "name":"Men's Green Shorts",
-        "description":"Soft material green shorts for Men",
+        "description":"Mens shorts made of soft material. Green shorts for Men",
         "price":"17.99",
         "category":3,
         "rating":2,
@@ -351,7 +351,7 @@
         "pk":30,
         "fields":{
         "name":"Men's Grey Shorts",
-        "description":"Soft material grey shorts for Men",
+        "description":"Mens shorts made of soft material. Grey shorts for Men",
         "price":"22.99",
         "category":3,
         "rating":2,
@@ -363,7 +363,7 @@
         "pk":31,
         "fields":{
         "name":"Men's Blue Jean Shorts",
-        "description":"Blue jean material shorts for Men",
+        "description":"Mens shorts made of jean material. Blue jean shorts for Men",
         "price":"27.99",
         "category":3,
         "rating":3,
@@ -375,7 +375,7 @@
         "pk":32,
         "fields":{
         "name":"Men's Green Nike Shorts",
-        "description":"Soft material green nike shorts for Men",
+        "description":"Mens shorts made of soft material. Green nike shorts for Men",
         "price":"32.99",
         "category":3,
         "rating":5,
@@ -387,7 +387,7 @@
         "pk":33,
         "fields":{
         "name":"Men's Red Shorts",
-        "description":"Soft material red shorts for Men",
+        "description":"Mens shorts made of soft material. Red shorts for Men",
         "price":"22.99",
         "category":3,
         "rating":5,
@@ -399,7 +399,7 @@
         "pk":34,
         "fields":{
         "name":"Men's Striped Shorts",
-        "description":"Soft material striped shorts for Men",
+        "description":"Mens shorts made of soft material. Striped shorts for Men",
         "price":"27.99",
         "category":3,
         "rating":1,
@@ -411,7 +411,7 @@
         "pk":35,
         "fields":{
         "name":"Men's White Jean Shorts",
-        "description":"White jean material shorts for Men",
+        "description":"Mens shorts made of jean material. White jean shorts for Men",
         "price":"32.99",
         "category":3,
         "rating":2,
@@ -423,7 +423,7 @@
         "pk":36,
         "fields":{
         "name":"Men's yellow Shorts",
-        "description":"Yellow silk material shorts for Men",
+        "description":"Mens shorts made of silk material. Yellow silk shorts for Men",
         "price":"19.99",
         "category":3,
         "rating":1,
@@ -435,7 +435,7 @@
         "pk":37,
         "fields":{
         "name":"Women's Adidas Overhead Hoodie",
-        "description":"Soft material grey Adidas overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Grey Adidas overhead hoodie for Women",
         "price":"34.99",
         "category":4,
         "rating":4,
@@ -447,7 +447,7 @@
         "pk":38,
         "fields":{
         "name":"Women's Beige Overhead Hoodie",
-        "description":"Soft material beige overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Beige overhead hoodie for Women",
         "price":"29.99",
         "category":4,
         "rating":3,
@@ -459,7 +459,7 @@
         "pk":39,
         "fields":{
         "name":"Women's Black Overhead Hoodie",
-        "description":"Soft material black overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Black overhead hoodie for Women",
         "price":"29.99",
         "category":4,
         "rating":4,
@@ -471,7 +471,7 @@
         "pk":40,
         "fields":{
         "name":"Women's Blue Overhead Hoodie",
-        "description":"Soft material blue overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Blue overhead hoodie for Women",
         "price":"29.99",
         "category":4,
         "rating":5,
@@ -482,8 +482,8 @@
         "model":"products.product",
         "pk":41,
         "fields":{
-        "name":"Women's Yellow Dog Lover Overhead Hoodie",
-        "description":"Soft material yellow dog lover overhead hoodie for Women",
+        "name":"Women's Dog Lover Overhead Hoodie",
+        "description":"Womens hoodie made of soft material. Yellow dog lover overhead hoodie for Women",
         "price":"24.99",
         "category":4,
         "rating":2,
@@ -495,7 +495,7 @@
         "pk":42,
         "fields":{
         "name":"Women's Green Overhead Hoodie",
-        "description":"Soft material green overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Green overhead hoodie for Women",
         "price":"24.99",
         "category":4,
         "rating":2,
@@ -507,7 +507,7 @@
         "pk":43,
         "fields":{
         "name":"Women's Grey Overhead Hoodie",
-        "description":"Soft material grey overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Grey overhead hoodie for Women",
         "price":"24.99",
         "category":4,
         "rating":3,
@@ -519,7 +519,7 @@
         "pk":44,
         "fields":{
         "name":"Women's Yellow Overhead Hoodie",
-        "description":"Soft material yellow overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Yellow overhead hoodie for Women",
         "price":"24.99",
         "category":4,
         "rating":5,
@@ -531,7 +531,7 @@
         "pk":45,
         "fields":{
         "name":"Women's Pink Overhead Hoodie",
-        "description":"Soft material pink overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Pink overhead hoodie for Women",
         "price":"24.99",
         "category":4,
         "rating":5,
@@ -543,7 +543,7 @@
         "pk":46,
         "fields":{
         "name":"Women's Purple Overhead Hoodie",
-        "description":"Soft material purple overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Purple overhead hoodie for Women",
         "price":"22.99",
         "category":4,
         "rating":1,
@@ -555,7 +555,7 @@
         "pk":47,
         "fields":{
         "name":"Women's Red Overhead Hoodie",
-        "description":"Soft material red overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. Red overhead hoodie for Women",
         "price":"27.99",
         "category":4,
         "rating":2,
@@ -567,7 +567,7 @@
         "pk":48,
         "fields":{
         "name":"Women's White Overhead Hoodie",
-        "description":"Soft material white overhead hoodie for Women",
+        "description":"Womens hoodie made of soft material. White overhead hoodie for Women",
         "price":"24.99",
         "category":4,
         "rating":1,
@@ -579,7 +579,7 @@
         "pk":49,
         "fields":{
         "name":"Women's White Aquas T-Shirt",
-        "description":"Soft material white Aquas t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. White Aquas t-shirt for Women",
         "price":"19.99",
         "category":5,
         "rating":4,
@@ -591,7 +591,7 @@
         "pk":50,
         "fields":{
         "name":"Women's Black T-Shirt",
-        "description":"Soft material black t-shirt for women",
+        "description":"Womens t-shirt made of soft material. Black t-shirt for women",
         "price":"16.99",
         "category":5,
         "rating":3,
@@ -603,7 +603,7 @@
         "pk":51,
         "fields":{
         "name":"Women's Blue T-Shirt",
-        "description":"Soft material blue t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. Blue t-shirt for Women",
         "price":"14.99",
         "category":5,
         "rating":4,
@@ -615,7 +615,7 @@
         "pk":52,
         "fields":{
         "name":"Women's Grey T-Shirt",
-        "description":"Soft material grey t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. Grey t-shirt for Women",
         "price":"16.99",
         "category":5,
         "rating":5,
@@ -627,7 +627,7 @@
         "pk":53,
         "fields":{
         "name":"Women's White New York T-Shirt",
-        "description":"Soft material white New York t-shirt for women",
+        "description":"Womens t-shirt made of soft material. White New York t-shirt for women",
         "price":"24.99",
         "category":5,
         "rating":2,
@@ -639,7 +639,7 @@
         "pk":54,
         "fields":{
         "name":"Women's Black Oakley T-Shirt",
-        "description":"Soft material black Oakley t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. Black Oakley t-shirt for Women",
         "price":"24.99",
         "category":5,
         "rating":2,
@@ -651,7 +651,7 @@
         "pk":55,
         "fields":{
         "name":"Women's Orange T-Shirt",
-        "description":"Soft material orange t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. Orange t-shirt for Women",
         "price":"14.99",
         "category":5,
         "rating":3,
@@ -663,7 +663,7 @@
         "pk":56,
         "fields":{
         "name":"Women's Pink T-Shirt",
-        "description":"Soft material pink t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. Pink t-shirt for Women",
         "price":"19.99",
         "category":5,
         "rating":5,
@@ -675,7 +675,7 @@
         "pk":57,
         "fields":{
         "name":"Women's Purple T-Shirt",
-        "description":"Soft material purple t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. Purple t-shirt for Women",
         "price":"24.99",
         "category":5,
         "rating":5,
@@ -687,7 +687,7 @@
         "pk":58,
         "fields":{
         "name":"Women's Yellow Stop T-Shirt",
-        "description":"Soft material yellow stop t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. Yellow stop t-shirt for Women",
         "price":"14.99",
         "category":5,
         "rating":1,
@@ -699,7 +699,7 @@
         "pk":59,
         "fields":{
         "name":"Women's Striped T-Shirt",
-        "description":"Soft material striped t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. Striped t-shirt for Women",
         "price":"34.99",
         "category":5,
         "rating":2,
@@ -711,7 +711,7 @@
         "pk":60,
         "fields":{
         "name":"Women's White T-Shirt",
-        "description":"Soft material white t-shirt for Women",
+        "description":"Womens t-shirt made of soft material. White t-shirt for Women",
         "price":"9.99",
         "category":5,
         "rating":1,
@@ -723,7 +723,7 @@
         "pk":61,
         "fields":{
         "name":"Women's Black Adidas Shorts",
-        "description":"Soft material black Adidas shorts for Women",
+        "description":"Womens shorts made of soft material. Black Adidas shorts for Women",
         "price":"29.99",
         "category":6,
         "rating":4,
@@ -735,7 +735,7 @@
         "pk":62,
         "fields":{
         "name":"Women's Beige Shorts",
-        "description":"Beige cargo material shorts for Women",
+        "description":"Womens shorts made of cargo material. Beige cargo shorts for Women",
         "price":"17.99",
         "category":6,
         "rating":3,
@@ -747,7 +747,7 @@
         "pk":63,
         "fields":{
         "name":"Women's Black Shorts",
-        "description":"soft material black shorts for Women",
+        "description":"Womens shorts made of soft material. Black shorts for Women",
         "price":"29.99",
         "category":6,
         "rating":4,
@@ -759,7 +759,7 @@
         "pk":64,
         "fields":{
         "name":"Women's Brown Shorts",
-        "description":"Brown cargo material shorts for Women",
+        "description":"Womens shorts made of cargo material. Brown cargo shorts for Women",
         "price":"19.99",
         "category":6,
         "rating":5,
@@ -771,11 +771,11 @@
         "pk":65,
         "fields":{
         "name":"Women's Blue Floral Shorts",
-        "description":"Silk material blue floral shorts for Women",
+        "description":"Womens shorts made of silk material. Blue silk floral shorts for Women",
         "price":"17.99",
         "category":6,
         "rating":2,
-        "image":"men-flower-shorts.jpg"
+        "image":"women-flower-shorts.jpg"
         }
     },
     {
@@ -783,7 +783,7 @@
         "pk":66,
         "fields":{
         "name":"Women's Blue Jean Shorts",
-        "description":"Blue jean material shorts for Women",
+        "description":"Womens shorts made of jean material. Blue jean shorts for Women",
         "price":"22.99",
         "category":6,
         "rating":2,
@@ -795,7 +795,7 @@
         "pk":67,
         "fields":{
         "name":"Women's Black Nike Shorts",
-        "description":"Black silk material Nike shorts for Women",
+        "description":"Womens shorts made of silk material. Black silk nike shorts for Women",
         "price":"27.99",
         "category":6,
         "rating":3,
@@ -807,7 +807,7 @@
         "pk":68,
         "fields":{
         "name":"Women's Orange Jean Shorts",
-        "description":"Orange jean material shorts for Women",
+        "description":"Womens shorts made of jean material. Orange jean shorts for Women",
         "price":"32.99",
         "category":6,
         "rating":5,
@@ -819,7 +819,7 @@
         "pk":69,
         "fields":{
         "name":"Women's Pink Shorts",
-        "description":"Pink shorts for Women",
+        "description":"Womens shorts made of soft material. Pink shorts for Women",
         "price":"22.99",
         "category":6,
         "rating":5,
@@ -831,7 +831,7 @@
         "pk":70,
         "fields":{
         "name":"Women's Red Shorts",
-        "description":"Red cargo material shorts for Women",
+        "description":"Womens shorts made of cargo material. Red cargo shorts for Women",
         "price":"27.99",
         "category":6,
         "rating":1,
@@ -843,7 +843,7 @@
         "pk":71,
         "fields":{
         "name":"Women's Blue Ripped Jean Shorts",
-        "description":"Blue ripped jean material shorts for Women",
+        "description":"Womens shorts made of jean material. Blue ripped jean shorts for Women",
         "price":"32.99",
         "category":6,
         "rating":2,
@@ -855,7 +855,7 @@
         "pk":72,
         "fields":{
         "name":"Women's White Jean Shorts",
-        "description":"White Jean material shorts for Women",
+        "description":"Womens shorts made of jean material. White Jean shorts for Women",
         "price":"19.99",
         "category":6,
         "rating":1,
@@ -867,7 +867,7 @@
         "pk":73,
         "fields":{
         "name":"Men's Green Overhead Hoodie",
-        "description":"Soft material green overhead hoodie for Men currently on sale",
+        "description":"Mens hoodie on sale made of soft material. Green overhead hoodie for Men currently on sale",
         "price":"29.99",
         "category":7,
         "rating":4,
@@ -880,7 +880,7 @@
         "pk":74,
         "fields":{
         "name":"Men's Grey Overhead Hoodie",
-        "description":"Soft material grey overhead hoodie for Men currently on sale",
+        "description":"Mens hoodie on sale made of soft material. Grey overhead hoodie for Men currently on sale",
         "price":"29.99",
         "category":7,
         "rating":5,
@@ -893,7 +893,7 @@
         "pk":75,
         "fields":{
         "name":"Men's Light Blue Overhead Hoodie",
-        "description":"Soft material light blue overhead hoodie for Men currently on sale",
+        "description":"Mens hoodie on sale made of soft material. Light blue overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
         "rating":3,
@@ -906,7 +906,7 @@
         "pk":76,
         "fields":{
         "name":"Men's Black Nike Overhead Hoodie",
-        "description":"Soft material black Nike overhead hoodie for Men currently on sale",
+        "description":"Mens hoodie on sale made of soft material. Black Nike overhead hoodie for Men currently on sale",
         "price":"34.99",
         "category":7,
         "rating":2,
@@ -919,7 +919,7 @@
         "pk":77,
         "fields":{
         "name":"Men's Red Overhead Hoodie",
-        "description":"Soft material red overhead hoodie for Men currently on sale",
+        "description":"Mens hoodie on sale made of soft material. Red overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
         "rating":3,
@@ -932,7 +932,7 @@
         "pk":78,
         "fields":{
         "name":"Men's Yellow Overhead Hoodie",
-        "description":"Soft material yellow overhead hoodie for Men currently on sale",
+        "description":"Mens hoodie on sale made of soft material. Yellow overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
         "rating":5,
@@ -945,7 +945,7 @@
         "pk":79,
         "fields":{
         "name":"Men's Black Ripped T-Shirt",
-        "description":"Soft material black ripped t-shirt for Men currently on sale",
+        "description":"Mens t-shirt on sale made of soft material. Black ripped t-shirt for Men currently on sale",
         "price":"14.99",
         "category":8,
         "rating":4,
@@ -958,7 +958,7 @@
         "pk":80,
         "fields":{
         "name":"Men's Blue Nike T-Shirt",
-        "description":"Soft material blue Nike t-shirt for Men currently on sale",
+        "description":"Mens t-shirt on sale made of soft material. Blue Nike t-shirt for Men currently on sale",
         "price":"16.99",
         "category":8,
         "rating":5,
@@ -971,7 +971,7 @@
         "pk":81,
         "fields":{
         "name":"Men's Grey T-Shirt",
-        "description":"Soft material grey t-shirt for Men currently on sale",
+        "description":"Mens t-shirt on sale made of soft material. Grey t-shirt for Men currently on sale",
         "price":"24.99",
         "category":8,
         "rating":2,
@@ -984,7 +984,7 @@
         "pk":82,
         "fields":{
         "name":"Men's Orange T-Shirt",
-        "description":"Soft material orange t-shirt for Men currently on sale",
+        "description":"Mens t-shirt on sale made of soft material. Orange t-shirt for Men currently on sale",
         "price":"24.99",
         "category":8,
         "rating":2,
@@ -997,7 +997,7 @@
         "pk":83,
         "fields":{
         "name":"Men's Pink Just Culture T-Shirt",
-        "description":"Soft material pink Just Culture t-shirt for Men currently on sale",
+        "description":"Mens t-shirt on sale made of soft material. Pink Just Culture t-shirt for Men currently on sale",
         "price":"14.99",
         "category":8,
         "rating":3,
@@ -1010,7 +1010,7 @@
         "pk":84,
         "fields":{
         "name":"Men's White T-Shirt",
-        "description":"Soft material white t-shirt for Men currently for sale",
+        "description":"Mens t-shirt on sale made of soft material. White t-shirt for Men currently for sale",
         "price":"19.99",
         "category":8,
         "rating":5,
@@ -1023,7 +1023,7 @@
         "pk":85,
         "fields":{
         "name":"Men's Black Puma Shorts",
-        "description":"Silk material black Puma shorts for Men currently on sale",
+        "description":"Mens shorts on sale made of silk material. Black Puma shorts for Men currently on sale",
         "price":"28.99",
         "category":9,
         "rating":3,
@@ -1036,7 +1036,7 @@
         "pk":86,
         "fields":{
         "name":"Men's Black Shorts",
-        "description":"Soft material black shorts for Men currently on sale",
+        "description":"Mens shorts on sale made of soft material. Black shorts for Men currently on sale",
         "price":"22.99",
         "category":9,
         "rating":4,
@@ -1049,7 +1049,7 @@
         "pk":87,
         "fields":{
         "name":"Men's Blue Fila Shorts",
-        "description":"Soft material blue Fila shorts for Men currently on sale",
+        "description":"Mens shorts on sale made of soft material. Blue Fila shorts for Men currently on sale",
         "price":"19.99",
         "category":9,
         "rating":5,
@@ -1062,7 +1062,7 @@
         "pk":88,
         "fields":{
         "name":"Men's Blue Shorts",
-        "description":"Soft material blue shorts for Men currently on sale",
+        "description":"Mens shorts on sale made of soft material. Blue shorts for Men currently on sale",
         "price":"17.99",
         "category":9,
         "rating":2,
@@ -1075,7 +1075,7 @@
         "pk":89,
         "fields":{
         "name":"Men's Grey Shorts",
-        "description":"Soft material grey shorts for Men currently on sale",
+        "description":"Mens shorts on sale made of soft material. Grey shorts for Men currently on sale",
         "price":"22.99",
         "category":9,
         "rating":2,
@@ -1088,7 +1088,7 @@
         "pk":90,
         "fields":{
         "name":"Men's White Cargo Shorts",
-        "description":"White Cargo material shorts for Men currently on sale",
+        "description":"Mens shorts on sale made of cargo material. White Cargo shorts for Men currently on sale",
         "price":"21.99",
         "category":9,
         "rating":3,
@@ -1101,7 +1101,7 @@
         "pk":91,
         "fields":{
         "name":"Women's Black Overhead Hoodie",
-        "description":"Soft material black overhead hoodie for Women currently on sale",
+        "description":"Womens hoodie on sale made of soft material. Black overhead hoodie for Women currently on sale",
         "price":"27.99",
         "category":10,
         "rating":3,
@@ -1114,7 +1114,7 @@
         "pk":92,
         "fields":{
         "name":"Women's Brown Overhead Hoodie",
-        "description":"Soft material brown overhead hoodie for Women currently on sale",
+        "description":"Womens hoodie on sale made of soft material. Brown overhead hoodie for Women currently on sale",
         "price":"23.99",
         "category":10,
         "rating":4,
@@ -1127,7 +1127,7 @@
         "pk":93,
         "fields":{
         "name":"Women's Grey Overhead Hoodie",
-        "description":"Soft material grey overhead hoodie for Women currently on sale",
+        "description":"Womens hoodie on sale made of soft material. Grey overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
         "rating":5,
@@ -1140,7 +1140,7 @@
         "pk":94,
         "fields":{
         "name":"Women's Orange Overhead Hoodie",
-        "description":"Soft material orange overhead hoodie for Women currently on sale",
+        "description":"Womens hoodie on sale made of soft material. Orange overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
         "rating":2,
@@ -1153,7 +1153,7 @@
         "pk":95,
         "fields":{
         "name":"Women's Pink Overhead Hoodie",
-        "description":"Soft material pink overhead hoodie for Women currently on sale",
+        "description":"Womens hoodie on sale made of soft material. Pink overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
         "rating":2,
@@ -1166,7 +1166,7 @@
         "pk":96,
         "fields":{
         "name":"Women's White Overhead Hoodie",
-        "description":"Soft material white overhead hoodie for Women currently on sale",
+        "description":"Womens hoodie on sale made of soft material. White overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
         "rating":3,
@@ -1179,7 +1179,7 @@
         "pk":97,
         "fields":{
         "name":"Women's Black T-Shirt",
-        "description":"Soft material black t-shirt for women currently on sale",
+        "description":"Womens t-shirt on sale made of soft material. Black t-shirt for women currently on sale",
         "price":"17.99",
         "category":11,
         "rating":2,
@@ -1192,7 +1192,7 @@
         "pk":98,
         "fields":{
         "name":"Women's Brown T-Shirt",
-        "description":"Soft material brown t-shirt for Women currently on sale",
+        "description":"Womens t-shirt on sale made of soft material. Brown t-shirt for Women currently on sale",
         "price":"19.99",
         "category":11,
         "rating":2,
@@ -1205,7 +1205,7 @@
         "pk":99,
         "fields":{
         "name":"Women's Grey T-Shirt",
-        "description":"Soft material grey t-shirt for Women currently on sale",
+        "description":"Womens t-shirt on sale made of soft material. Grey t-shirt for Women currently on sale",
         "price":"14.99",
         "category":11,
         "rating":3,
@@ -1218,7 +1218,7 @@
         "pk":100,
         "fields":{
         "name":"Women's Red T-Shirt",
-        "description":"Soft material red t-shirt for Women currently on sale",
+        "description":"Womens t-shirt on sale made of soft material. Red t-shirt for Women currently on sale",
         "price":"12.99",
         "category":11,
         "rating":5,
@@ -1231,7 +1231,7 @@
         "pk":101,
         "fields":{
         "name":"Women's White T-Shirt",
-        "description":"Soft material white t-shirt for Women currently on sale",
+        "description":"Womens t-shirt on sale made of soft material. White t-shirt for Women currently on sale",
         "price":"24.99",
         "category":11,
         "rating":4,
@@ -1244,7 +1244,7 @@
         "pk":102,
         "fields":{
         "name":"Women's White Vogue T-Shirt",
-        "description":"Soft material white Vogue t-shirt for Women currently on sale",
+        "description":"Womens t-shirt on sale made of soft material. White Vogue t-shirt for Women currently on sale",
         "price":"29.99",
         "category":11,
         "rating":5,
@@ -1257,7 +1257,7 @@
         "pk":103,
         "fields":{
         "name":"Women's Black Shorts",
-        "description":"Soft material black shorts for Women currently on sale",
+        "description":"Womens shorts on sale made of soft material. Black shorts for Women currently on sale",
         "price":"19.99",
         "category":12,
         "rating":3,
@@ -1270,7 +1270,7 @@
         "pk":104,
         "fields":{
         "name":"Women's Green Shorts",
-        "description":"Soft material green shorts for Women currently on sale",
+        "description":"Womens shorts on sale made of soft material. Green shorts for Women currently on sale",
         "price":"22.99",
         "category":12,
         "rating":3,
@@ -1283,7 +1283,7 @@
         "pk":105,
         "fields":{
         "name":"Women's Grey Shorts",
-        "description":"Soft material grey shorts for Women currently on sale",
+        "description":"Womens shorts on sale made of soft material. Grey shorts for Women currently on sale",
         "price":"17.99",
         "category":12,
         "rating":5,
@@ -1296,7 +1296,7 @@
         "pk":106,
         "fields":{
         "name":"Women's Blue Jean Shorts",
-        "description":"Blue jean material shorts for Women currently on sale",
+        "description":"Womens shorts on sale made of jean material. Blue jean shorts for Women currently on sale",
         "price":"24.99",
         "category":12,
         "rating":1,
@@ -1309,7 +1309,7 @@
         "pk":107,
         "fields":{
         "name":"Women's Red Shorts",
-        "description":"Soft material red shorts for Women currently on sale",
+        "description":"Womens shorts on sale made of soft material. Red shorts for Women currently on sale",
         "price":"17.99",
         "category":12,
         "rating":3,
@@ -1322,7 +1322,7 @@
         "pk":108,
         "fields":{
         "name":"Women's White Jean Shorts",
-        "description":"White Jean material shorts for Women currently on sale",
+        "description":"Womens shorts on sale made of jean material. White Jean shorts for Women currently on sale",
         "price":"19.99",
         "category":12,
         "rating":1,

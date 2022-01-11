@@ -395,11 +395,7 @@ div.swiper-scrollbar-drag{
 /* ----- Shop For Men Styling ----- */
 
 .shop-for-men-image{
-<<<<<<< HEAD
     background: url(../../media/shop-for-men.jpg) no-repeat center center;
-=======
-    background: url(media/shop-for-men.jpg) no-repeat center center;
->>>>>>> ea3eb911644b41b98b8e97d5c9af68e6750b6ca3
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;
@@ -464,11 +460,7 @@ div.swiper-scrollbar-drag{
 /* ----- Shop For Women Styling ----- */
 
 .shop-for-women-image{
-<<<<<<< HEAD
     background: url(../../media/shop-for-women.jpg) no-repeat center center;
-=======
-    background: url(media/shop-for-women.jpg) no-repeat center center;
->>>>>>> ea3eb911644b41b98b8e97d5c9af68e6750b6ca3
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;
@@ -1297,12 +1289,15 @@ button.primaryAction{
 }
 
 .category-name-buttons a{
+    display: block;
+    width: 175px;
     text-decoration: none;
     border: 2px solid #152238;
     margin: 0 0.25rem;
     padding: 0.5rem;
     color: #152238;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    text-align: center;
 }
 
 .category-name-buttons a:hover{
@@ -1445,7 +1440,7 @@ div hr{
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    margin: 2.5rem 4rem 2.5rem 0rem;
+    margin: 2.5rem 3rem 1.5rem 0rem;
 }
 
 .product-detail-item-content{
@@ -1472,20 +1467,20 @@ div hr{
     padding: 0 0 0.25rem;
 }
 
-.product-detail-item-content p{
+.product-detail-item-content h4{
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
 .product-detail-image-card{
-    height: 452px;
-    width: 452px;
+    height: 427px;
+    width: 427px;
     border: 1px solid #152238;
 }
 
 .product-detail-image-card img{
-    width: 450px;
-    height: 450px;
+    width: 425px;
+    height: 425px;
 }
 
 div.product-detail-form,
@@ -1502,7 +1497,7 @@ div.product-detail-size select{
     border: 2px solid #152238;
     background-color: #fafafa;
     color: #152238;
-    width: 300px;
+    width: 450px;
     padding-left: 0.5rem;
 }
 
@@ -1610,7 +1605,6 @@ div.product-detail-buttons{
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
-
 }
 
 div.product-detail-buttons i{
@@ -1618,12 +1612,14 @@ div.product-detail-buttons i{
 }
 
 div.product-detail-buttons a{
+    display: block;
+    width: 225px;
     text-decoration: none;
     border: 2px solid #152238;
-    padding: 0.85rem 2.5rem;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1rem;
-    margin-right: 1rem;
+    text-align: center;
 }
 
 div.product-detail-buttons a:hover{
@@ -1634,10 +1630,12 @@ div.product-detail-buttons a:hover{
 
 div.product-detail-buttons button{
     border: 2px solid #152238;
-    padding: 0.71rem 3.5rem;
+    padding: 0.75rem;
+    width: 225px;
     background-color: #fafafa;
     color: #152238;
     font-size: 1rem;
+    margin-right: 1rem;
 }
 
 div.product-detail-buttons button:hover{
@@ -1799,7 +1797,7 @@ input#new-image{
 }
 
 div.input-group{
-    width: 425px;
+    width: 450px;
     height: 60px;
     background-color: #fafafa;
     margin-bottom: 2rem !important;
@@ -2097,6 +2095,42 @@ nav.navbar.navbar-expand-lg.navbar-light{
         background-position: right;
     }
 
+    .product-detail-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem
+    }
+
+    .product-detail-item-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    div.product-detail-size select{
+        width: 500px;
+    }
+
+    div.input-group{
+        width: 500px;
+    }
+
+    .product-detail-item-content h4{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    div.product-detail-buttons a{
+        width: 240px;
+        margin-right: 1.5rem;
+    }
+
+    div.product-detail-buttons button{
+        width: 240px;
+    }
+
 }
 
 @media screen and (max-width: 768px){
@@ -2105,6 +2139,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     div.col-12.nav-links-small{
         display: none;
+    }
+
+    .header-icons ul{
+        padding-right: 1rem;
     }
     
     nav.navbar.navbar-expand-lg.navbar-light{
@@ -2220,7 +2258,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         flex-direction: column;
         padding: 1rem;
         margin: 0.5rem 0;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .category-name-buttons{
@@ -2228,8 +2266,40 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     .category-name-buttons-section a{
-        padding: 0.5rem 4rem;
+        width: 300px;
     }
+
+    .product-number{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .product-filters{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ----- Products Detail Page ----- */
+
+    .product-detail-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .product-detail-image-card{
+        height: 400px;
+        width: 400px;
+    }
+
+    .product-detail-image-card img{
+        height: 400px;
+        width: 400px;
+        border: 1px solid #152238;
+    }
+
 
 @media screen and (max-width: 767px) {
 
@@ -2423,6 +2493,59 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     .search-bar-text p{
         font-size: 0.8rem;
+    }
+
+    /* ----- Product Details Page ----- */
+
+    .product-detail-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .product-detail-image-card{
+        height: 300px;
+        width: 300px;
+    }
+
+    .product-detail-image-card img{
+        height: 300px;
+        width: 300px;
+        border: 1px solid #152238;
+    }
+
+    .product-detail-item-content h4{
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    div.product-detail-size select{
+        width: 300px;
+    }
+
+    div.input-group{
+        width: 300px;
+    }
+
+    div.product-detail-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    div.product-detail-buttons a{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    div.product-detail-buttons button{
+        width: 100%;
     }
 
     /* ----- Footer Styling for Mobile Devices ----- */

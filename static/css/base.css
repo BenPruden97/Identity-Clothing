@@ -395,7 +395,11 @@ div.swiper-scrollbar-drag{
 /* ----- Shop For Men Styling ----- */
 
 .shop-for-men-image{
+<<<<<<< HEAD
     background: url(../../media/shop-for-men.jpg) no-repeat center center;
+=======
+    background: url(media/shop-for-men.jpg) no-repeat center center;
+>>>>>>> ea3eb911644b41b98b8e97d5c9af68e6750b6ca3
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;
@@ -460,7 +464,11 @@ div.swiper-scrollbar-drag{
 /* ----- Shop For Women Styling ----- */
 
 .shop-for-women-image{
+<<<<<<< HEAD
     background: url(../../media/shop-for-women.jpg) no-repeat center center;
+=======
+    background: url(media/shop-for-women.jpg) no-repeat center center;
+>>>>>>> ea3eb911644b41b98b8e97d5c9af68e6750b6ca3
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;
@@ -524,7 +532,7 @@ div.swiper-scrollbar-drag{
 /* ----- Items On Sale Styling ----- */
 
 .items-on-sale-image{
-    background: url(/media/items-on-sale.jpg) no-repeat center center;
+    background: url(media/items-on-sale.jpg) no-repeat center center;
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;

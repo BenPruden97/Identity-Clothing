@@ -63,113 +63,57 @@
 
                     <!-- Slides -->
 
-                    <div class="swiper-slide">
+                    {% for product in best_seller_products %}  
 
-                        <img src="../../media/shop-for-men.jpg" alt="Man wearing an adidas hoodie">
+                        <div class="swiper-slide">
+                                    
+                            <div>                   
+                                {% if product.image %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
+                                {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img src="{{ MEDIA_URL}}}" alt="{{ product.name }}">
+                                    </a>
+                                {% endif %}
+                            </div>
 
-                        <div class="swiper-info">
+                            <div class="best-sellers-name">
 
-                            Price: £34.99
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <h6><strong>{{ product.name }}</strong></h6>
+                                </a>
 
-                            <div>
-                                Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+
+                            <div class="best-sellers-info">
+
+                                <h6><strong>Price:</strong> £{{ product.price }}</h6>
+
+                                {% if product.rating == 1%}
+                                    <h6><strong>Rating:</strong>  <i class="fas fa-star"></i></h6>
+                                {% elif product.rating == 2 %}
+                                    <h6><strong>Rating:</strong> <i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                {% elif product.rating == 3 %}
+                                    <h6><strong>Rating:</strong> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                {% elif product.rating == 4 %}
+                                    <h6><strong>Rating:</strong> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                {% else %}
+                                    <h6><strong>Rating:</strong> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                {% endif %}
+
+                            </div>
+
+                            <div class="best-sellers-button">
+
+                                <a href="{% url 'product_detail' product.id %}">View Clothing Item</a>
+
                             </div>
 
                         </div>
 
-                        <button>View Clothing Item</button>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <img src="../../media/men-adidas-hoodie.jpg" alt="Man wearing an adidas hoodie">
-
-                        <div class="swiper-info">
-
-                            Price: £34.99
-
-                            <div>
-                                Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-
-                        </div>
-
-                        <button>View Clothing Item</button>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <img src="../../media/men-adidas-hoodie.jpg" alt="Man wearing an adidas hoodie">
-
-                        <div class="swiper-info">
-
-                            Price: £34.99
-
-                            <div>
-                                Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-
-                        </div>
-
-                        <button>View Clothing Item</button>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <img src="../../media/men-adidas-hoodie.jpg" alt="Man wearing an adidas hoodie">
-
-                        <div class="swiper-info">
-
-                            Price: £34.99
-
-                            <div>
-                                Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-
-                        </div>
-
-                        <button>View Clothing Item</button>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <img src="../../media/men-adidas-hoodie.jpg" alt="Man wearing an adidas hoodie">
-
-                        <div class="swiper-info">
-
-                            Price: £34.99
-
-                            <div>
-                                Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-
-                        </div>
-
-                        <button>View Clothing Item</button>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <img src="../../media/men-adidas-hoodie.jpg" alt="Man wearing an adidas hoodie">
-
-                        <div class="swiper-info">
-
-                            Price: £34.99
-
-                            <div>
-                                Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-
-                        </div>
-
-                        <button>View Clothing Item</button>
-
-                    </div>
+                    {% endfor %}
 
                     </div>
                     <!-- If we need pagination -->

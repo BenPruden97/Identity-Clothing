@@ -301,7 +301,7 @@ body{
 .carousel-heading h1{
     background: #fafafa;
     text-align: center;
-    padding: 4rem 0 1rem;
+    padding: 4rem 0 0;
     margin: 0;
 }
 
@@ -317,7 +317,7 @@ body{
 }
 
 .swiper {
-    width: 750px;
+    width: 900px;
     height: 525px;
     margin-bottom: 2rem;
 }
@@ -326,12 +326,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 750px;
+    width: 900px;
     height: 525px;
 }
 
 div.swiper-slide.swiper-slide-active{
-    width: 750px;
+    width: 900px;
     height: 525px;
     display: flex;
     justify-content: center;
@@ -339,16 +339,60 @@ div.swiper-slide.swiper-slide-active{
     flex-direction: column;
 }
 
-.swiper-info{
-    width: 300px;
+.swiper-slide img{
+    border: 1px solid #152238;
+}
+
+.best-sellers-name a{
+    text-decoration: none;
+}
+
+.best-sellers-name a h6{
+    color: #152238;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.best-sellers-name a h6:hover{
+    color: #f68b58;
+}
+
+.best-sellers-info{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0.5rem 0;
+    width: 300px;
 }
 
-.swiper-info i{
+.best-sellers-info h6{
+    font-size: 1.1rem;
+}
+
+.best-sellers-info i{
     color: #efc501;
+}
+
+.best-sellers-button{
+    margin-top: 0.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.best-sellers-button a{
+    display: block;
+    width: 300px;
+    text-decoration: none;
+    border: 2px solid #152238;
+    padding: 0.5rem;
+    color: #152238;
+    text-align: center;
+}
+
+.best-sellers-button a:hover{
+    color: #fafafa;
+    background-color: #152238;
+    transition: 0.5s;
 }
 
 .swiper-slide button{

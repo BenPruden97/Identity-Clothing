@@ -31,19 +31,45 @@
 
                 <div class="category-name-buttons-section">
 
-                    {% for c in current_categories %}
-
                     <div class="category-name-buttons">
 
-                        <a href="{% url 'products' %}?category={{ c.name }}">
-                            {{ c.friendly_name }}
+                        <a href="{% url 'products' %}?category=mens_hoodies_sale">
+                            Men's Hoodies On Sale
+                        </a>
+
+                        <a href="{% url 'products' %}?category=mens_tshirts_sale">
+                            Men's T-Shirts On Sale
+                        </a>
+
+                        <a href="{% url 'products' %}?category=mens_shorts_sale">
+                            Men's Shorts On Sale
                         </a>
 
                     </div>
 
-                    {% endfor %}
+                </div>
+
+
+                <div class="category-name-buttons-section">
+
+                    <div class="category-name-buttons">
+
+                        <a href="{% url 'products' %}?category=womens_hoodies_sale">
+                            Women's Hoodies On Sale
+                        </a>
+
+                        <a href="{% url 'products' %}?category=womens_tshirts_sale">
+                            Women's T-Shirts On Sale
+                        </a>
+
+                        <a href="{% url 'products' %}?category=mens_shorts_sale">
+                            Women's Shorts On Sale
+                        </a>
+
+                    </div>
 
                 </div>
+
 
             </div>
 
@@ -148,43 +174,25 @@
 
                             </div>
 
-                            {% if product.is_on_sale %}
-                                <div class="product-image-content">
+                            <div class="product-image-content">
 
+                                {% if product.is_on_sale %}
                                     <h6>Sale Price: <span>£{{ product.calculate_sale_price }}</span></h6>
+                                {% endif %}
 
-                                    {% if product.rating == 1%}
-                                        <h6><i class="fas fa-star"></i></h6>
-                                    {% elif product.rating == 2 %}
-                                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                    {% elif product.rating == 3 %}
-                                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                    {% elif product.rating == 4 %}
-                                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                    {% else %}
-                                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                    {% endif %}
+                                {% if product.rating == 1%}
+                                    <h6><i class="fas fa-star"></i></h6>
+                                {% elif product.rating == 2 %}
+                                    <h6><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                {% elif product.rating == 3 %}
+                                    <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                {% elif product.rating == 4 %}
+                                    <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                {% else %}
+                                    <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                {% endif %}
 
-                                </div>
-                            {% else %}
-                                <div class="product-image-content">
-
-                                    <h6>Price: £{{ product.price }}</h6>
-
-                                    {% if product.rating == 1%}
-                                        <h6><i class="fas fa-star"></i></h6>
-                                    {% elif product.rating == 2 %}
-                                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                    {% elif product.rating == 3 %}
-                                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                    {% elif product.rating == 4 %}
-                                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                    {% else %}
-                                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                                    {% endif %}
-
-                                </div>
-                            {% endif %}
+                            </div>
 
                             {% if request.user.is_superuser %}
 
@@ -207,7 +215,6 @@
                     </div>
 
                 </div>
-
 
             {% endfor %}
 

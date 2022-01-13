@@ -161,3 +161,37 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Clothing item has been deleted!')
     return redirect(reverse('products'))
+
+
+def products_on_sale(request):
+    """
+    View Items on sale
+    """
+    products = Product.objects.filter(is_on_sale=True)
+    sort = None
+    direction = None
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
+    current_sorting = f'{sort}_{direction}'
+
+    context = {
+        'products': products,
+        'current_sorting': current_sorting,
+    }
+
+    return render(request, 'products/products_on_sale.html', context)

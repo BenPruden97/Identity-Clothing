@@ -134,7 +134,11 @@
 
                             <div class="col-12 col-md-2">
 
-                                <p>£{{ item.product.price }}</p>
+                                {% if item.product.is_on_sale %}
+                                    <p>£{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</p>
+                                {% else %}
+                                    <p>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                {% endif %}
 
                             </div>
 

@@ -70,7 +70,11 @@
                                     </td>
 
                                     <td>
-                                        <p><strong>£{{ item.product.price }}</strong></p>
+                                        {% if item.product.is_on_sale %}
+                                            <p><strong>£{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</strong></p>
+                                        {% else %}
+                                            <p><strong>£{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
+                                        {% endif %}
                                     </td>
 
                                     <td>
@@ -130,7 +134,11 @@
                                     </td>
 
                                     <td>
-                                        <p><strong>£{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
+                                        {% if item.product.is_on_sale %}
+                                            <p><strong>£{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</strong></p>
+                                        {% else %}
+                                            <p><strong>£{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
+                                        {% endif %}
                                     </td>
 
                                 </tr>

@@ -871,7 +871,7 @@
         "price":"29.99",
         "category":7,
         "rating":4,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-green-hoodie-sale.jpg"
         }
     },
@@ -884,7 +884,7 @@
         "price":"29.99",
         "category":7,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-grey-hoodie-sale.jpg"
         }
     },
@@ -897,7 +897,7 @@
         "price":"24.99",
         "category":7,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-light-blue-hoodie-sale.jpg"
         }
     },
@@ -910,7 +910,7 @@
         "price":"34.99",
         "category":7,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-nike-hoodie-sale.jpg"
         }
     },
@@ -923,7 +923,7 @@
         "price":"24.99",
         "category":7,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-red-hoodie-sale.jpg"
         }
     },
@@ -936,7 +936,7 @@
         "price":"24.99",
         "category":7,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-yellow-hoodie-sale.jpg"
         }
     },
@@ -949,7 +949,7 @@
         "price":"14.99",
         "category":8,
         "rating":4,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-black-tshirt-sale.jpg"
         }
     },
@@ -962,7 +962,7 @@
         "price":"16.99",
         "category":8,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-blue-nike-tshirt-sale.jpg"
         }
     },
@@ -975,7 +975,7 @@
         "price":"24.99",
         "category":8,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-grey-tshirt-sale.jpg"
         }
     },
@@ -988,7 +988,7 @@
         "price":"24.99",
         "category":8,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-orange-tshirt-sale.jpg"
         }
     },
@@ -1001,7 +1001,7 @@
         "price":"14.99",
         "category":8,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-pink-tshirt-sale.jpg"
         }
     },
@@ -1014,7 +1014,7 @@
         "price":"19.99",
         "category":8,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-white-tshirt-sale.jpg"
         }
     },
@@ -1027,7 +1027,7 @@
         "price":"28.99",
         "category":9,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-black-puma-shorts-sale.jpg"
         }
     },
@@ -1040,7 +1040,7 @@
         "price":"22.99",
         "category":9,
         "rating":4,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-black-shorts-sale.jpg"
         }
     },
@@ -1053,7 +1053,7 @@
         "price":"19.99",
         "category":9,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-blue-fila-shorts-sale.jpg"
         }
     },
@@ -1066,7 +1066,7 @@
         "price":"17.99",
         "category":9,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-blue-shorts-sale.jpg"
         }
     },
@@ -1079,7 +1079,7 @@
         "price":"22.99",
         "category":9,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-grey-shorts-sale.jpg"
         }
     },
@@ -1092,7 +1092,7 @@
         "price":"21.99",
         "category":9,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"men-white-shorts-sale.jpg"
         }
     },
@@ -1105,7 +1105,7 @@
         "price":"27.99",
         "category":10,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-black-hoodie-sale.jpg"
         }
     },
@@ -1118,7 +1118,7 @@
         "price":"23.99",
         "category":10,
         "rating":4,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-brown-hoodie-sale.jpg"
         }
     },
@@ -1131,7 +1131,7 @@
         "price":"24.99",
         "category":10,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-grey-hoodie-sale.jpg"
         }
     },
@@ -1144,7 +1144,7 @@
         "price":"24.99",
         "category":10,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-orange-hoodie-sale.jpg"
         }
     },
@@ -1157,7 +1157,7 @@
         "price":"24.99",
         "category":10,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-pink-hoodie-sale.jpg"
         }
     },
@@ -1170,7 +1170,7 @@
         "price":"24.99",
         "category":10,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-white-hoodie-sale.jpg"
         }
     },
@@ -1183,7 +1183,7 @@
         "price":"17.99",
         "category":11,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-black-tshirt-sale.jpg"
         }
     },
@@ -1196,7 +1196,7 @@
         "price":"19.99",
         "category":11,
         "rating":2,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-brown-tshirt-sale.jpg"
         }
     },
@@ -1209,7 +1209,7 @@
         "price":"14.99",
         "category":11,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-grey-culprit-tshirt-sale.jpg"
         }
     },
@@ -1222,7 +1222,7 @@
         "price":"12.99",
         "category":11,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-red-tshirt-sale.jpg"
         }
     },
@@ -1235,7 +1235,7 @@
         "price":"24.99",
         "category":11,
         "rating":4,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-white-tshirt-sale.jpg"
         }
     },
@@ -1248,7 +1248,7 @@
         "price":"29.99",
         "category":11,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-white-vogue-tshirt-sale.jpg"
         }
     },
@@ -1261,7 +1261,7 @@
         "price":"19.99",
         "category":12,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-black-shorts-sale.jpg"
         }
     },
@@ -1274,7 +1274,7 @@
         "price":"22.99",
         "category":12,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-green-shorts-sale.jpg"
         }
     },
@@ -1287,7 +1287,7 @@
         "price":"17.99",
         "category":12,
         "rating":5,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-grey-shorts-sale.jpg"
         }
     },
@@ -1300,7 +1300,7 @@
         "price":"24.99",
         "category":12,
         "rating":1,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-jean-shorts-sale.jpg"
         }
     },
@@ -1313,7 +1313,7 @@
         "price":"17.99",
         "category":12,
         "rating":3,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-red-shorts-sale.jpg"
         }
     },
@@ -1326,7 +1326,7 @@
         "price":"19.99",
         "category":12,
         "rating":1,
-        "product_sale":10,
+        "sale_percentage":10,
         "image":"women-white-shorts-sale.jpg"
         }
     }

@@ -37,9 +37,21 @@
 
                     <div class="product-detail-item-content">
 
-                        <h6><strong>{{ product.name }}</strong></h6>
+                        <span class="product-detail-sale">
 
-                        <h6>Price: £{{ product.price }}</h6>
+                            <h6><strong>{{ product.name }}</strong></h6>
+                            
+                            {% if product.is_on_sale %}
+                                <h5 class="sale-text-detail">Sale</h5>
+                            {% endif %}
+
+                        </span>
+
+                        {% if product.is_on_sale %}
+                            <h6>Sale Price: £{{ product.calculate_sale_price }}</h6>
+                        {% else %}
+                            <h6>Price: £{{ product.price }}</h6>
+                        {% endif %}
 
                         {% if product.product_rating == 1%}
                             <h6><i class="fas fa-star"></i></h6>
@@ -53,7 +65,7 @@
                             <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
                         {% endif %}
 
-                        <h4>{{ product.description }}</h4>
+                        <h4><strong>Product Description:</strong> <br>{{ product.description }}</h4>
 
                         <form action="{% url 'add_to_bag' product.id %}" method="POST">
 
@@ -150,8 +162,13 @@
                                 <div class="edit-delete-buttons">
 
                                     {% if request.user.is_superuser %}
-                                        <a class="edit-button" href="{% url 'edit_product' product.id %}">Edit Clothing Item</a>
-                                        <a class="delete-button" href="{% url 'delete_product' product.id %}">Delete Clothing Item</a>
+
+                                        <div class="col-12 col-sm-6">
+                                            <a class="edit-button" href="{% url 'edit_product' product.id %}">Edit Clothing Item</a>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <a class="delete-button" href="{% url 'delete_product' product.id %}">Delete Clothing Item</a>
+                                        </div>
                                     {% endif %}
 
                                 </div>

@@ -11,25 +11,21 @@ def bag_contents(request):
     bag = request.session.get('bag', {})
 
     for item_id, item_data in bag.items():
-        if isinstance(item_data, int):
-            product = get_object_or_404(Product, pk=item_id)
-            total += item_data * product.price
-            product_count += item_data
+        product = get_object_or_404(Product, pk=item_id)
+        for product_size, quantity in item_data["items_by_size"].items():
+            if product.is_on_sale:
+                total += quantity * Decimal(
+                    product.price * (
+                        100 - product.sale_percentage) / 100).quantize(
+                            Decimal('0.00'))
+            else:
+                total += quantity * product.price
+            product_count += quantity
             bag_items.append({
                 'item_id': item_id,
-                'quantity': item_data,
+                'product_size': product_size, 
+                'quantity': quantity,
                 'product': product,
-            })
-        else:
-            product = get_object_or_404(Product, pk=item_id)
-            for product_size, quantity in item_data['items_by_size'].items():
-                total += quantity * product.price
-                product_count += quantity
-                bag_items.append({
-                    'item_id': item_id,
-                    'quantity': quantity,
-                    'product': product,
-                    'product_size': product_size,
                 })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
@@ -49,7 +45,6 @@ def bag_contents(request):
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
-
     }
 
     return context

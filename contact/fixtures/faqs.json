@@ -1,0 +1,82 @@
+[
+    {
+        "model":"contact.faq",
+        "pk":1,
+        "fields":{
+            "question":"What clothing items do Identity Clothing sell?",
+            "answer":"We sell a selection of hoodies, t-shirts and shorts for both men & women. You can view all of the current products we have on our products page."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":2,
+        "fields":{
+            "question":"What sizes do we offer?",
+            "answer":"We offer sizes ranging from XXS - XXL for all of our products."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":3,
+        "fields":{
+            "question":"Can I view my order history?",
+            "answer":"Yes, you can view your order history by loggin into your account and navigating to your account profile."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":4,
+        "fields":{
+            "question":"Can I update my delivery information?",
+            "answer":"Yes, you can view your order history by loggin into your account and navigating to your account profile."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":5,
+        "fields":{
+            "question":"How do I contact Identity Clothing?",
+            "answer":"We sell a selection of hoodies, t-shirts and shorts for both men & women. You can view all of the current products we have on our products page."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":6,
+        "fields":{
+            "question":"What is the delivery charge?",
+            "answer":"Delivery is FREE of charge for orders £50 or more. However the delivery charge for orders under £50 will be 10% of the total price of the order."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":7,
+        "fields":{
+            "question":"Can I return my order?",
+            "answer":"Yes, you can return your order to us within the first 7 days of your purchase by contacting us using the contact form above. If you have had the item for more than 7 days, you will not be able to return your item."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":8,
+        "fields":{
+            "question":"Can I cancel my order?",
+            "answer":"No, if you have already placed the order and received the order confirmation email, you can no longer cancel your order."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":8,
+        "fields":{
+            "question":"Where is my order?",
+            "answer":"Please allow up to 5-7 working days for your order to arrive, if you have not received your order within this time frame. Please contact us using the contact form above."
+        }
+    },
+    {
+        "model":"contact.faq",
+        "pk":8,
+        "fields":{
+            "question":"Do you ?",
+            "answer":"We sell a selection of hoodies, t-shirts and shorts for both men & women. You can view all of the current products we have on our products page."
+        }
+    }
+]

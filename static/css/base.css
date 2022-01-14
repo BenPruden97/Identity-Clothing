@@ -24,6 +24,28 @@ ul{
     background-color: #fafafa;
 }
 
+.btn-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f68b58;
+    color: #152238;
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.btn-top:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
 /* ----- Bootstrap Toast Messages Styling ----- */
 
 .message-container{
@@ -33,23 +55,29 @@ ul{
     z-index: 99999999999;
 }
 
-.message-container button{
-    border: none;
-    color: #152238;
-    font-size: 2rem;
-    background-color: #fafafa;
-}
-
-.message-container button span{
-    background-color: #fafafa;
-}
-
 .message-container button span{
     margin-left: 235px;
 }
 
 .toast-header strong{
     font-size: 1.1rem;
+    margin-right: 200x;
+}
+
+.toast-header .btn-close{
+    margin-left: 230px;
+}
+
+.btn-close {
+    box-sizing: content-box;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.25em 0.25em;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #152238;
+    background: transparent url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e) center/1em auto no-repeat;
+    opacity: 1;
 }
 
 .shopping-bag-message{
@@ -568,7 +596,7 @@ div.swiper-scrollbar-drag{
 /* ----- Items On Sale Styling ----- */
 
 .items-on-sale-image{
-    background: url(media/items-on-sale.jpg) no-repeat center center;
+    background: url(../../media/items-on-sale.jpg) no-repeat center center;
     width: 100%;
     height: 450px;
     border-top: 2px solid #152238;

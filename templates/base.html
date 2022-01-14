@@ -69,6 +69,8 @@
 
     <body>
 
+        <button onclick="topFunction()" class="btn-top" title="Back To Top">Back To Top</button>
+
         <header>
 
             <div class="container-fluid">
@@ -232,18 +234,45 @@
         {% block postloadjs %}
             <script type="text/javascript">
 
-                // document.getElementById("toastbtn").onclick = function() {
+                // Toast JS to get toasts to display and close as default toast.show() was not working
+                // https://stackoverflow.com/questions/63515279/how-to-initialize-toasts-with-javascript-in-bootstrap-5
+
+                // document.querySelector(".toast").onclick = function() {
+
                     var toastElList = [].slice.call(document.querySelectorAll('.toast'))
                     var toastList = toastElList.map(function(toastEl) {
                     // Creates an array of toasts (it only initializes them)
                     return new bootstrap.Toast(toastEl) // No need for options; use the default options
                     });
                     toastList.forEach(toast => toast.show()); // This show them
-            
-                    console.log(toastList); // Testing to see if it works
+
+                    $(".btn-close").click(function(){
+                        $(".toast").remove();
+                    });
+                                            
                 // };
 
-                // $('.toast').toast('show');
+                // JS for Back To Top Button
+                // Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top
+
+                var mybutton = document.querySelector(".btn-top");
+
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+
             </script>
         {% endblock %}
 

@@ -59,9 +59,8 @@
 
                 <div class="product-number">
 
-                    {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span><a href="{% url 'products' %}">All Products</a> | </span>
-                    {% endif %}
+                    <span><a href="{% url 'products' %}">All Products</a> | </span>
+                    
                     {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
 
                 </div>
@@ -207,8 +206,6 @@
                     </div>
 
                 </div>
-
-
             {% endfor %}
 
         </div>

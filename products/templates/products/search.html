@@ -87,7 +87,7 @@
 
                     {% for product in products %}
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="col-sm-12 col-md-6 col-xl-4">
 
                             <div class="product-item">
 
@@ -131,29 +131,11 @@
 
                             </div>
 
+                            <div class="product-hr">
+                                <hr>
+                            </div>
+
                         </div>
-
-                        <div class="col-12 d-sm-none">
-                            <hr>
-                        </div>
-
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
-                                <hr>
-                            </div>
-                        {% endif %}
-
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none">
-                                <hr>
-                            </div>
-                        {% endif %}
-
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block">
-                                <hr>
-                            </div>
-                        {% endif %}
 
                     {% endfor %}
 
@@ -161,18 +143,21 @@
 
             {% endif %}
 
+        </div>
+
+    </div>
+
             {% if not search_term or products|length < 1 %}
 
                 <div class="container">
 
                     <div class="row">
 
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-xl-4">
 
                             <div class="search-men-category-image">
 
                                 <a href="{% url 'products' %}?category=mens_hoodies,mens_shorts,mens_tshirts">
-                                    <img src="../../../media/shop-for-men-300.jpg" height="300" width="300" alt="">
                                 </a>
 
                             </div>
@@ -187,12 +172,11 @@
 
                         </div>
 
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-xl-4">
 
                             <div class="search-women-category-image">
 
                                 <a href="{% url 'products' %}?category=womens_hoodies,womens_shorts,womens_tshirts">
-                                    <img src="../../../media/shop-for-women-300.jpg" height="300" width="300" alt="">
                                 </a>
 
                             </div>
@@ -207,12 +191,11 @@
 
                         </div>
 
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-xl-4">
 
                             <div class="search-sale-category-image">
 
                                 <a href="{% url 'products' %}?category=womens_hoodies_sale,womens_shorts_sale,womens_tshirts_sale,mens_hoodies_sale,mens_shorts_sale,mens_tshirts_sale">
-                                    <img src="../../../media/items-on-sale-300.jpg" height="300" width="300" alt="">
                                 </a>
 
                             </div>

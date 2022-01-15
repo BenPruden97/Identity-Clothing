@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     # Other Apps
     'crispy_forms',
     'crispy_bootstrap5',
+    'django_pagination_bootstrap',
     'storages',
 ]
 

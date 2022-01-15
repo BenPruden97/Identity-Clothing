@@ -1274,7 +1274,10 @@ button.primaryAction{
     flex-direction: column;
 }
 
-.search-men-category-image img{
+.search-men-category-image a{
+    background: url(../../media/shop-for-men-300.jpg) no-repeat center center;
+    width: 300px;
+    height: 300px;
     border: 2px solid #152238;
 }
 
@@ -1285,7 +1288,10 @@ button.primaryAction{
     flex-direction: column;
 }
 
-.search-women-category-image img{
+.search-women-category-image a{
+    background: url(../../media/shop-for-women-300.jpg) no-repeat center center;
+    width: 300px;
+    height: 300px;
     border: 2px solid #152238;
 }
 
@@ -1296,7 +1302,10 @@ button.primaryAction{
     flex-direction: column;
 }
 
-.search-sale-category-image img{
+.search-sale-category-image a{
+    background: url(../../media/items-on-sale-300.jpg) no-repeat center center;
+    width: 300px;
+    height: 300px;
     border: 2px solid #152238;
 }
 

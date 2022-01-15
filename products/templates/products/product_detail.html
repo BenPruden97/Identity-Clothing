@@ -189,9 +189,86 @@
 
     </div>
 
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="product-detail-reviews-header">
+
+                    <h1>Product Reviews:</h1>
+
+                    <hr>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                {% if user.is_authenticated %}
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#productReview">Add A Review</button>
+                {% endif %}
+
+                <div class="modal fade" id="productReview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="exampleModalLabel">Add Product Review</h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+
+                            <div class="modal-body">
+                            
+                                <form id="addProductReviewForm" method="POST" action="{% url 'add_product_review' product.id %}">
+
+                                    {% csrf_token %}
+                                    {% for field in form %}
+                                        {{ field | as_crispy_field }}
+                                    {% endfor %}
+
+                                    <p class="ajaxRes"></p>
+
+                                    <button type="button" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit">Submit Review</button>
+
+                                </form>
+
+                            </div>
+
+
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 {% endblock %}
 
 {% block postloadjs %}
-{{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
+    {{ block.super }}
+    {% include 'products/includes/quantity_input_script.html' %}
+    <script src="{% static 'products/js/product_review.js' %}"></script>
 {% endblock %}

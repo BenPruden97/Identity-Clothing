@@ -6,8 +6,8 @@ from django.db.models.functions import Lower
 
 from django.core.paginator import Paginator
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, ProductReview
+from .forms import ProductForm, ProductReviewForm
 
 # Create your views here.
 
@@ -83,9 +83,11 @@ def search(request):
 def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
+    form = ProductReviewForm()
 
     context = {
         'product': product,
+        'form': form,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -118,6 +120,36 @@ def add_product(request):
 
     return render(request, template, context)
 
+
+@login_required
+def add_product_review(request, product_id):
+    """
+    Add a product review on product detail page
+    """
+    product = get_object_or_404(Product, pk=product_id)
+
+    if not request.user.is_authenticated:
+        messages.error(request, 'Sorry, you have to be logged in to add a product review.')
+        return redirect(reverse('product_detail', args=[product.id]))
+
+    if request.method == 'POST':
+        form = ProductReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            messages.success(request, 'You have successfully added a Product review!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to add product review. Please ensure the form is valid!')
+    else:
+        form = ProductReviewForm()
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, context)
 
 @login_required
 def edit_product(request, product_id):
@@ -197,3 +229,6 @@ def products_on_sale(request):
     }
 
     return render(request, 'products/products_on_sale.html', context)
+
+
+

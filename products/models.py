@@ -1,6 +1,7 @@
 from django.db import models
 from decimal import Decimal
 
+from django.contrib.auth.models import User
 
 class Category(models.Model):
 
@@ -35,7 +36,6 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     is_on_sale = models.BooleanField(default=False)
     sale_percentage = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    rating = models.DecimalField(max_digits=2, decimal_places=0, null=True, blank=True)
     product_size = models.CharField(max_length=7, choices=SIZE_CHOICES)
     image = models.ImageField(null=True, blank=True)
 
@@ -51,3 +51,20 @@ class Product(models.Model):
             100 - self.sale_percentage) / 100).quantize(Decimal('0.00'))
         return product_sale
 
+
+PRODUCT_RATING = (
+    (0, '0'),
+    (1, '1'),
+    (2, '2'),
+    (3, '3'),
+    (4, '4'),
+    (5, '5'),
+)
+
+
+class ProductReview(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    review_add_text = models.TextField(max_length=254)
+    review_add_rating = models.IntegerField(choices=PRODUCT_RATING)
+    date_created = models.DateField(auto_now_add=True)

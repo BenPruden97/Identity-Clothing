@@ -158,6 +158,9 @@
                             <div class="search-men-category-image">
 
                                 <a href="{% url 'products' %}?category=mens_hoodies,mens_shorts,mens_tshirts">
+
+                                    <div class="search-men-category-image-img"></div>
+
                                 </a>
 
                             </div>
@@ -177,6 +180,9 @@
                             <div class="search-women-category-image">
 
                                 <a href="{% url 'products' %}?category=womens_hoodies,womens_shorts,womens_tshirts">
+
+                                    <div class="search-women-category-image-img"></div>
+
                                 </a>
 
                             </div>
@@ -195,14 +201,17 @@
 
                             <div class="search-sale-category-image">
 
-                                <a href="{% url 'products' %}?category=womens_hoodies_sale,womens_shorts_sale,womens_tshirts_sale,mens_hoodies_sale,mens_shorts_sale,mens_tshirts_sale">
+                                <a href="{% url 'products_on_sale' %}">
+                                
+                                    <div class="search-sale-category-image-img"></div>
+
                                 </a>
 
                             </div>
 
                             <div class="search-category-buttons">
 
-                                <a href="{% url 'products' %}?category=womens_hoodies_sale,womens_shorts_sale,womens_tshirts_sale,mens_hoodies_sale,mens_shorts_sale,mens_tshirts_sale">
+                                <a href="{% url 'products_on_sale' %}">
                                     View Clothing Items On Sale
                                 </a>
 

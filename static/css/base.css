@@ -1274,7 +1274,7 @@ button.primaryAction{
     flex-direction: column;
 }
 
-.search-men-category-image a{
+.search-men-category-image-img{
     background: url(../../media/shop-for-men-300.jpg) no-repeat center center;
     width: 300px;
     height: 300px;
@@ -1288,7 +1288,7 @@ button.primaryAction{
     flex-direction: column;
 }
 
-.search-women-category-image a{
+.search-women-category-image-img{
     background: url(../../media/shop-for-women-300.jpg) no-repeat center center;
     width: 300px;
     height: 300px;
@@ -1302,7 +1302,7 @@ button.primaryAction{
     flex-direction: column;
 }
 
-.search-sale-category-image a{
+.search-sale-category-image-img{
     background: url(../../media/items-on-sale-300.jpg) no-repeat center center;
     width: 300px;
     height: 300px;
@@ -1768,6 +1768,21 @@ div.product-detail-buttons button:hover{
     transition: 0.5s;
     background-color: #152238;
     color: #fafafa;
+}
+
+.product-detail-reviews-header{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    flex-direction: column;
+    margin: 2.5rem 0 3rem;
+}
+
+.product-detail-reviews-header h1{
+    font-size: 3rem;
+    color: #152238;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 /* ----- Add/ Edit Product Page Styling ----- */

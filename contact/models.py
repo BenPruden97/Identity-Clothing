@@ -4,15 +4,13 @@ from django.db import models
 
 
 class FAQ(models.Model):
-    """
-    Define FAQS for contact page
-    """
+    """Define FAQS for contact page"""
 
     question = models.CharField(max_length=254)
     answer = models.TextField()
 
     def __str__(self):
-        return self.question
+        return str(self.question)
 
     def get_friendly_name(self):
-        return self.answer
+        return str(self.answer)

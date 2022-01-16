@@ -16,11 +16,11 @@
 
                         <li><a href="{% url 'search' %}">Search</a></li><strong> |</strong>
 
-                        <li><a href="{% url 'contact' %}">Contact</a></li><strong> |</strong>
+                        <li><a href="{% url 'view_contact' %}">Contact</a></li><strong> |</strong>
 
                         {% if request.user.is_authenticated %}
 
-                            <li><a href="{% url 'account_logout' %}">Sign Out</a></li><strong> |</strong>
+                            <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
 
                         {% else %}                                             
 

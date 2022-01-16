@@ -1161,6 +1161,42 @@ button.primaryAction{
     transition: 0.5s;
 }
 
+.faqs-section{
+    margin-bottom: 3rem;
+}
+
+.accordion-item{
+    margin: 1.5rem 0;
+    border: 2px solid #152238;
+}
+
+.accordion-button.collapsed:focus{
+    background-color: #fafafa;
+    border: none;
+    box-shadow: none;
+    color: #152238;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #fafafa;
+    box-shadow: none;
+}
+
+button.accordion-button h5{
+    margin-bottom: 0;
+    color: #152238;
+}
+
+div.accordion-body{
+    background-color: #fafafa;
+    border-top: 2px solid #152238;
+}
+
+div.accordion-body p{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
 /* ----- Search Page Styling ----- */
 
 .search-header{

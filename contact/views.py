@@ -8,9 +8,11 @@ def view_contact(request):
     """
     View to return the contact.html page
     """
-    questions = FAQ.objects.all()
+
+    faqs = FAQ.objects.all()
 
     context = {
-        'questions': questions,
+        'faqs': faqs,
     }
+
     return render(request, 'contact.html', context)

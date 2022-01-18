@@ -384,11 +384,14 @@ div.col-4 p{
 }
 
 .shop-again a{
+    display: block;
+    width: 300px;
     text-decoration: none;
     border: 2px solid #152238;
-    padding: 0.75rem 2.5rem;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1rem;
+    text-align: center;
 }
 
 .shop-again a:hover{
@@ -434,9 +437,42 @@ div.col-4 p{
         margin-bottom: 1rem;
     }
 
+    .order-info-section p{
+        text-align: left;
+        margin-left: 0.75rem;
+        margin-top: 0;
+    }
+
+    .order-details-section p{
+        text-align: left;
+        margin-left: 0.75rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .delivery-to-section p{
+        text-align: left;
+        margin-left: 0.75rem;
+        margin-top: 0;
+    }
+
+    .billing-info-section p{
+        text-align: left;
+        margin-left: 0.75rem;
+        margin-top: 0;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
+
+    .order-confirmation-header h1{
+        font-size: 2rem;
+    }
+
+    .order-confirmation-section{
+        padding: 0.5rem;
+    }
 
     .order-summary-header p{
         font-size: 0.8rem;
@@ -500,6 +536,22 @@ div.col-4 p{
     .checkout-buttons button{
         margin-left: 0;
         width: 100%;
+    }
+
+    .order-info-section p{
+        font-size: 0.8rem;
+    }
+
+    .order-details-section p{
+        font-size: 0.8rem;
+    }
+
+    .delivery-to-section p{
+        font-size: 0.8rem;
+    }
+
+    .billing-info-section p{
+        font-size: 0.8rem;
     }
 
 }

@@ -1669,6 +1669,10 @@ div.product-detail-quantity{
     margin-top: 1rem;
 }
 
+div.product-detail-quantity div.input-group{
+    width: 450px;
+}
+
 div.product-detail-quantity p{
     margin-bottom: 0.5rem;
 }
@@ -2050,13 +2054,6 @@ input#new-image{
     border-radius: 0;
 }
 
-div.input-group{
-    width: 450px;
-    height: 60px;
-    background-color: #fafafa;
-    margin-bottom: 2rem !important;
-}
-
 div.input-group span.text-break{
     padding-top: 0.75rem;
 }
@@ -2175,6 +2172,11 @@ div.input-group label{
     transition: 0.5s;
 }
 
+div.input-group{
+    width: 275px;
+    margin-bottom: 0;
+}
+
 .update-link,
 .update-link:hover{
     color: #152238;
@@ -2186,7 +2188,7 @@ div.input-group label{
 .remove-item:hover{
     color: #152238;
     cursor: pointer;
-    margin-left: 6rem;
+    margin-left: 3rem;
 }
 
 .shopping-cart-empty{
@@ -2372,7 +2374,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     div.input-group{
-        width: 500px;
+        width: 250px;
     }
 
     .product-detail-item-content h4{
@@ -2800,7 +2802,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     div.input-group{
-        width: 300px;
+        width: 200px;
     }
 
     div.product-detail-buttons{

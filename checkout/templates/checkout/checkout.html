@@ -77,7 +77,7 @@
                         <div class="col-sm-2">
 
                             {% if item.product.is_on_sale %}
-                                <p>£{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</p>
+                                <p>£{{ item.product.calculate_sale_price | calc_subtotal_sale:item.quantity }}</p>
                             {% else %}
                                 <p>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                             {% endif %}

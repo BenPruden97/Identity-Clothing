@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -29,7 +30,7 @@
 
     <div class="container">
 
-        <div class="row">
+        <div class="row order-display-center">
 
             <div class="col-12 order-confirmation-email">
 
@@ -41,7 +42,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row order-display-center">
 
             <div class="col-12 col-lg-7">
 
@@ -135,7 +136,7 @@
                             <div class="col-12 col-md-2">
 
                                 {% if item.product.is_on_sale %}
-                                    <p>£{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</p>
+                                    <p>£{{ item.product.calculate_sale_price | calc_subtotal_sale:item.quantity }}</p>
                                 {% else %}
                                     <p>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 {% endif %}

@@ -744,17 +744,12 @@ div#div_id_remember.mb-3{
 
 .sign-in-button button{
     background: transparent;
+    background-color: #152238;
     border: 2px solid #152238;
     width: 300px;
     padding: 0.75rem;
-    color: #152238;
-    font-size: 1.25rem;
-}
-
-.sign-in-button button:hover{
     color: #fafafa;
-    background-color: #152238;
-    transition: 0.5s;
+    font-size: 1.25rem;
 }
 
 button.primaryAction{
@@ -788,17 +783,12 @@ button.primaryAction{
 .new-customer-content a{
     text-decoration: none;
     border: 2px solid #152238;
+    background-color: #152238;
     width: 300px;
     padding: 0.75rem;
-    color: #152238;
+    color: #fafafa;
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
-}
-
-.new-customer-content a:hover{
-    color: #fafafa;
-    background-color: #152238;
-    transition: 0.5s;
 }
 
 /* ----- Allauth Sign Up Form Styling ----- */
@@ -812,17 +802,12 @@ button.primaryAction{
 }
 
 .sign-up-button button{
-    background: transparent;
+    background: #152238;
     border: 2px solid #152238;
+    width: 300px;
     padding: 0.75rem 4rem;
-    color: #152238;
-    font-size: 1.25rem;
-}
-
-.sign-up-button button:hover{
     color: #fafafa;
-    background-color: #152238;
-    transition: 0.5s;
+    font-size: 1.25rem;
 }
 
 /* ----- Allauth Sign Out Styling ----- */
@@ -1151,8 +1136,7 @@ button.primaryAction{
     padding: 0.75rem;
     color: #152238;
     font-size: 1.25rem;
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    margin: 1rem 0 2.5rem;
 }
 
 .contact-form form button:hover{
@@ -2079,19 +2063,17 @@ div.input-group label{
 }
 
 .shopping-cart-buttons a{
+    display: block;
+    width: 300px;
     text-decoration: none;
+    background-color: #152238;
     border: 2px solid #152238;
     margin-top: 2rem;
-    padding: 0.85rem 6rem;
-    color: #152238;
-    font-size: 1rem;
-    margin-left: 2rem;
-}
-
-.shopping-cart-buttons a:hover{
-    transition: 0.5s;
-    background-color: #152238;
+    padding: 0.75rem;
     color: #fafafa;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 2rem;
 }
 
 .update-link,
@@ -2464,13 +2446,15 @@ nav.navbar.navbar-expand-lg.navbar-light{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 1rem;
-        margin: 0.5rem 0;
-        margin-bottom: 1rem;
+        padding: 0;
+        margin: 0;
     }
 
     .category-name-buttons{
+        flex-direction: column;
         margin: 0.75rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .category-name-buttons-section a{
@@ -2479,6 +2463,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     .product-number{
         text-align: center;
+        margin-top: 2rem;
         margin-bottom: 1rem;
     }
 
@@ -2486,6 +2471,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 1.5rem;
     }
 
     /* ----- Products Detail Page ----- */
@@ -2506,6 +2492,15 @@ nav.navbar.navbar-expand-lg.navbar-light{
         height: 400px;
         width: 400px;
         border: 1px solid #152238;
+    }
+
+    /* ----- Contact Page Styling for Tablet Devices ----- */
+
+    .contact-form form button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
 
@@ -2723,6 +2718,17 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 100%;
     }
 
+    /* ----- Product Page Styling for Mobile Devices ----- */
+
+    .category-name-buttons a{
+        width: 300px;
+        margin: 0.25rem 0;
+    }
+
+    .product-filters{
+        margin-top: 0.5rem;
+    }
+
     /* ----- Footer Styling for Mobile Devices ----- */
 
     /* ----- Footer Styling ----- */
@@ -2767,4 +2773,5 @@ nav.navbar.navbar-expand-lg.navbar-light{
         padding: 0 1rem 1rem;
     }
 
+}
 }

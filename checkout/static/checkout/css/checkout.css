@@ -77,24 +77,23 @@
 }
 
 .checkout-buttons a{
+    display: block;
     text-decoration: none;
+    width: 300px;
+    background-color: #152238;
     border: 2px solid #152238;
     padding: 0.75rem 1.25rem;
-    color: #152238;
-    font-size: 1rem;
-}
-
-.checkout-buttons a:hover{
-    transition: 0.5s;
-    background-color: #152238;
     color: #fafafa;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .checkout-buttons button{
     border: 2px solid #152238;
     padding: 0.75rem 1.25rem;
-    background-color: #fafafa;
-    color: #152238;
+    width: 300px;
+    background-color: #152238;
+    color: #fafafa;
     font-size: 1rem;
     margin-left: 1.5rem;
 }
@@ -418,4 +417,83 @@ div.col-4 p{
     margin: 0;
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .checkout-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .order-summary-header p{
+        font-size: 0.8rem;
+    }
+
+    .order-summary-image{
+        margin-bottom: 0.5rem;
+    }
+
+    .order-summary-image img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .product-summary-headings p{
+        font-size: 0.8rem;
+    }
+
+    .product-order-summary{
+        padding-left: 0;
+    }
+
+    .product-order-summary p{
+        font-size: 0.9rem;
+    }
+
+    .col-sm-2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: bold;
+    }
+
+    div.col-12.col-lg-6.checkout-form{
+        margin-top: 2rem;
+    }
+
+    .save-delivery-info label{
+        font-size: 0.8rem;
+    }
+
+    .payment-p p{
+        font-size: 0.8rem;
+    }
+
+    .checkout-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0.25rem 0;
+    }
+
+    .checkout-buttons a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .checkout-buttons button{
+        margin-left: 0;
+        width: 100%;
+    }
+
 }

@@ -47,19 +47,14 @@
 }
 
 .profile-delivery-form button{
-    background-color: #fafafa;
+    background-color: #152238;
     border: 2px solid #152238;
+    width: 300px;
     padding: 0.75rem 1.25rem;
-    color: #152238;
+    color: #fafafa;
     font-size: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
-}
-
-.profile-delivery-form button:hover{
-    color: #fafafa;
-    background-color: #152238;
-    transition: 0.5s;
 }
 
 /* ----- Profile Page Delivery Form Input Field Styling ----- */
@@ -129,4 +124,12 @@
         padding-right: 0
     }
 
-};
+}
+
+@media screen and (max-width: 576px) {
+
+    .profile-delivery-form button {
+        width: 100%;
+    }
+
+}

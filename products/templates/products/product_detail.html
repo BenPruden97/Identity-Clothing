@@ -199,6 +199,18 @@
 
                     <h1>Product Reviews:</h1>
 
+                    <div class="product-detail-review-buttons">
+
+                        {% if user.is_authenticated %}
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#productReview">Add A Review</button>
+                        {% else %}
+                            <p>You need to have an account with us to be able to add a product review.</p>
+                            <a href="{% url 'account_signup' %}">Sign Up</a>
+                            <a href="{% url 'account_login' %}">Sign In</a>
+                        {% endif %}
+
+                    </div>
+
                     <hr>
 
                 </div>
@@ -215,10 +227,20 @@
 
             <div class="col-12">
 
-                {% if user.is_authenticated %}
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#productReview">Add A Review</button>
-                {% endif %}
+                <h1>Reviews: </h1>
 
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+ 
                 <div class="modal fade" id="productReview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
                     <div class="modal-dialog">

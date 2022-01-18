@@ -744,12 +744,18 @@ div#div_id_remember.mb-3{
 
 .sign-in-button button{
     background: transparent;
-    background-color: #152238;
+    background-color: #fafafa;
     border: 2px solid #152238;
     width: 300px;
     padding: 0.75rem;
-    color: #fafafa;
+    color: #152238;
     font-size: 1.25rem;
+}
+
+.sign-in-button button:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 button.primaryAction{
@@ -783,12 +789,18 @@ button.primaryAction{
 .new-customer-content a{
     text-decoration: none;
     border: 2px solid #152238;
-    background-color: #152238;
+    background-color: #fafafa;
     width: 300px;
     padding: 0.75rem;
-    color: #fafafa;
+    color: #152238;
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
+}
+
+.new-customer-content a:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 /* ----- Allauth Sign Up Form Styling ----- */
@@ -802,12 +814,18 @@ button.primaryAction{
 }
 
 .sign-up-button button{
-    background: #152238;
+    background: #fafafa;
     border: 2px solid #152238;
     width: 300px;
     padding: 0.75rem 4rem;
-    color: #fafafa;
+    color: #152238;
     font-size: 1.25rem;
+}
+
+.sign-up-button button:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 /* ----- Allauth Sign Out Styling ----- */
@@ -1805,6 +1823,81 @@ div.product-detail-buttons button:hover{
     text-transform: uppercase;
 }
 
+/* -- Product Detail Add Review -- */
+
+.modal-header h5{
+    text-transform: uppercase;
+}
+
+.modal-header .btn-close{
+    margin-right: 0.5rem !important;
+}
+
+.modal-body label{
+    color: #152238;
+    font-size: 1.1rem;
+}
+
+.modal-body textarea{
+    border: 2px solid #152238;
+    border-radius: 0;
+    color: #152238;
+}
+
+.modal-body select{
+    border: 2px solid #152238;
+    border-radius: 0;
+    color: #152238;
+    margin: 0;
+}
+
+.modal-body button{
+    width: 150px;
+    background-color: #152238;
+    border: 2px solid #152238;
+    color: #fafafa;
+    padding: 0.75rem;
+}
+
+.product-detail-review-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.product-detail-review-buttons p{
+    padding-top: 0.75rem;
+    margin-right: 1.5rem;
+}
+
+.product-detail-review-buttons button{
+    width: 300px;
+    background-color: #fafafa;
+    border: 2px solid #152238;
+    color: #152238;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.product-detail-review-buttons button:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
+.product-detail-review-buttons a{
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    background-color: #152238;
+    border: 2px solid #152238;
+    color: #fafafa;
+    padding: 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 /* ----- Add/ Edit Product Page Styling ----- */
 
 .add-product-header{
@@ -2066,14 +2159,20 @@ div.input-group label{
     display: block;
     width: 300px;
     text-decoration: none;
-    background-color: #152238;
+    background-color: #fafafa;
     border: 2px solid #152238;
     margin-top: 2rem;
     padding: 0.75rem;
-    color: #fafafa;
+    color: #152238;
     font-size: 1rem;
     text-align: center;
     margin-left: 2rem;
+}
+
+.shopping-cart-buttons a:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 .update-link,
@@ -2685,11 +2784,15 @@ nav.navbar.navbar-expand-lg.navbar-light{
         border: 1px solid #152238;
     }
 
+    .product-detail-item-content h6{
+        text-align: center;
+    }
+
     .product-detail-item-content h4{
         font-weight: bold;
         padding: 0.5rem 1.5rem;
         font-size: 0.9rem;
-        text-align: center;
+        text-align: left;
     }
 
     div.product-detail-size select{
@@ -2716,6 +2819,37 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     div.product-detail-buttons button{
         width: 100%;
+    }
+
+    .edit-delete-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .edit-delete-buttons .edit-button{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .edit-delete-buttons .delete-button{
+        width: 100%;
+    }
+
+    /* -- Product Detail Add Review -- */
+
+    .modal-content{
+        width: 300px;
+    }
+
+    .modal-body button{
+        width: 130px;
+        background-color: #152238;
+        border: 2px solid #152238;
+        color: #fafafa;
+        font-size: 0.9rem;
+        padding: 0.75rem;
     }
 
     /* ----- Product Page Styling for Mobile Devices ----- */

@@ -47,14 +47,20 @@
 }
 
 .profile-delivery-form button{
-    background-color: #152238;
+    background-color: #fafafa;
     border: 2px solid #152238;
     width: 300px;
     padding: 0.75rem 1.25rem;
-    color: #fafafa;
+    color: #152238;
     font-size: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+}
+
+.profile-delivery-form button:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 /* ----- Profile Page Delivery Form Input Field Styling ----- */

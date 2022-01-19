@@ -68,3 +68,6 @@ class ProductReview(models.Model):
     review_add_text = models.TextField(max_length=254)
     review_add_rating = models.IntegerField(choices=PRODUCT_RATING)
     date_created = models.DateField(auto_now_add=True)
+
+    def get_review_rating(self):
+        return self.review_add_rating

@@ -53,17 +53,25 @@
                             <h6>Price: £{{ product.price }}</h6>
                         {% endif %}
 
-                        {% if product.product_rating == 1%}
-                            <h6><i class="fas fa-star"></i></h6>
-                        {% elif product.product_rating == 2 %}
-                            <h6><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                        {% elif product.product_rating == 3 %}
-                            <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                        {% elif product.product_rating == 4 %}
-                            <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                        {% else %}
-                            <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-                        {% endif %}
+                        {% for review in product_reviews %}
+
+                            {% if review.review_add_rating == 0%}
+                                <h6>0 Stars</h6>
+                            {% elif review.review_add_rating == 1 %}
+                                <h6><i class="fas fa-star"></i>
+                            {% elif review.review_add_rating == 2 %}
+                                <h6><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            {% elif review.review_add_rating == 3 %}
+                                <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            {% elif review.review_add_rating == 4%}
+                                <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
+                            {% elif review.review_add_rating == 5%}
+                                <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                            {% else %}
+                                <h6>No Rating</h6>
+                            {% endif %}
+
+                        {% endfor %}
 
                         <h4><strong>Product Description:</strong> <br>{{ product.description }}</h4>
 
@@ -197,10 +205,10 @@
 
                 <div class="product-detail-reviews-header">
 
-                    <h1>Product Reviews:</h1>
+                    <h5>Product Reviews:</h5>
 
                     {% if user.is_authenticated %}
-                        <button class="review-button" type="button" data-bs-toggle="modal" data-bs-target="#productReview">Add A Review</button>
+                        <button class="review-button" type="button" data-bs-toggle="modal" data-bs-target="#productReview{{ product.id }}">Add A Review</button>
                     {% else %}
                         <p>You need to have an account with us to be able to add a product review.</p>
                         <div class="review-buttons">
@@ -225,7 +233,49 @@
 
             <div class="col-12">
 
-                <h1>Reviews: </h1>
+                <h1>Reviews({{ review_number }})</h1>
+
+                {% for review in product_reviews %}
+
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="col-12">
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {{ review.user }}
+                    
+                    {{ review.date_created }}
+
+                    {{ review.review_add_text }}
+
+                    {% if review.review_add_rating == 0%}
+                        <h6>0 Stars</h6>
+                    {% elif review.review_add_rating == 1 %}
+                        <h6><i class="fas fa-star"></i>
+                    {% elif review.review_add_rating == 2 %}
+                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    {% elif review.review_add_rating == 3 %}
+                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    {% elif review.review_add_rating == 4%}
+                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
+                    {% elif review.review_add_rating == 5%}
+                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                    {% else %}
+                        <h6>No Rating</h6>
+                    {% endif %}
+
+                    {{ review.review_add_rating }}
+
+                {% endfor %}
 
             </div>
 
@@ -239,7 +289,7 @@
 
             <div class="col-12">
  
-                <div class="modal fade" id="productReview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="productReview{{ product.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
                     <div class="modal-dialog">
 
@@ -255,14 +305,12 @@
 
                             <div class="modal-body">
                             
-                                <form id="addProductReviewForm" method="POST" action="{% url 'add_product_review' product.id %}">
+                                <form method="POST" action="{% url 'add_product_review' product.id %}" id="addProductReviewForm">
 
                                     {% csrf_token %}
                                     {% for field in form %}
                                         {{ field | as_crispy_field }}
                                     {% endfor %}
-
-                                    <p class="ajaxRes"></p>
 
                                     <button type="button" data-bs-dismiss="modal">Close</button>
                                     <button type="submit">Submit Review</button>
@@ -270,7 +318,6 @@
                                 </form>
 
                             </div>
-
 
 
                         </div>

@@ -1813,7 +1813,7 @@ div.product-detail-buttons button:hover{
     margin: 2.5rem 0 3rem;
 }
 
-.product-detail-reviews-header h1{
+.product-detail-reviews-header h5{
     font-size: 3rem;
     color: #152238;
     text-align: left;
@@ -2966,10 +2966,6 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     /* -- Product Detail Add Review -- */
-
-    .modal-content{
-        width: 300px;
-    }
 
     .modal-body button{
         width: 130px;

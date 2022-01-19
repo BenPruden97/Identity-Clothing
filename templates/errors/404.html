@@ -1,30 +1,32 @@
 {% extends "base.html" %}
 {% load static %}
 
-<div class="container">
+{% block content %}
 
-    <div class="row">
+    <div class="container">
 
-        <div class="col-12">
+        <div class="row">
 
-            <div class="error-message">
+            <div class="col-12">
 
-                <h1>400</h1>
+                <div class="error-message">
 
-                <h1>PAGE NOT FOUND</h1>
+                    <h1>400</h1>
 
-                <h2>The Page You Are Looking For Does Not Exist!</h2>
+                    <h1>PAGE NOT FOUND</h1>
 
-                <h4>Go Back To Identity Clothing</h4>
+                    <h2>The Page You Are Looking For Does Not Exist!</h2>
 
-                <a href="{% url 'home' %}">Back To Home Page</a>
+                    <h4>Go Back To Identity Clothing</h4>
+
+                    <a href="{% url 'home' %}">Back To Home Page</a>
+
+                </div>
 
             </div>
 
         </div>
 
     </div>
-
-</div>
 
 {% endblock %}

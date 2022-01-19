@@ -345,21 +345,14 @@ body{
 }
 
 .swiper {
-    width: 900px;
+    border: none;
+    width: 50%;
     height: 525px;
     margin-bottom: 2rem;
 }
 
-.swiper-slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 900px;
-    height: 525px;
-}
-
 div.swiper-slide.swiper-slide-active{
-    width: 900px;
+    width: 100%;
     height: 525px;
     display: flex;
     justify-content: center;
@@ -457,7 +450,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active{
 
 div.swiper-scrollbar{
     margin-bottom: 1rem;
-    background: rgba(21, 34, 56, 0.5)
+    background: rgba(21, 34, 56, 0.5);
 }
 
 div.swiper-scrollbar-drag{
@@ -1838,6 +1831,7 @@ div.product-detail-buttons button:hover{
 }
 
 .modal-body label{
+    font-weight: bold;
     color: #152238;
     font-size: 1.1rem;
 }
@@ -1857,10 +1851,16 @@ div.product-detail-buttons button:hover{
 
 .modal-body button{
     width: 150px;
-    background-color: #152238;
+    background-color: #fafafa;
     border: 2px solid #152238;
-    color: #fafafa;
+    color: #152238;
     padding: 0.75rem;
+}
+
+.modal-body button:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 .product-detail-review-buttons{
@@ -1874,7 +1874,14 @@ div.product-detail-buttons button:hover{
     margin-right: 1.5rem;
 }
 
-.product-detail-review-buttons button{
+.review-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.review-button{
     width: 300px;
     background-color: #fafafa;
     border: 2px solid #152238;
@@ -1883,23 +1890,29 @@ div.product-detail-buttons button:hover{
     margin-bottom: 1rem;
 }
 
-.product-detail-review-buttons button:hover{
+.review-button:hover{
     background-color: #152238;
     color: #fafafa;
     transition: 0.5s;
 }
 
-.product-detail-review-buttons a{
+.review-buttons a{
     display: block;
     text-decoration: none;
     width: 200px;
     text-align: center;
-    background-color: #152238;
+    background-color: #fafafa;
     border: 2px solid #152238;
-    color: #fafafa;
+    color: #152238;
     padding: 0.75rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+.review-buttons a:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 /* ----- Add/ Edit Product Page Styling ----- */
@@ -2188,7 +2201,7 @@ div.input-group{
 .remove-item:hover{
     color: #152238;
     cursor: pointer;
-    margin-left: 3rem;
+    margin-left: 3.5rem;
 }
 
 .shopping-cart-empty{
@@ -2355,6 +2368,40 @@ nav.navbar.navbar-expand-lg.navbar-light{
         background-position: right;
     }
 
+    /* ----- Carousel Styling ----- */
+
+    .swiper {
+        border: none;
+        width: 75%;
+        height: 525px;
+        margin-bottom: 2rem;
+    }
+
+    .swiper-slide{
+        width: 100%;
+    }
+    
+    div.swiper-slide.swiper-slide-active{
+        width: 100%;
+        height: 525px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.swiper-slide.swiper-slide-next{
+        display: none;
+    }
+
+    div.swiper-slide.swiper-slide-next img,
+    div.swiper-slide.swiper-slide-next a,
+    div.swiper-slide.swiper-slide-next h6{
+        display: none !important;
+    }
+
+    /* ----- Product Detail Styling ----- */
+
     .product-detail-item{
         display: flex;
         justify-content: center;
@@ -2367,6 +2414,11 @@ nav.navbar.navbar-expand-lg.navbar-light{
         justify-content: center;
         align-items: center;
         margin-top: 0.5rem;
+    }
+
+    
+    div.product-detail-quantity div.input-group{
+        width: 500px;
     }
 
     div.product-detail-size select{
@@ -2597,11 +2649,14 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     /* ----- Contact Page Styling for Tablet Devices ----- */
 
-    .contact-form form button{
+    .contact-button{
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 100%;
+        align-content: center;
+    }
+
+    .contact-form form button{
+        width: 300px;
     }
 
 
@@ -2689,6 +2744,69 @@ nav.navbar.navbar-expand-lg.navbar-light{
         font-size: 1.5rem;
     }
 
+    /* ----- Carousel Styling ----- */
+
+    .swiper {
+        border: none;
+        width: 100%;
+        height: 525px;
+        margin-bottom: 2rem;
+    }
+    
+    .swiper-slide{
+        width: 100%;
+    }
+
+    div.swiper-slide.swiper-slide-active{
+        width: 100%;
+        height: 525px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .swiper-slide img{
+        height: 200px;
+        width: 200px;
+    }
+
+    div.swiper-slide.swiper-slide-next,
+    div.swiper-slide.swiper-slide-prev{
+        width: 100%;
+    }
+
+    div.swiper-slide.swiper-slide-next img,
+    div.swiper-slide.swiper-slide-next a,
+    div.swiper-slide.swiper-slide-next h6{
+        display: none !important;
+    }
+
+    .best-sellers-name a h6{
+        margin-top: 2rem;
+    }
+
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+        margin-left: 1.25rem;
+        margin-bottom: 12.5rem;
+        font-size: 1.5rem;
+    }
+
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after{
+        margin-right: 1.25rem;
+        margin-bottom: 12.5rem;
+        font-size: 1.5rem;
+    }
+    
+    div.swiper-button-prev{
+        font-size: 1.5rem;
+    }
+
+    .swiper-horizontal>.swiper-scrollbar{
+        margin-left: 5%;
+        width: 90%;
+    }
+
     /* ----- Sign In & Sing Up Form Styling ----- */
 
     .sign-in-form input{
@@ -2751,6 +2869,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 100%;
     }
 
+    .contact-form form button{
+        width: 100%;
+    }
+
     /* ----- Search Page Styling ----- */
 
     .search-bar::placeholder{
@@ -2795,6 +2917,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
         padding: 0.5rem 1.5rem;
         font-size: 0.9rem;
         text-align: left;
+    }
+        
+    div.product-detail-quantity div.input-group{
+        width: 300px;
     }
 
     div.product-detail-size select{

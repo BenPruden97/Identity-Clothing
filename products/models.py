@@ -34,6 +34,7 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    average_rating = models.IntegerField(default=0)
     is_on_sale = models.BooleanField(default=False)
     sale_percentage = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     product_size = models.CharField(max_length=7, choices=SIZE_CHOICES)
@@ -67,6 +68,3 @@ class ProductReview(models.Model):
     review_add_text = models.TextField(max_length=254)
     review_add_rating = models.IntegerField(choices=PRODUCT_RATING)
     date_created = models.DateField(auto_now_add=True)
-
-    def get_review_rating(self):
-        return self.review_add_rating

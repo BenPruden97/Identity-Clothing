@@ -89,8 +89,6 @@ def product_detail(request, product_id):
 
     product_reviews = ProductReview.objects.filter(product=product)
     average_rating = ProductReview.objects.all().aggregate(Avg('review_add_rating'))
-    for key in average_rating.items():
-        average_rating_integer = round(key)
     review_number = ProductReview.objects.filter(product=product).count()
 
     context = {
@@ -216,6 +214,7 @@ def products_on_sale(request):
     View Items on sale
     """
     products = Product.objects.filter(is_on_sale=True)
+    product_reviews = ProductReview.objects.all()
     sort = None
     direction = None
 
@@ -239,6 +238,7 @@ def products_on_sale(request):
 
     context = {
         'products': products,
+        'product_reviews': product_reviews,
         'current_sorting': current_sorting,
     }
 

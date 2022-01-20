@@ -1606,7 +1606,7 @@ div hr{
 } 
 
 .product-detail-item-content div{
-    margin-top: 5rem;
+    margin-top: 0;
 }
 
 .product-detail-item-content h6{
@@ -1633,6 +1633,13 @@ div hr{
 
 div.product-detail-form,
 div.col-12{
+    margin-top: 0;
+}
+
+div.average-rating{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: 0;
 }
 

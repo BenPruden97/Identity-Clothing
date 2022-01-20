@@ -7,7 +7,6 @@
         "description":"Mens hoodie made of soft material. Black & grey Adidas overhead hoodie for Men",
         "price":"34.99",
         "category":1,
-        "rating":4,
         "image":"men-adidas-hoodie.jpg"
         }
     },
@@ -19,7 +18,6 @@
         "description":"Mens hoodie made of soft material. Beige overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "rating":3,
         "image":"men-beige-hoodie.jpg"
         }
     },
@@ -31,7 +29,6 @@
         "description":"Mens hoodie made of soft material. Black overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "rating":4,
         "image":"men-black-hoodie.jpg"
         }
     },
@@ -43,7 +40,6 @@
         "description":"Mens hoodie made of soft material. Grey overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "rating":5,
         "image":"men-grey-hoodie.jpg"
         }
     },
@@ -55,7 +51,6 @@
         "description":"Mens hoodie made of soft material. Light blue overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "rating":2,
         "image":"men-light-blue-hoodie.jpg"
         }
     },
@@ -67,7 +62,6 @@
         "description":"Mens hoodie made of soft material. Pink overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "rating":2,
         "image":"men-pink-hoodie.jpg"
         }
     },
@@ -79,7 +73,6 @@
         "description":"Mens hoodie made of soft material. Purple overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "rating":3,
         "image":"men-purple-hoodie.jpg"
         }
     },
@@ -91,7 +84,6 @@
         "description":"Mens hoodie made of soft material. Red overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "rating":5,
         "image":"men-red-hoodie.jpg"
         }
     },
@@ -103,7 +95,6 @@
         "description":"Mens hoodie made of soft material. Star wars overhead hoodie for Men",
         "price":"34.99",
         "category":1,
-        "rating":5,
         "image":"men-star-wars-hoodie.jpg"
         }
     },
@@ -115,7 +106,6 @@
         "description":"Mens hoodie made of soft material. Striped overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "rating":1,
         "image":"men-striped-hoodie.jpg"
         }
     },
@@ -127,7 +117,6 @@
         "description":"Mens hoodie made of soft material. White overhead hoodie for Men",
         "price":"29.99",
         "category":1,
-        "rating":2,
         "image":"men-white-hoodie.jpg"
         }
     },
@@ -139,7 +128,6 @@
         "description":"Mens hoodie made of soft material. Yellow overhead hoodie for Men",
         "price":"24.99",
         "category":1,
-        "rating":1,
         "image":"men-yellow-hoodie.jpg"
         }
     },
@@ -151,7 +139,6 @@
         "description":"Mens t-shirt made of soft material. Red Adidas t-shirt for Men",
         "price":"19.99",
         "category":2,
-        "rating":4,
         "image":"men-adidas-tshirt.jpg"
         }
     },
@@ -163,7 +150,6 @@
         "description":"Mens t-shirt made of soft material. Black t-shirt for Men",
         "price":"16.99",
         "category":2,
-        "rating":3,
         "image":"men-black-tshirt.jpg"
         }
     },
@@ -175,7 +161,6 @@
         "description":"Mens t-shirt made of soft material. Blue t-shirt for Men",
         "price":"14.99",
         "category":2,
-        "rating":4,
         "image":"men-blue-tshirt.jpg"
         }
     },
@@ -187,7 +172,6 @@
         "description":"Mens t-shirt made of soft material. Grey t-shirt for Men",
         "price":"16.99",
         "category":2,
-        "rating":5,
         "image":"men-grey-tshirt.jpg"
         }
     },
@@ -199,7 +183,6 @@
         "description":"Mens t-shirt made of soft material. Black nike t-shirt for Men",
         "price":"24.99",
         "category":2,
-        "rating":2,
         "image":"men-nike-tshirt.jpg"
         }
     },
@@ -211,7 +194,6 @@
         "description":"Mens t-shirt made of soft material. Pink nike t-shirt for Men",
         "price":"24.99",
         "category":2,
-        "rating":2,
         "image":"men-pink-nike-tshirt.jpg"
         }
     },
@@ -223,7 +205,6 @@
         "description":"Mens t-shirt made of soft material. Pink t-shirt for Men",
         "price":"14.99",
         "category":2,
-        "rating":3,
         "image":"men-pink-tshirt.jpg"
         }
     },
@@ -235,7 +216,6 @@
         "description":"Mens t-shirt made of soft material. Navy spartan t-shirt for Men",
         "price":"19.99",
         "category":2,
-        "rating":5,
         "image":"men-spartan-tshirt.jpg"
         }
     },
@@ -247,7 +227,6 @@
         "description":"Mens t-shirt made of soft material. White srsly t-shirt for Men",
         "price":"24.99",
         "category":2,
-        "rating":5,
         "image":"men-srsly-tshirt.jpg"
         }
     },
@@ -259,7 +238,6 @@
         "description":"Mens t-shirt made of soft material. Striped t-shirt for Men",
         "price":"14.99",
         "category":2,
-        "rating":1,
         "image":"men-striped-tshirt.jpg"
         }
     },
@@ -271,7 +249,6 @@
         "description":"Mens t-shirt made of soft material. White lacoste t-shirt for Men",
         "price":"34.99",
         "category":2,
-        "rating":2,
         "image":"men-white-lacoste-tshirt.jpg"
         }
     },
@@ -283,7 +260,6 @@
         "description":"Mens t-shirt made of soft material. White t-shirt for Men",
         "price":"9.99",
         "category":2,
-        "rating":1,
         "image":"men-white-tshirt.jpg"
         }
     },{
@@ -294,7 +270,6 @@
         "description":"Mens t-shirt made of soft material. Grey Adidas shorts for Men",
         "price":"29.99",
         "category":3,
-        "rating":4,
         "image":"men-adidas-shorts.jpg"
         }
     },
@@ -306,7 +281,6 @@
         "description":"Mens shorts made of soft material. Black shorts for Men",
         "price":"17.99",
         "category":3,
-        "rating":3,
         "image":"men-black-shorts.jpg"
         }
     },
@@ -318,7 +292,6 @@
         "description":"Mens shorts made from cargo material. Khaki camouflage shorts for Men",
         "price":"29.99",
         "category":3,
-        "rating":4,
         "image":"men-camouflage-shorts.jpg"
         }
     },
@@ -330,7 +303,6 @@
         "description":"Mens shorts made from cargo. Floral cargo shorts for Men",
         "price":"19.99",
         "category":3,
-        "rating":5,
         "image":"men-flower-shorts.jpg"
         }
     },
@@ -342,7 +314,6 @@
         "description":"Mens shorts made of soft material. Green shorts for Men",
         "price":"17.99",
         "category":3,
-        "rating":2,
         "image":"men-green-shorts.jpg"
         }
     },
@@ -354,7 +325,6 @@
         "description":"Mens shorts made of soft material. Grey shorts for Men",
         "price":"22.99",
         "category":3,
-        "rating":2,
         "image":"men-grey-shorts.jpg"
         }
     },
@@ -366,7 +336,6 @@
         "description":"Mens shorts made of jean material. Blue jean shorts for Men",
         "price":"27.99",
         "category":3,
-        "rating":3,
         "image":"men-jean-shorts.jpg"
         }
     },
@@ -378,7 +347,6 @@
         "description":"Mens shorts made of soft material. Green nike shorts for Men",
         "price":"32.99",
         "category":3,
-        "rating":5,
         "image":"men-nike-shorts.jpg"
         }
     },
@@ -390,7 +358,6 @@
         "description":"Mens shorts made of soft material. Red shorts for Men",
         "price":"22.99",
         "category":3,
-        "rating":5,
         "image":"men-red-shorts.jpg"
         }
     },
@@ -402,7 +369,6 @@
         "description":"Mens shorts made of soft material. Striped shorts for Men",
         "price":"27.99",
         "category":3,
-        "rating":1,
         "image":"men-striped-shorts.jpg"
         }
     },
@@ -414,7 +380,6 @@
         "description":"Mens shorts made of jean material. White jean shorts for Men",
         "price":"32.99",
         "category":3,
-        "rating":2,
         "image":"men-white-shorts.jpg"
         }
     },
@@ -426,7 +391,6 @@
         "description":"Mens shorts made of silk material. Yellow silk shorts for Men",
         "price":"19.99",
         "category":3,
-        "rating":1,
         "image":"men-yellow-shorts.jpg"
         }
     },
@@ -438,7 +402,6 @@
         "description":"Womens hoodie made of soft material. Grey Adidas overhead hoodie for Women",
         "price":"34.99",
         "category":4,
-        "rating":4,
         "image":"women-adidas-hoodie.jpg"
         }
     },
@@ -450,7 +413,6 @@
         "description":"Womens hoodie made of soft material. Beige overhead hoodie for Women",
         "price":"29.99",
         "category":4,
-        "rating":3,
         "image":"women-beige-hoodie.jpg"
         }
     },
@@ -462,7 +424,6 @@
         "description":"Womens hoodie made of soft material. Black overhead hoodie for Women",
         "price":"29.99",
         "category":4,
-        "rating":4,
         "image":"women-black-hoodie.jpg"
         }
     },
@@ -474,7 +435,6 @@
         "description":"Womens hoodie made of soft material. Blue overhead hoodie for Women",
         "price":"29.99",
         "category":4,
-        "rating":5,
         "image":"women-blue-hoodie.jpg"
         }
     },
@@ -486,7 +446,6 @@
         "description":"Womens hoodie made of soft material. Yellow dog lover overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "rating":2,
         "image":"women-dog-lover-hoodie.jpg"
         }
     },
@@ -498,7 +457,6 @@
         "description":"Womens hoodie made of soft material. Green overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "rating":2,
         "image":"women-green-hoodie.jpg"
         }
     },
@@ -510,7 +468,6 @@
         "description":"Womens hoodie made of soft material. Grey overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "rating":3,
         "image":"women-grey-hoodie.jpg"
         }
     },
@@ -522,7 +479,6 @@
         "description":"Womens hoodie made of soft material. Yellow overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "rating":5,
         "image":"women-yellow-hoodie.jpg"
         }
     },
@@ -534,7 +490,6 @@
         "description":"Womens hoodie made of soft material. Pink overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "rating":5,
         "image":"women-pink-hoodie.jpg"
         }
     },
@@ -546,7 +501,6 @@
         "description":"Womens hoodie made of soft material. Purple overhead hoodie for Women",
         "price":"22.99",
         "category":4,
-        "rating":1,
         "image":"women-purple-hoodie.jpg"
         }
     },
@@ -558,7 +512,6 @@
         "description":"Womens hoodie made of soft material. Red overhead hoodie for Women",
         "price":"27.99",
         "category":4,
-        "rating":2,
         "image":"women-red-hoodie.jpg"
         }
     },
@@ -570,7 +523,6 @@
         "description":"Womens hoodie made of soft material. White overhead hoodie for Women",
         "price":"24.99",
         "category":4,
-        "rating":1,
         "image":"women-white-hoodie.jpg"
         }
     },
@@ -582,7 +534,6 @@
         "description":"Womens t-shirt made of soft material. White Aquas t-shirt for Women",
         "price":"19.99",
         "category":5,
-        "rating":4,
         "image":"women-aquas-tshirt.jpg"
         }
     },
@@ -594,7 +545,6 @@
         "description":"Womens t-shirt made of soft material. Black t-shirt for women",
         "price":"16.99",
         "category":5,
-        "rating":3,
         "image":"women-black-tshirt.jpg"
         }
     },
@@ -606,7 +556,6 @@
         "description":"Womens t-shirt made of soft material. Blue t-shirt for Women",
         "price":"14.99",
         "category":5,
-        "rating":4,
         "image":"women-blue-tshirt.jpg"
         }
     },
@@ -618,7 +567,6 @@
         "description":"Womens t-shirt made of soft material. Grey t-shirt for Women",
         "price":"16.99",
         "category":5,
-        "rating":5,
         "image":"women-grey-tshirt.jpg"
         }
     },
@@ -630,7 +578,6 @@
         "description":"Womens t-shirt made of soft material. White New York t-shirt for women",
         "price":"24.99",
         "category":5,
-        "rating":2,
         "image":"women-new-york-tshirt.jpg"
         }
     },
@@ -642,7 +589,6 @@
         "description":"Womens t-shirt made of soft material. Black Oakley t-shirt for Women",
         "price":"24.99",
         "category":5,
-        "rating":2,
         "image":"women-oakley-tshirt.jpg"
         }
     },
@@ -654,7 +600,6 @@
         "description":"Womens t-shirt made of soft material. Orange t-shirt for Women",
         "price":"14.99",
         "category":5,
-        "rating":3,
         "image":"women-orange-tshirt.jpg"
         }
     },
@@ -666,7 +611,6 @@
         "description":"Womens t-shirt made of soft material. Pink t-shirt for Women",
         "price":"19.99",
         "category":5,
-        "rating":5,
         "image":"women-pink-tshirt.jpg"
         }
     },
@@ -678,7 +622,6 @@
         "description":"Womens t-shirt made of soft material. Purple t-shirt for Women",
         "price":"24.99",
         "category":5,
-        "rating":5,
         "image":"women-purple-tshirt.jpg"
         }
     },
@@ -690,7 +633,6 @@
         "description":"Womens t-shirt made of soft material. Yellow stop t-shirt for Women",
         "price":"14.99",
         "category":5,
-        "rating":1,
         "image":"Women-stop-tshirt.jpg"
         }
     },
@@ -702,7 +644,6 @@
         "description":"Womens t-shirt made of soft material. Striped t-shirt for Women",
         "price":"34.99",
         "category":5,
-        "rating":2,
         "image":"women-striped-tshirt.jpg"
         }
     },
@@ -714,7 +655,6 @@
         "description":"Womens t-shirt made of soft material. White t-shirt for Women",
         "price":"9.99",
         "category":5,
-        "rating":1,
         "image":"women-white-tshirt.jpg"
         }
     },
@@ -726,7 +666,6 @@
         "description":"Womens shorts made of soft material. Black Adidas shorts for Women",
         "price":"29.99",
         "category":6,
-        "rating":4,
         "image":"women-adidas-shorts.jpg"
         }
     },
@@ -738,7 +677,6 @@
         "description":"Womens shorts made of cargo material. Beige cargo shorts for Women",
         "price":"17.99",
         "category":6,
-        "rating":3,
         "image":"women-beige-shorts.jpg"
         }
     },
@@ -750,7 +688,6 @@
         "description":"Womens shorts made of soft material. Black shorts for Women",
         "price":"29.99",
         "category":6,
-        "rating":4,
         "image":"women-black-shorts.jpg"
         }
     },
@@ -762,7 +699,6 @@
         "description":"Womens shorts made of cargo material. Brown cargo shorts for Women",
         "price":"19.99",
         "category":6,
-        "rating":5,
         "image":"women-brown-shorts.jpg"
         }
     },
@@ -774,7 +710,6 @@
         "description":"Womens shorts made of silk material. Blue silk floral shorts for Women",
         "price":"17.99",
         "category":6,
-        "rating":2,
         "image":"women-flower-shorts.jpg"
         }
     },
@@ -786,7 +721,6 @@
         "description":"Womens shorts made of jean material. Blue jean shorts for Women",
         "price":"22.99",
         "category":6,
-        "rating":2,
         "image":"women-jean-shorts.jpg"
         }
     },
@@ -798,7 +732,6 @@
         "description":"Womens shorts made of silk material. Black silk nike shorts for Women",
         "price":"27.99",
         "category":6,
-        "rating":3,
         "image":"women-nike-shorts.jpg"
         }
     },
@@ -810,7 +743,6 @@
         "description":"Womens shorts made of jean material. Orange jean shorts for Women",
         "price":"32.99",
         "category":6,
-        "rating":5,
         "image":"women-orange-shorts.jpg"
         }
     },
@@ -822,7 +754,6 @@
         "description":"Womens shorts made of soft material. Pink shorts for Women",
         "price":"22.99",
         "category":6,
-        "rating":5,
         "image":"women-pink-shorts.jpg"
         }
     },
@@ -834,7 +765,6 @@
         "description":"Womens shorts made of cargo material. Red cargo shorts for Women",
         "price":"27.99",
         "category":6,
-        "rating":1,
         "image":"women-red-shorts.jpg"
         }
     },
@@ -846,7 +776,6 @@
         "description":"Womens shorts made of jean material. Blue ripped jean shorts for Women",
         "price":"32.99",
         "category":6,
-        "rating":2,
         "image":"women-ripped-jean-shorts.jpg"
         }
     },
@@ -858,7 +787,6 @@
         "description":"Womens shorts made of jean material. White Jean shorts for Women",
         "price":"19.99",
         "category":6,
-        "rating":1,
         "image":"women-white-shorts.jpg"
         }
     },
@@ -870,7 +798,6 @@
         "description":"Mens hoodie on sale made of soft material. Green overhead hoodie for Men currently on sale",
         "price":"29.99",
         "category":7,
-        "rating":4,
         "sale_percentage":10,
         "image":"men-green-hoodie-sale.jpg"
         }
@@ -883,7 +810,6 @@
         "description":"Mens hoodie on sale made of soft material. Grey overhead hoodie for Men currently on sale",
         "price":"29.99",
         "category":7,
-        "rating":5,
         "sale_percentage":10,
         "image":"men-grey-hoodie-sale.jpg"
         }
@@ -896,7 +822,6 @@
         "description":"Mens hoodie on sale made of soft material. Light blue overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
-        "rating":3,
         "sale_percentage":10,
         "image":"men-light-blue-hoodie-sale.jpg"
         }
@@ -909,7 +834,6 @@
         "description":"Mens hoodie on sale made of soft material. Black Nike overhead hoodie for Men currently on sale",
         "price":"34.99",
         "category":7,
-        "rating":2,
         "sale_percentage":10,
         "image":"men-nike-hoodie-sale.jpg"
         }
@@ -922,7 +846,6 @@
         "description":"Mens hoodie on sale made of soft material. Red overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
-        "rating":3,
         "sale_percentage":10,
         "image":"men-red-hoodie-sale.jpg"
         }
@@ -935,7 +858,6 @@
         "description":"Mens hoodie on sale made of soft material. Yellow overhead hoodie for Men currently on sale",
         "price":"24.99",
         "category":7,
-        "rating":5,
         "sale_percentage":10,
         "image":"men-yellow-hoodie-sale.jpg"
         }
@@ -948,7 +870,6 @@
         "description":"Mens t-shirt on sale made of soft material. Black ripped t-shirt for Men currently on sale",
         "price":"14.99",
         "category":8,
-        "rating":4,
         "sale_percentage":10,
         "image":"men-black-tshirt-sale.jpg"
         }
@@ -961,7 +882,6 @@
         "description":"Mens t-shirt on sale made of soft material. Blue Nike t-shirt for Men currently on sale",
         "price":"16.99",
         "category":8,
-        "rating":5,
         "sale_percentage":10,
         "image":"men-blue-nike-tshirt-sale.jpg"
         }
@@ -974,7 +894,6 @@
         "description":"Mens t-shirt on sale made of soft material. Grey t-shirt for Men currently on sale",
         "price":"24.99",
         "category":8,
-        "rating":2,
         "sale_percentage":10,
         "image":"men-grey-tshirt-sale.jpg"
         }
@@ -987,7 +906,6 @@
         "description":"Mens t-shirt on sale made of soft material. Orange t-shirt for Men currently on sale",
         "price":"24.99",
         "category":8,
-        "rating":2,
         "sale_percentage":10,
         "image":"men-orange-tshirt-sale.jpg"
         }
@@ -1000,7 +918,6 @@
         "description":"Mens t-shirt on sale made of soft material. Pink Just Culture t-shirt for Men currently on sale",
         "price":"14.99",
         "category":8,
-        "rating":3,
         "sale_percentage":10,
         "image":"men-pink-tshirt-sale.jpg"
         }
@@ -1013,7 +930,6 @@
         "description":"Mens t-shirt on sale made of soft material. White t-shirt for Men currently for sale",
         "price":"19.99",
         "category":8,
-        "rating":5,
         "sale_percentage":10,
         "image":"men-white-tshirt-sale.jpg"
         }
@@ -1026,7 +942,6 @@
         "description":"Mens shorts on sale made of silk material. Black Puma shorts for Men currently on sale",
         "price":"28.99",
         "category":9,
-        "rating":3,
         "sale_percentage":10,
         "image":"men-black-puma-shorts-sale.jpg"
         }
@@ -1039,7 +954,6 @@
         "description":"Mens shorts on sale made of soft material. Black shorts for Men currently on sale",
         "price":"22.99",
         "category":9,
-        "rating":4,
         "sale_percentage":10,
         "image":"men-black-shorts-sale.jpg"
         }
@@ -1052,7 +966,6 @@
         "description":"Mens shorts on sale made of soft material. Blue Fila shorts for Men currently on sale",
         "price":"19.99",
         "category":9,
-        "rating":5,
         "sale_percentage":10,
         "image":"men-blue-fila-shorts-sale.jpg"
         }
@@ -1065,7 +978,6 @@
         "description":"Mens shorts on sale made of soft material. Blue shorts for Men currently on sale",
         "price":"17.99",
         "category":9,
-        "rating":2,
         "sale_percentage":10,
         "image":"men-blue-shorts-sale.jpg"
         }
@@ -1078,7 +990,6 @@
         "description":"Mens shorts on sale made of soft material. Grey shorts for Men currently on sale",
         "price":"22.99",
         "category":9,
-        "rating":2,
         "sale_percentage":10,
         "image":"men-grey-shorts-sale.jpg"
         }
@@ -1091,7 +1002,6 @@
         "description":"Mens shorts on sale made of cargo material. White Cargo shorts for Men currently on sale",
         "price":"21.99",
         "category":9,
-        "rating":3,
         "sale_percentage":10,
         "image":"men-white-shorts-sale.jpg"
         }
@@ -1104,7 +1014,6 @@
         "description":"Womens hoodie on sale made of soft material. Black overhead hoodie for Women currently on sale",
         "price":"27.99",
         "category":10,
-        "rating":3,
         "sale_percentage":10,
         "image":"women-black-hoodie-sale.jpg"
         }
@@ -1117,7 +1026,6 @@
         "description":"Womens hoodie on sale made of soft material. Brown overhead hoodie for Women currently on sale",
         "price":"23.99",
         "category":10,
-        "rating":4,
         "sale_percentage":10,
         "image":"women-brown-hoodie-sale.jpg"
         }
@@ -1130,7 +1038,6 @@
         "description":"Womens hoodie on sale made of soft material. Grey overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
-        "rating":5,
         "sale_percentage":10,
         "image":"women-grey-hoodie-sale.jpg"
         }
@@ -1143,7 +1050,6 @@
         "description":"Womens hoodie on sale made of soft material. Orange overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
-        "rating":2,
         "sale_percentage":10,
         "image":"women-orange-hoodie-sale.jpg"
         }
@@ -1156,7 +1062,6 @@
         "description":"Womens hoodie on sale made of soft material. Pink overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
-        "rating":2,
         "sale_percentage":10,
         "image":"women-pink-hoodie-sale.jpg"
         }
@@ -1169,7 +1074,6 @@
         "description":"Womens hoodie on sale made of soft material. White overhead hoodie for Women currently on sale",
         "price":"24.99",
         "category":10,
-        "rating":3,
         "sale_percentage":10,
         "image":"women-white-hoodie-sale.jpg"
         }
@@ -1182,7 +1086,6 @@
         "description":"Womens t-shirt on sale made of soft material. Black t-shirt for women currently on sale",
         "price":"17.99",
         "category":11,
-        "rating":2,
         "sale_percentage":10,
         "image":"women-black-tshirt-sale.jpg"
         }
@@ -1195,7 +1098,6 @@
         "description":"Womens t-shirt on sale made of soft material. Brown t-shirt for Women currently on sale",
         "price":"19.99",
         "category":11,
-        "rating":2,
         "sale_percentage":10,
         "image":"women-brown-tshirt-sale.jpg"
         }
@@ -1208,7 +1110,6 @@
         "description":"Womens t-shirt on sale made of soft material. Grey t-shirt for Women currently on sale",
         "price":"14.99",
         "category":11,
-        "rating":3,
         "sale_percentage":10,
         "image":"women-grey-culprit-tshirt-sale.jpg"
         }
@@ -1221,7 +1122,6 @@
         "description":"Womens t-shirt on sale made of soft material. Red t-shirt for Women currently on sale",
         "price":"12.99",
         "category":11,
-        "rating":5,
         "sale_percentage":10,
         "image":"women-red-tshirt-sale.jpg"
         }
@@ -1234,7 +1134,6 @@
         "description":"Womens t-shirt on sale made of soft material. White t-shirt for Women currently on sale",
         "price":"24.99",
         "category":11,
-        "rating":4,
         "sale_percentage":10,
         "image":"women-white-tshirt-sale.jpg"
         }
@@ -1247,7 +1146,6 @@
         "description":"Womens t-shirt on sale made of soft material. White Vogue t-shirt for Women currently on sale",
         "price":"29.99",
         "category":11,
-        "rating":5,
         "sale_percentage":10,
         "image":"women-white-vogue-tshirt-sale.jpg"
         }
@@ -1260,7 +1158,6 @@
         "description":"Womens shorts on sale made of soft material. Black shorts for Women currently on sale",
         "price":"19.99",
         "category":12,
-        "rating":3,
         "sale_percentage":10,
         "image":"women-black-shorts-sale.jpg"
         }
@@ -1273,7 +1170,6 @@
         "description":"Womens shorts on sale made of soft material. Green shorts for Women currently on sale",
         "price":"22.99",
         "category":12,
-        "rating":3,
         "sale_percentage":10,
         "image":"women-green-shorts-sale.jpg"
         }
@@ -1286,7 +1182,6 @@
         "description":"Womens shorts on sale made of soft material. Grey shorts for Women currently on sale",
         "price":"17.99",
         "category":12,
-        "rating":5,
         "sale_percentage":10,
         "image":"women-grey-shorts-sale.jpg"
         }
@@ -1299,7 +1194,6 @@
         "description":"Womens shorts on sale made of jean material. Blue jean shorts for Women currently on sale",
         "price":"24.99",
         "category":12,
-        "rating":1,
         "sale_percentage":10,
         "image":"women-jean-shorts-sale.jpg"
         }
@@ -1312,7 +1206,6 @@
         "description":"Womens shorts on sale made of soft material. Red shorts for Women currently on sale",
         "price":"17.99",
         "category":12,
-        "rating":3,
         "sale_percentage":10,
         "image":"women-red-shorts-sale.jpg"
         }
@@ -1325,7 +1218,6 @@
         "description":"Womens shorts on sale made of jean material. White Jean shorts for Women currently on sale",
         "price":"19.99",
         "category":12,
-        "rating":1,
         "sale_percentage":10,
         "image":"women-white-shorts-sale.jpg"
         }

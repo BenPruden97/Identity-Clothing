@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from django.db.models import Avg
+
 from .models import Product, Category, ProductReview
 from .forms import ProductForm, ProductReviewForm
 
@@ -16,6 +18,7 @@ def all_products(request):
     """
 
     products = Product.objects.all()
+    product_reviews = ProductReview.objects.all()
     categories = None
     sort = None
     direction = None
@@ -45,6 +48,7 @@ def all_products(request):
 
     context = {
         'products': products,
+        'product_reviews': product_reviews,
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
@@ -84,12 +88,15 @@ def product_detail(request, product_id):
     form = ProductReviewForm()
 
     product_reviews = ProductReview.objects.filter(product=product)
-
+    average_rating = ProductReview.objects.all().aggregate(Avg('review_add_rating'))
+    for key in average_rating.items():
+        average_rating_integer = round(key)
     review_number = ProductReview.objects.filter(product=product).count()
 
     context = {
         'product': product,
         'form': form,
+        'average_rating': average_rating,
         'product_reviews': product_reviews,
         'review_number': review_number,
     }
@@ -236,6 +243,3 @@ def products_on_sale(request):
     }
 
     return render(request, 'products/products_on_sale.html', context)
-
-
-

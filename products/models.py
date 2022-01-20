@@ -53,7 +53,6 @@ class Product(models.Model):
 
 
 PRODUCT_RATING = (
-    (0, '0'),
     (1, '1'),
     (2, '2'),
     (3, '3'),
@@ -63,7 +62,7 @@ PRODUCT_RATING = (
 
 
 class ProductReview(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     review_add_text = models.TextField(max_length=254)
     review_add_rating = models.IntegerField(choices=PRODUCT_RATING)

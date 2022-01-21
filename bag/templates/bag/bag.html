@@ -32,158 +32,138 @@
 
                 {% if bag_items %}
 
-                    <div class="col-12">
+                    <!-- Mobile Device Layout -->
 
-                        <div class="shopping-cart-headings">
+                    <div class="d-block d-md-none">
 
-                            <div class="col-12 col-md-2">
+                        <div class="row">
 
-                                <th>Product Image</th>
+                            <div class="col-12">
 
-                            </div>
-
-                            <div class="col-12 col-md-4">
-
-                                <th>Product Info</th>
-
-                            </div>
-
-                            <div class="col-12 col-md-1">
-
-                                <th>Product price</th>
-
-                            </div>
-
-                            <div class="col-12 col-md-1">
-
-                                <th>Product Size</th>
-
-                            </div>
-
-                            <div class="col-12 col-md-2">
-
-                                <th>Product Qty</th>
-
-                            </div>
-
-                            <div class="col-12 col-md-1">
-
-                                <th>Product Subtotal</th>
+                                {% include "bag/bag-total.html" %}
 
                             </div>
 
                         </div>
 
+                        <div class="row">
+
+                            <div class="col-12">
+
+                                {% include "bag/bag-buttons.html" %}
+
+                            </div>
+
+                        </div>
+
+                        {% for item in bag_items %}
+
+                            <hr>
+
+                            <div class="bag-table">
+
+                                <div class="row">
+
+                                    {% include "bag/product-image.html" %}
+
+                                    {% include "bag/product-info.html" %}
+
+
+                                    {% if item.product.is_on_sale %}
+                                        <p><strong>Sale Price: £{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</strong></p>
+                                    {% else %}
+                                        <p><strong>Price: £{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
+                                    {% endif %}
+
+                                    {% if item.product.is_on_sale %}
+                                        <p><strong>Price Each: £{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</strong></p>
+                                    {% else %}
+                                        <p><strong>Subtotal: £{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
+                                    {% endif %}
+
+                                    {% include "bag/quantity-form.html" %}
+
+                                </div>
+
+                            </div>
+
+                        {% endfor %}
+
                     </div>
 
-                    {% for item in bag_items %}
+                    <!-- Tablet Device Layout -->
 
-                    <div class="col-12">
+                    <div class="d-none d-md-block d-lg-none">
 
-                        <div class="shopping-cart-content">
+                        {% for item in bag_items %}
 
-                            <div class="col-12 col-md-3">
+                            <div class="row">
 
-                                {% if item.product.image %}
-                                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                                {% else %}
-                                    <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                                {% endif %}
+                                <div class="col-6">
 
-                            </div>
+                                    <div class="bag-table-img">
 
-                            <div class="col-12 col-md-4">
+                                        {% include "bag/product-image.html" %}
 
-                                <p><strong>Product Name:</strong> {{ item.product.name }}</p>
-                                <p><strong>Product ID Number:</strong> {{ item.product.pk|upper }}</p>
+                                    </div>
 
-                            </div>
+                                </div>
 
-                            <div class="col-12 col-md-1">
+                                <div class="col-6">
+                                    
+                                    <div class="bag-table">
 
-                                {% if item.product.is_on_sale %}
-                                    <p><strong>£{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</strong></p>
-                                {% else %}
-                                    <p><strong>£{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
-                                {% endif %}
+                                        {% include "bag/product-info.html" %}
 
-                            </div>
-
-                            <div class="col-12 col-md-1">
-
-                                <p><strong>{{ item.product_size }}</strong></p>
-
-                            </div>
-
-                            <div class="col-12 col-md-2">
-
-                                <form class="update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
-                                    {% csrf_token %}
-
-                                    <div class="input-group">
-
-                                        <div class="input-group-prepend">
-
-                                            <button class="decrement-qty" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
-                                                
-                                                <span>
-
-                                                    <i class="fas fa-minus"></i>
-
-                                                </span>
-
-                                            </button>
-                                        </div>
-
-                                        <input class="form-control qty_input" type="number"
-                                            name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                                            data-item_id="{{ item.item_id }}"
-                                            id="id_qty_{{ item.item_id }}">
-
-                                        <div class="input-group-append">
-
-                                            <button class="increment-qty" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
-
-                                                <span>
-
-                                                    <i class="fas fa-plus"></i>
-
-                                                </span>
-
-                                            </button>
-
-                                        </div>
-
-                                        {% if item.product.SIZE_CHOICES %}
-                                            <input type="hidden" name="size" value="{{ item.product_size }}">
+                                        {% if item.product.is_on_sale %}
+                                            <p><strong>Sale Price: £{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</strong></p>
+                                        {% else %}
+                                            <p><strong>Price: £{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
                                         {% endif %}
 
-                                    </div>    
+                                        {% if item.product.is_on_sale %}
+                                            <p><strong>Price Each: £{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</strong></p>
+                                        {% else %}
+                                            <p><strong>Subtotal: £{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
+                                        {% endif %}
 
-                                </form>
+                                        {% include "bag/quantity-form.html" %}
 
-                                <a class="update-link">Update Item</a>
-                                <a class="remove-item" id="remove_{{ item.item_id }}" data-size="{{ item.product_size }}">Remove Item</a>
+                                    </div>
+
+                                </div>
 
                             </div>
 
-                            <div class="col-12 col-md-1">
+                            <hr>
 
-                                {% if item.product.is_on_sale %}
-                                    <p><strong>£{{ item.product.calculate_sale_price | calc_subtotal:item.quantity }}</strong></p>
-                                {% else %}
-                                    <p><strong>£{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
-                                {% endif %}
+                        {% endfor %}
 
-                            </div>                    
+                        <div class="row">
+
+                            <div class="col-12">
+
+                                {% include "bag/bag-total.html" %}
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-12">
+
+                                {% include "bag/bag-buttons.html" %}
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                    {% endfor %}
+                    <!-- Laptop/ Desktop Device Layout -->
 
-                    <div class="shopping-cart-table">
+                    <div class="shopping-cart-table d-none d-lg-block">
                         
                         <table class="table">
 
@@ -208,16 +188,11 @@
                                 <tr>
 
                                     <td>
-                                        {% if item.product.image %}
-                                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                                        {% else %}
-                                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                                        {% endif %}
+                                        {% include "bag/product-image.html" %}
                                     </td>
 
                                     <td>
-                                        <p><strong>Product Name:</strong> {{ item.product.name }}</p>
-                                        <p><strong>Product ID Number:</strong> {{ item.product.pk|upper }}</p>
+                                        {% include "bag/product-info.html" %}
                                     </td>
 
                                     <td>
@@ -234,53 +209,7 @@
 
                                     <td>
 
-                                        <form class="update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
-                                            {% csrf_token %}
-
-                                            <div class="input-group">
-
-                                                <div class="input-group-prepend">
-    
-                                                    <button class="decrement-qty" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
-                                                        
-                                                        <span>
-    
-                                                            <i class="fas fa-minus"></i>
-    
-                                                        </span>
-    
-                                                    </button>
-                                                </div>
-    
-                                                <input class="form-control qty_input" type="number"
-                                                    name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                                                    data-item_id="{{ item.item_id }}"
-                                                    id="id_qty_{{ item.item_id }}">
-    
-                                                <div class="input-group-append">
-    
-                                                    <button class="increment-qty" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
-    
-                                                        <span>
-    
-                                                            <i class="fas fa-plus"></i>
-    
-                                                        </span>
-    
-                                                    </button>
-    
-                                                </div>
-
-                                                {% if item.product.SIZE_CHOICES %}
-                                                    <input type="hidden" name="size" value="{{ item.product_size }}">
-                                                {% endif %}
-    
-                                            </div>    
-
-                                        </form>
-
-                                        <a class="update-link">Update Item</a>
-                                        <a class="remove-item" id="remove_{{ item.item_id }}" data-size="{{ item.product_size }}">Remove Item</a>
+                                        {% include "bag/quantity-form.html" %}
 
                                     </td>
 
@@ -300,27 +229,13 @@
 
                     </div>
 
-                    <div class="shopping-cart-total">
+                    <div class="shopping-cart-total d-none d-lg-block">
 
                         <tr>
 
                             <td>
 
-                                <h4>Shopping Cart Total: £{{ total|floatformat:2 }}</h6>
-
-                                <hr>
-
-                                <h4>Delivery: £{{ delivery|floatformat:2 }}</h6>
-
-                                <hr>
-
-                                <h3>Grand Total: £{{ grand_total|floatformat:2 }}</h4>
-
-                                {% if free_delivery_delta > 0 %}
-                                    <p>
-                                        You can get FREE delivery with your purchase by spending just £{{ free_delivery_delta }} more!
-                                    </p>
-                                {% endif %}
+                                {% include "bag/bag-total.html" %}
 
                             </td>
 
@@ -328,23 +243,9 @@
 
                     </div>
 
-                    <div class="shopping-cart-buttons">
+                    <div class="shopping-cart-buttons d-none d-lg-block">
 
-                        <a href="{% url 'products' %}">
-
-                            <span><i class="fas fa-chevron-left"></i></span>
-
-                            Keep Shopping
-
-                        </a>
-
-                        <a href="{% url 'checkout' %}">
-
-                            Checkout Securely
-
-                            <span><i class="fas fa-lock"></i></span>
-
-                        </a>
+                        {% include "bag/bag-buttons.html" %}
 
                     </div>
 

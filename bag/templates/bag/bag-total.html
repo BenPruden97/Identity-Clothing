@@ -1,0 +1,27 @@
+<div class="shopping-cart-total">
+
+    <tr>
+
+        <td>
+
+            <h4>Shopping Cart Total: £{{ total|floatformat:2 }}</h6>
+
+            <hr>
+
+            <h4>Delivery: £{{ delivery|floatformat:2 }}</h6>
+
+            <hr>
+
+            <h3>Grand Total: £{{ grand_total|floatformat:2 }}</h4>
+
+            {% if free_delivery_delta > 0 %}
+                <p>
+                    You can get FREE delivery with your purchase by spending just £{{ free_delivery_delta }} more!
+                </p>
+            {% endif %}
+
+        </td>
+
+    </tr>
+
+</div>

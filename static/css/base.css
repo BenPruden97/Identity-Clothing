@@ -2247,7 +2247,7 @@ div.input-group label{
     color: #152238;
     font-size: 1rem;
     text-align: center;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .shopping-cart-buttons a:hover{
@@ -2300,6 +2300,30 @@ div.input-group{
     background-color: #152238;
     color: #fafafa;
     transition: 0.5s;
+}
+
+.shopping-cart-headings{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 2px solid #152238;
+    border-left: 2px solid #152238;
+    border-right: 2px solid #152238;
+    padding-top: 1rem;
+}
+
+.shopping-cart-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 2px solid #152238;
+    border-left: 2px solid #152238;
+    border-right: 2px solid #152238;
+}
+
+.shopping-cart-content img{
+    height: 150px;
+    width: 150px;
 }
 
 /* ----- Footer Styling ----- */
@@ -2511,7 +2535,35 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     div.product-detail-buttons button{
-        width: 240px;
+        width: 275px;
+    }
+
+    .bag-table{
+        margin-top: 1rem;
+    }
+
+    .bag-table-img img{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .bag-table div.input-group{
+        width: 350px;
+    }
+
+    .update-remove{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 350px;
+    }
+
+    .update-link{
+        margin-left: 0;
+    }
+
+    .remove-item{
+        margin-left: 0;
     }
 
 }
@@ -2730,6 +2782,78 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 300px;
     }
 
+    /* ----- Shopping Bag Page Styling for Tablet Devices ----- */
+
+    .shopping-cart-header{
+        margin-bottom: 1rem;
+    }
+
+    .shopping-cart-header h1{
+        font-size: 2rem;
+    }
+
+    .shopping-cart-total h4{
+        font-size: 1rem;
+    }
+
+    .shopping-cart-total h3{
+        font-size: 1rem;
+    }
+
+    .shopping-cart-total hr{
+        width: 100% !important;
+    }
+
+    .shopping-cart-buttons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+    }
+
+    .shopping-cart-buttons a{
+        margin: 0.5rem 0 0.5rem 0.5rem;
+        width: 300px;
+    }
+
+    .bag-table{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .bag-table-img img{
+        margin-top: 1rem;
+        width: 250px;
+        height: 250px;
+    }
+
+    .bag-table p{
+        margin: 0.5rem 0;
+    }
+
+    .bag-table div.input-group{
+        width: 300px;
+    }
+
+    .update-remove{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 300px;
+    }
+
+    .remove-item{
+        margin-left: 1rem;
+    }
+
+    .shopping-cart-total hr{
+        width: 30% !important;
+    }
+
 
 @media screen and (max-width: 767px) {
 
@@ -2762,6 +2886,11 @@ nav.navbar.navbar-expand-lg.navbar-light{
 }
 
 @media screen and (max-width: 576px) {
+
+    .btn-top{
+        bottom: 25px;
+        right: 25px;
+    }
 
     /* ----- Header/ Navbar Styling for Mobile Devices ----- */
 
@@ -3056,6 +3185,68 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     .product-filters{
         margin-top: 0.5rem;
+    }
+
+    /* ----- Shopping Bag Page for Mobile Devices ----- */
+
+    .shopping-cart-header{
+        margin-bottom: 1rem;
+    }
+
+    .shopping-cart-header h1{
+        font-size: 2rem;
+    }
+
+    .shopping-cart-total h4{
+        font-size: 1rem;
+    }
+
+    .shopping-cart-total h3{
+        font-size: 1rem;
+    }
+
+    .shopping-cart-total hr{
+        width: 100% !important;
+    }
+
+    .shopping-cart-buttons{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .shopping-cart-buttons a{
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+
+    .bag-table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    .bag-table img{
+        margin-top: 1rem;
+    }
+
+    .bag-table p{
+        margin: 0.5rem 0;
+    }
+
+    .bag-table div.input-group{
+        width: 100%;
+    }
+
+    .update-remove{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .remove-item{
+        margin-left: 1rem;
     }
 
     /* ----- Footer Styling for Mobile Devices ----- */

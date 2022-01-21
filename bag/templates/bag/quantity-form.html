@@ -1,0 +1,51 @@
+<form class="update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+    {% csrf_token %}
+
+    <div class="input-group">
+
+        <div class="input-group-prepend">
+
+            <button class="decrement-qty" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                
+                <span>
+
+                    <i class="fas fa-minus"></i>
+
+                </span>
+
+            </button>
+        </div>
+
+        <input class="form-control qty_input" type="number"
+            name="quantity" value="{{ item.quantity }}" min="1" max="99"
+            data-item_id="{{ item.item_id }}"
+            id="id_qty_{{ item.item_id }}">
+
+        <div class="input-group-append">
+
+            <button class="increment-qty" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+
+                <span>
+
+                    <i class="fas fa-plus"></i>
+
+                </span>
+
+            </button>
+
+        </div>
+
+        {% if item.product.SIZE_CHOICES %}
+            <input type="hidden" name="size" value="{{ item.product_size }}">
+        {% endif %}
+
+    </div>    
+
+</form>
+
+<div class="col-12 update-remove">
+
+    <a class="update-link">Update Item</a>
+    <a class="remove-item" id="remove_{{ item.item_id }}" data-size="{{ item.product_size }}">Remove Item</a>
+
+</div>

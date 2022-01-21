@@ -40,4 +40,4 @@ def ben_averages(sender, instance, **kwargs):
     """
     Update product average_rating on rating_add_rating delete
     """
-    instance.product_id.average_rating()
+    instance.product.average_rating()

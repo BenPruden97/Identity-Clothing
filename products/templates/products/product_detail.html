@@ -53,6 +53,8 @@
                             <h6>Price: £{{ product.price }}</h6>
                         {% endif %}
 
+                        <hr>
+
                         {% if product.average_rating > 0 %}
                             {% with ''|center:product.average_rating as range %}
                                 {% for _ in range %}
@@ -64,6 +66,8 @@
                         {% endif %}
 
                         <h4><strong>Product Description:</strong> <br>{{ product.description }}</h4>
+
+                        <hr>
 
                         <form action="{% url 'add_to_bag' product.id %}" method="POST">
 

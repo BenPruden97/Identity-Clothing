@@ -175,23 +175,27 @@
 
                             </div>
 
+                            <div class="average-product-rating">
+
+                                {% if product.average_rating > 0 %}
+                                    {% with ''|center:product.average_rating as range %}
+                                        {% for _ in range %}
+                                            <h5><i class="fas fa-star"></i></h5>
+                                        {% endfor %}
+                                    {% endwith %}
+                                {% else %}
+                                    <h5 class="text-danger"><strong>No Rating</strong></h5>
+                                {% endif %}
+
+                            </div>
+
                             <div class="product-image-content">
 
                                 {% if product.is_on_sale %}
                                     <h6>Sale Price: <span>£{{ product.calculate_sale_price }}</span></h6>
                                 {% endif %}
 
-                                {% if product.average_rating > 0 %}
-                                    {% with ''|center:product.average_rating as range %}
-                                        {% for _ in range %}
-                                            <h6><i class="fas fa-star"></i></h6>
-                                        {% endfor %}
-                                    {% endwith %}
-                                {% else %}
-                                    <h6>No Rating</h6>
-                                {% endif %}
-
-                            </div>
+                            </div>                          
 
                             {% if request.user.is_superuser %}
 

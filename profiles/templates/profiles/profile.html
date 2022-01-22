@@ -49,8 +49,61 @@
                 </div>
 
             </div>
+
+            <!-- Mobile Device Layout -->
+
+            <div class="d-block d-md-none">
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <p class="mobile-order-history">Your Order History</p>
+
+                    </div>
+
+                </div>
+
+                {% for order in orders %}
+
+                    <hr>
+
+                    <div class="row">
+
+                        <div class="profile-order-number">
+
+                            <strong>Order No. </strong><a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
+                                {{ order.order_number|truncatechars:10 }}
+                            </a>
+
+                        </div>
+
+                        <div class="profile-order-date"><strong>Date:</strong> {{ order.date }}</div>
+
+                        <hr>
+
+                        <div class="profile-order-items">
+
+                            <ul>
+                                {% for item in order.lineitems.all %}
+                                    <li><strong>Produce Name:</strong> {{ item.product.name }}</li>
+                                    <li><strong>Product Size:</strong> {{ item.product.product_size|upper }}</li>
+                                    <li><strong>Product Qty:</strong> x{{ item.quantity }}</li>
+                                    <hr>
+                                {% endfor %}
+                            </ul>  
+
+                        </div>
+
+                        <div class="profile-order-total text-danger"><strong>Grand Total:</strong> £{{ order.grand_total }}</div>
+
+                    </div>
+
+                {% endfor %}
+
+            </div>
            
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 d-none d-md-block">
 
                 <div class="profile-order-history table-responsive">
 

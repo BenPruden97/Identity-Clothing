@@ -2282,18 +2282,21 @@ div.input-group{
 .shopping-cart-empty p{
     color: #152238;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .shopping-cart-empty a{
+    display: block;
+    width: 300px;
     text-decoration: none;
     border: 2px solid #152238;
     margin-top: 2rem;
-    padding: 0.85rem 14rem;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1rem;
+    text-align: center;
 }
 
 .shopping-cart-empty a:hover{
@@ -3165,7 +3168,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 100%;
     }
 
-    /* -- Product Detail Add Review -- */
+    /* ----- Product Detail Add Review ----- */
 
     .modal-body button{
         width: 130px;
@@ -3247,6 +3250,45 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     .remove-item{
         margin-left: 1rem;
+    }
+
+    /* ----- Profile Page for Mobile Devices ----- */
+
+    .mobile-order-history{
+        color: #152238;
+        font-weight: bold;
+        font-size: 1.25rem
+    }
+
+    .profile-order-number{
+        width: 300px !important;
+        padding-top: 0.5rem;
+    }
+
+    .profile-order-date{
+        width: 300px !important;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .profile-order-items{
+        width: 300px !important;
+    }
+
+    .profile-order-items ul li{
+        padding: 0.25rem 0;
+    }
+
+    .profile-order-total{
+        text-align: left !important;
+        width: 300px !important;
+        margin-bottom: 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    .profile-order-total strong{
+        padding: 0.5rem 0;
+        font-weight: bold;
     }
 
     /* ----- Footer Styling for Mobile Devices ----- */

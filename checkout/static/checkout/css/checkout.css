@@ -440,26 +440,26 @@ div.col-4 p{
     .order-info-section p{
         text-align: left;
         margin-left: 0.75rem;
-        margin-top: 0;
+        margin-top: 0.75rem;
     }
 
     .order-details-section p{
-        text-align: left;
+        text-align: center;
         margin-left: 0.75rem;
-        margin-top: 0.25rem;
+        margin-top: 0.75rem;
         margin-bottom: 0.25rem;
     }
 
     .delivery-to-section p{
         text-align: left;
         margin-left: 0.75rem;
-        margin-top: 0;
+        margin-top: 0.75rem;
     }
 
     .billing-info-section p{
         text-align: left;
         margin-left: 0.75rem;
-        margin-top: 0;
+        margin-top: 0.75rem;
     }
 
 }
@@ -544,6 +544,7 @@ div.col-4 p{
 
     .order-details-section p{
         font-size: 0.8rem;
+        text-align: left;
     }
 
     .delivery-to-section p{

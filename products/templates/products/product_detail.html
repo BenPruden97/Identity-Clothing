@@ -53,17 +53,21 @@
                             <h6>Price: £{{ product.price }}</h6>
                         {% endif %}
 
-                        {% if product.average_rating > 0 %}
-                            {% with ''|center:product.average_rating as range %}
-                                {% for _ in range %}
-                                    <h6><i class="fas fa-star"></i></h6>
-                                {% endfor %}
-                            {% endwith %}
-                        {% else %}
-                            <h6 class="text-danger">No Rating</h6>
-                        {% endif %}
+                        <div class="average-product-detail-rating">
 
-                        <h4><strong>Product Description:</strong> <br>{{ product.description }}</h4>
+                            {% if product.average_rating > 0 %}
+                                {% with ''|center:product.average_rating as range %}
+                                    {% for _ in range %}
+                                        <h5><i class="fas fa-star"></i></h5>
+                                    {% endfor %}
+                                {% endwith %}
+                            {% else %}
+                                <h6 class="text-danger">No Rating</h6>
+                            {% endif %}
+
+                        </div>
+
+                        <h4>{{ product.description }}</h4>
 
                         <form action="{% url 'add_to_bag' product.id %}" method="POST">
 

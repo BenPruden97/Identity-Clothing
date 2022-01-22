@@ -161,6 +161,7 @@ def add_product_review(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def edit_product(request, product_id):
     """
@@ -191,6 +192,39 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
+@login_required
+def edit_product_review(request, productreview_id):
+    """
+    Edit a clothing item from the store
+    """
+    productreview = get_object_or_404(ProductReview, pk=productreview_id)
+    product = productreview.product
+
+    if not request.user.is_authenticated:
+        messages.error(request, 'Sorry, you do not have the correct permission to edit this product review.')
+        return redirect(reverse('product_detail', args=[product.id]))
+
+    if request.method == 'POST':
+        form = ProductReviewForm(request.POST, instance=productreview)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You have Successfully updated this product review!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to update product review. Please ensure the form is valid!')
+    else:
+        form = ProductReviewForm(instance=productreview)
+
+    template = 'products/product_detail.html'
+    context = {
+        'form': form,
+        'productreview': productreview,
+        'product': product,
+    }
+
+    return render(request, template, context)
+   
 
 @login_required
 def delete_product(request, product_id):

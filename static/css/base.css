@@ -1997,6 +1997,38 @@ div.product-detail-buttons button:hover{
     color: #152238;
 }
 
+.edit-review-button{
+    width: 200px;
+    border: 2px solid #5cb85c;
+    background-color: #fafafa;
+    color: #5cb85c;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+}
+
+.edit-review-button:hover{
+    background-color: #5cb85c;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
+.delete-review-button{
+    width: 200px;
+    border: 2px solid #dc3545;
+    background-color: #fafafa;
+    color: #dc3545;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+}
+
+.delete-review-button:hover{
+    background-color: #dc3545;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
 /* ----- Add/ Edit Product Page Styling ----- */
 
 .add-product-header{

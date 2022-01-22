@@ -11,12 +11,8 @@ def ben_find_averages(sender, instance, created, **kwargs):
     Update product average_rating on rating_add_rating update/create
     """
     current_product = instance.product
-    print("average rating", (current_product))
 
     current_product_reviews = ProductReview.objects.filter(product=current_product)
-
-    print("average rating", (current_product_reviews))
-
     product_sum = 0
     product_count = 0
 
@@ -24,14 +20,7 @@ def ben_find_averages(sender, instance, created, **kwargs):
         product_sum += review.review_add_rating
         product_count += 1
 
-    print("sum", product_sum)
-    print("product_count", product_count)
-
-    print("average rating", round(product_sum/product_count))
-
     instance.product.average_rating = round(product_sum/product_count)
-
-    print("rating", instance.product.average_rating)
 
     instance.product.save()
 

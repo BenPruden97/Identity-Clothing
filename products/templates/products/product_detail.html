@@ -191,6 +191,8 @@
 
     </div>
 
+    <!----- Add a review Section ----->
+
     <div class="container">
 
         <div class="row">
@@ -289,6 +291,10 @@
 
             </div>
 
+            <button class="edit-review-button" type="button" data-bs-toggle="modal" data-bs-target="#editReview{{ productreview.id }}">Edit Review</button>
+            <button class="delete-review-button" type="button" data-bs-toggle="modal" data-bs-target="#">Delete Review</button>
+
+
         {% endfor %}
 
     </div>
@@ -315,7 +321,7 @@
 
                             <div class="modal-body">
                             
-                                <form method="POST" action="{% url 'add_product_review' product.id %}" id="addProductReviewForm">
+                                <form method="POST" action="{% url 'add_product_review' product.id %}">
 
                                     {% csrf_token %}
                                     {% for field in form %}
@@ -324,6 +330,55 @@
 
                                     <button type="button" data-bs-dismiss="modal">Close</button>
                                     <button type="submit">Submit Review</button>
+
+                                </form>
+
+                            </div>
+
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+ 
+                <div class="modal fade" id="editReview{{ productreview.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Product Review</h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+
+                            <div class="modal-body">
+                            
+                                <form method="POST" action="{% url 'edit_product_review' product.id %}">
+
+                                    {% csrf_token %}
+                                    {% for field in form %}
+                                        {{ field | as_crispy_field }}
+                                    {% endfor %}
+
+                                    <button type="button" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit">Update Review</button>
 
                                 </form>
 

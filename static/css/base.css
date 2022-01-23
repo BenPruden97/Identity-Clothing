@@ -24,6 +24,8 @@ ul{
     background-color: #fafafa;
 }
 
+/* ----- Back To Top Button ----- */
+
 .btn-top{
     display: none;
     position: fixed;
@@ -81,6 +83,8 @@ ul{
     background: transparent url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e) center/1em auto no-repeat;
     opacity: 1;
 }
+
+/* ----- Shopping bag messages ----- */
 
 .shopping-bag-message{
     margin: 0.5rem 0;
@@ -168,6 +172,42 @@ ul{
 body{
     font-family: "Cabin", sans-serif;
     background-color: #fafafa;
+}
+
+/* ----- Error Page styling ----- */
+
+.error-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.error-message h2,
+.error-message h3,
+.error-message h4{
+    color: #152238;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.error-message a{
+    display: block;
+    width: 300px;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: 2px solid #152238;
+    background-color: #fafafa;
+    color: #152238;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.error-message a:hover{
+    background-color: #152238;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 /* ----- Navigation Menu Styling ----- */
@@ -2998,6 +3038,14 @@ nav.navbar.navbar-expand-lg.navbar-light{
     .btn-top{
         bottom: 25px;
         right: 25px;
+    }
+
+    /* ----- Error Pages ----- */
+
+    .error-message h2,
+    .error-message h3,
+    .error-message h4{
+        font-size: 1.25rem;
     }
 
     /* ----- Header/ Navbar Styling for Mobile Devices ----- */

@@ -169,6 +169,7 @@
                                         <div class="col-12 col-sm-6">
                                             <a class="delete-button" href="{% url 'delete_product' product.id %}">Delete Clothing Item</a>
                                         </div>
+
                                     {% endif %}
 
                                 </div>
@@ -289,8 +290,68 @@
 
             </div>
 
-            <button class="edit-review-button" type="button" data-bs-toggle="modal" data-bs-target="#editReview{{ productreview.id }}">Edit Review</button>
-            <button class="delete-review-button" type="button" data-bs-toggle="modal" data-bs-target="#">Delete Review</button>
+
+            {% if user.is_authenticated %}            
+
+                <button class="edit-review-button" type="button" data-bs-toggle="modal" data-bs-target="#editReview{{ review.id }}">Edit Review</button>
+
+                <button class="delete-review-button" type="button" data-bs-toggle="modal" data-bs-target="#">Delete Review</button>
+
+                <div class="container">
+
+                    <div class="row">
+            
+                        <div class="col-12">
+             
+                            <div class="modal fade" id="editReview{{ review.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            
+                                <div class="modal-dialog">
+            
+                                    <div class="modal-content">
+            
+                                        <div class="modal-header">
+            
+                                            <h5 class="modal-title" id="exampleModalLabel">Edit Product Review</h5>
+            
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+                                        </div>
+            
+                                        <div class="modal-body">
+                                        
+                                            <form method="POST" action="{% url 'edit_product_review' review.id %}">
+            
+                                                {% csrf_token %}
+                                                
+
+                                                <textarea name="review_add_text" cols="40" rows="10" maxlength="254" class="textarea form-control" required="" id="id_review_add_text">{{ review.review_add_text}}</textarea>
+                                                <select name="review_add_rating" class="select form-select" required="" id="id_review_add_rating">
+                                                    <option value="{{ review.review_add_rating }}" selected="{{ review.review_add_rating }}">{{ review.review_add_rating }}</option>
+                                                    {% for i in choices %}
+                                                        <option value="{{ i }}">{{i}}</option>
+                                                    {% endfor %}
+                                                </select>
+                                                <button type="button" data-bs-dismiss="modal">Close</button>
+                                                <button type="submit">Update Review</button>
+            
+                                            </form>
+            
+                                        </div>
+            
+            
+                                    </div>
+                                    
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+            
+                </div>
+
+            {% endif %}
 
 
         {% endfor %}
@@ -346,59 +407,10 @@
 
     </div>
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-12">
- 
-                <div class="modal fade" id="editReview{{ productreview.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                    <div class="modal-dialog">
-
-                        <div class="modal-content">
-
-                            <div class="modal-header">
-
-                                <h5 class="modal-title" id="exampleModalLabel">Edit Product Review</h5>
-
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                            </div>
-
-                            <div class="modal-body">
-                            
-                                <form method="POST" action="{% url 'edit_product_review' product.id %}">
-
-                                    {% csrf_token %}
-                                    {% for field in form %}
-                                        {{ field | as_crispy_field }}
-                                    {% endfor %}
-
-                                    <button type="button" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit">Update Review</button>
-
-                                </form>
-
-                            </div>
-
-
-                        </div>
-                        
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
 
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
     {% include 'products/includes/quantity_input_script.html' %}
-    <script src="{% static 'products/js/product_review.js' %}"></script>
 {% endblock %}

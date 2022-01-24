@@ -1937,6 +1937,7 @@ div.product-detail-buttons button:hover{
     border: 2px solid #152238;
     border-radius: 0;
     color: #152238;
+    margin-bottom: 0.75rem;
 }
 
 .modal-body select{
@@ -1944,6 +1945,7 @@ div.product-detail-buttons button:hover{
     border-radius: 0;
     color: #152238;
     margin: 0;
+    margin-bottom: 0.75rem;
 }
 
 .modal-body button{

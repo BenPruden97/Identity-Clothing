@@ -88,13 +88,13 @@ def product_detail(request, product_id):
     product_reviews = ProductReview.objects.filter(product=product)
     average_rating = ProductReview.objects.all().aggregate(Avg('review_add_rating'))
     review_number = ProductReview.objects.filter(product=product).count()
-
     context = {
         'product': product,
         'form': form,
         'average_rating': average_rating,
         'product_reviews': product_reviews,
         'review_number': review_number,
+        'choices': [1,2,3,4,5]
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -199,6 +199,7 @@ def edit_product_review(request, productreview_id):
     Edit a clothing item from the store
     """
     productreview = get_object_or_404(ProductReview, pk=productreview_id)
+    average_rating = ProductReview.objects.all().aggregate(Avg('review_add_rating'))
     product = productreview.product
 
     if not request.user.is_authenticated:

@@ -242,6 +242,24 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
+
+@login_required
+def delete_product_review(request, productreview_id):
+    """
+    Delete a product review from a product
+    """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can delete a product review.')
+        return redirect(reverse('product_detail', args=[product.id]))
+
+    productreview = ProductReview.objects.filter(pk=productreview_id)
+    product_id = productreview.product_id
+    productreview.delete()
+    messages.success(request, 'Product review has been deleted!')
+    return redirect(reverse('product_detail', args=[product.id]))
+
+
 def products_on_sale(request):
     """
     View Items on sale

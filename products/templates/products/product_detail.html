@@ -291,11 +291,11 @@
             </div>
 
 
-            {% if user.is_authenticated %}            
+            {% if user.is_superuser %}          
 
                 <button class="edit-review-button" type="button" data-bs-toggle="modal" data-bs-target="#editReview{{ review.id }}">Edit Review</button>
 
-                <button class="delete-review-button" type="button" data-bs-toggle="modal" data-bs-target="#">Delete Review</button>
+                <a href="{% url 'delete_product_review' product.id %}">Delete Review</a>
 
                 <div class="container">
 
@@ -323,7 +323,6 @@
             
                                                 {% csrf_token %}
                                                 
-
                                                 <textarea name="review_add_text" cols="40" rows="10" maxlength="254" class="textarea form-control" required="" id="id_review_add_text">{{ review.review_add_text}}</textarea>
                                                 <select name="review_add_rating" class="select form-select" required="" id="id_review_add_rating">
                                                     <option value="{{ review.review_add_rating }}" selected="{{ review.review_add_rating }}">{{ review.review_add_rating }}</option>

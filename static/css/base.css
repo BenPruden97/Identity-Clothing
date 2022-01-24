@@ -872,9 +872,10 @@ button.primaryAction{
 }
 
 .sign-out button{
+    width: 300px;
     background: transparent;
     border: 2px solid #152238;
-    padding: 0.75rem 4rem;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1.25rem;
 }
@@ -3017,7 +3018,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
 @media screen and (max-width: 576px) {
 
-    /* ----- Message Container ----- */
+    /* ----- Message Container for Mobile Devices ----- */
 
     .message-container{
         width: 300px;
@@ -3044,7 +3045,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         right: 25px;
     }
 
-    /* ----- Error Pages ----- */
+    /* ----- Error Pages for Mobile Devices ----- */
 
     .error-message h2,
     .error-message h3,
@@ -3082,11 +3083,12 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
 
     .header-content-mobile .header-icons ul li{
+        padding: 0 0.25rem;
         width: 75px;
     }
 
     .header-content-mobile .header-icons ul li a{
-        font-size: 0.75rem;
+        font-size: 0.6rem;
     }
 
     .header-content-mobile .header-icons ul li a i{
@@ -3104,7 +3106,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         font-size: 1.5rem;
     }
 
-    /* ----- Carousel Styling ----- */
+    /* ----- Carousel Styling for Mobile Devices ----- */
 
     .swiper{
         width: 100%;
@@ -3138,7 +3140,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         background: rgba(21, 34, 56, 0.5);
     }
 
-    /* ----- Sign In & Sing Up Form Styling ----- */
+    /* ----- Sign In & Sing Up Form Styling for Mobile Devices ----- */
 
     .sign-in-form input{
     width: 100%;
@@ -3167,6 +3169,14 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     .sign-in-forgot{
         font-size: 1rem;
+    }
+
+    .sign-out p{
+        font-size: 1.1rem;
+    }
+
+    .sign-out button{
+        width: 100%;
     }
 
     /* ----- Contact Page Styling for Tablet Devices ----- */
@@ -3204,7 +3214,14 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 100%;
     }
 
-    /* ----- Search Page Styling ----- */
+    button.accordion-button h5{
+        font-size: 0.9rem;
+    }
+    div.accordion-body p{
+        font-size: 0.8rem;
+    }
+
+    /* ----- Search Page Styling for Mobile Devices ----- */
 
     .search-bar::placeholder{
         color: #152238;
@@ -3219,7 +3236,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         font-size: 0.8rem;
     }
 
-    /* ----- Product Details Page ----- */
+    /* ----- Product Details Page for Mobile Devices ----- */
 
     .product-detail-item{
         display: flex;
@@ -3297,7 +3314,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 100%;
     }
 
-    /* ----- Product Detail Add Review ----- */
+    /* ----- Product Detail Add Review for Mobile Devices ----- */
 
     .modal-body button{
         width: 130px;

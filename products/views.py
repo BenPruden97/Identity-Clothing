@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from django.http import HttpResponseRedirect
+
 from django.db.models import Avg
 
 from .models import Product, Category, ProductReview
@@ -248,16 +250,20 @@ def delete_product_review(request, productreview_id):
     """
     Delete a product review from a product
     """
+    productreview = get_object_or_404(ProductReview, pk=productreview_id)
 
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can delete a product review.')
-        return redirect(reverse('product_detail', args=[product.id]))
-
-    productreview = ProductReview.objects.filter(pk=productreview_id)
+    if not productreview:
+        messages.error(request, 'Sorry, There is no product review.')
+        return redirect(reverse('home'))
     product_id = productreview.product_id
+
+    if not (request.user.id == productreview.user.id) or not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can delete a product review.')
+        return redirect(reverse('product_detail', args=[product_id]))
+
     productreview.delete()
-    messages.success(request, 'Product review has been deleted!')
-    return redirect(reverse('product_detail', args=[product.id]))
+    messages.success(request, 'Productc review has been deleted!')
+    return redirect(reverse('product_detail', args=[product_id]))
 
 
 def products_on_sale(request):

@@ -7,9 +7,20 @@ from .models import ProductReview
 
 @receiver(post_save, sender=ProductReview)
 def ben_find_averages(sender, instance, created, **kwargs):
+
+    calculate_average_rating(instance)
+
+@receiver(post_delete, sender=ProductReview)
+def ben_averages(sender, instance, **kwargs):
     """
-    Update product average_rating on rating_add_rating update/create
+    Update product average_rating on rating_add_rating delete
     """
+    
+    calculate_average_rating(instance)
+
+
+def calculate_average_rating(instance):
+
     current_product = instance.product
 
     current_product_reviews = ProductReview.objects.filter(product=current_product)
@@ -22,11 +33,5 @@ def ben_find_averages(sender, instance, created, **kwargs):
 
     instance.product.average_rating = round(product_sum/product_count)
 
+    print(instance.product.average_rating)
     instance.product.save()
-
-@receiver(post_delete, sender=ProductReview)
-def ben_averages(sender, instance, **kwargs):
-    """
-    Update product average_rating on rating_add_rating delete
-    """
-    instance.product.average_rating()

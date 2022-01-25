@@ -23,7 +23,7 @@
 
                             <h6>We have a wide range of clothing items for you to choose from. Start shopping now!</h6>
 
-                            <a href="#">Start Shopping</a>
+                            <a href="{% url 'products' %}">Start Shopping</a>
 
                         </div>
 
@@ -181,7 +181,7 @@
 
                     <h4>Find your identity today. We currently have a wide range of Men's clothing items for you to choose from.</h4>
 
-                    <a href="#">Shop For Men's Clothing</a>
+                    <a href="{% url 'products' %}?category=mens_hoodies,mens_shorts,mens_tshirts">Shop For Men's Clothing</a>
 
                 </div>
 
@@ -221,7 +221,7 @@
 
                     <h4>Find your identity today. We currently have a wide range of women's clothing items for you to choose from.</h4>
 
-                    <a href="#">Shop For Women's Clothing</a>
+                    <a href="{% url 'products' %}?category=womens_hoodies,womens_shorts,womens_tshirts">Shop For Women's Clothing</a>
 
                 </div>
 
@@ -273,7 +273,7 @@
 
                     <h4>Find your identity on a budget! We currently have a selection of clothing items on sale at a discounted price.</h4>
 
-                    <a href="#">Shop For Item's On Sale</a>
+                    <a href="{% url 'products_on_sale' %}">Shop For Item's On Sale</a>
 
                 </div>
 

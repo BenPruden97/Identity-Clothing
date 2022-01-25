@@ -1888,6 +1888,8 @@ div.product-detail-buttons a:hover{
 }
 
 div.product-detail-buttons button{
+    display: block;
+    width: 225px;
     border: 2px solid #152238;
     padding: 0.75rem;
     width: 225px;
@@ -2590,8 +2592,13 @@ nav.navbar.navbar-expand-lg.navbar-light{
         align-items: center;
         margin-top: 0.5rem;
     }
-
     
+    .average-product-detail-rating{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     div.product-detail-quantity div.input-group{
         width: 500px;
     }
@@ -2607,6 +2614,8 @@ nav.navbar.navbar-expand-lg.navbar-light{
     .product-detail-item-content h4{
         font-size: 1.1rem;
         font-weight: bold;
+        width: 400px;
+        text-align: center
     }
 
     div.product-detail-buttons a{
@@ -2615,7 +2624,15 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     div.product-detail-buttons button{
-        width: 275px;
+        width: 240px;
+    }
+
+    .edit-delete-buttons .edit-button{
+        width: 240px;
+    }
+
+    .edit-delete-buttons .delete-button{
+        width: 240px;
     }
 
     .bag-table{
@@ -3047,6 +3064,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     /* ----- Error Pages for Mobile Devices ----- */
 
+    .error-message{
+        height: none;
+    }
+
     .error-message h2,
     .error-message h3,
     .error-message h4{
@@ -3259,6 +3280,12 @@ nav.navbar.navbar-expand-lg.navbar-light{
     .product-detail-item-content h6{
         width: 300px;
         text-align: left;
+    }
+
+    .average-product-detail-rating{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .product-detail-item-content h4{

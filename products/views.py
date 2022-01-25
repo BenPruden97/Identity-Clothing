@@ -257,12 +257,12 @@ def delete_product_review(request, productreview_id):
         return redirect(reverse('home'))
     product_id = productreview.product_id
 
-    if not (request.user.id == productreview.user.id) or not request.user.is_superuser:
+    if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can delete a product review.')
         return redirect(reverse('product_detail', args=[product_id]))
 
     productreview.delete()
-    messages.success(request, 'Productc review has been deleted!')
+    messages.success(request, 'Product review has been deleted successfully!')
     return redirect(reverse('product_detail', args=[product_id]))
 
 

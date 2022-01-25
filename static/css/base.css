@@ -1643,10 +1643,52 @@ div hr{
     font-weight: bold;
 }
 
-.product-super-user-buttons .delete-button-product{
-    text-decoration: none;
+/* ----- Delete Modal Styling ----- */
+
+.delete-product-button{
+    border: none;
+    background-color: #fafafa;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.modal-body h6{
+    color: #152238;
+}
+
+.delete-modal-no{
+    width: 100px;
+    background-color: #fafafa;
+    border: 2px solid #dc3545;
     color: #dc3545;
-    font-weight: bold;
+    padding: 0.75rem;
+}
+
+.delete-modal-no:hover{
+    background-color: #dc3545;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
+.delete-modal-yes{
+    display: block;
+    width: 100px;
+    background-color: #fafafa;
+    border: 2px solid #5cb85c;
+    color: #5cb85c;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.delete-modal-yes:hover{
+    background-color: #5cb85c;
+    color: #fafafa;
+    transition: 0.5s;
 }
 
 /* ----- Product Detail Page Styling ----- */
@@ -1842,10 +1884,9 @@ div.edit-delete-buttons{
     transition: 0.5s;
 }
 
-.edit-delete-buttons .delete-button{
-    display: block;
+.delete-product-detail-button{
     width: 225px;
-    text-decoration: none;
+    background-color: #fafafa;
     border: 2px solid #dc3545;
     padding: 0.75rem;
     color: #dc3545;
@@ -1853,7 +1894,7 @@ div.edit-delete-buttons{
     text-align: center;
 }
 
-.edit-delete-buttons .delete-button:hover{
+.delete-product-detail-button:hover{
     color: #fafafa;
     background-color: #dc3545;
     transition: 0.5s;
@@ -2631,7 +2672,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 240px;
     }
 
-    .edit-delete-buttons .delete-button{
+    .delete-product-detail-button{
         width: 240px;
     }
 
@@ -3337,7 +3378,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         margin-bottom: 1rem;
     }
 
-    .edit-delete-buttons .delete-button{
+    .delete-product-detail-button{
         width: 100%;
     }
 

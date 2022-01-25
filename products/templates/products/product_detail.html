@@ -166,8 +166,42 @@
                                         <div class="col-12 col-sm-6">
                                             <a class="edit-button" href="{% url 'edit_product' product.id %}">Edit Clothing Item</a>
                                         </div>
+
                                         <div class="col-12 col-sm-6">
-                                            <a class="delete-button" href="{% url 'delete_product' product.id %}">Delete Clothing Item</a>
+                                            <!-- Delete Product Modal Button --> 
+                                            <button type="button" class="delete-product-detail-button" data-bs-toggle="modal" data-bs-target="#deleteProductModal{{ product.id }}">
+                                                Delete Clothing Item
+                                            </button>
+                                        </div>
+
+                                        <!-- Delete Product Modal -->
+                                        <div class="modal fade" id="deleteProductModal{{ product.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                            <div class="modal-dialog">
+
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header">
+                                                        <h6 class="modal-title text-danger" id="exampleModalLabel">Delete Product - {{ product.name }}</h6>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+
+                                                        <h6>Once deleted, this product will be permanently removed from the database.</h6>
+                                                        <h6>Are you sure you want to delete {{ product.name }}?</h6>
+                                                        
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="delete-modal-no" data-bs-dismiss="modal">No</button>
+                                                        <a class="delete-modal-yes" href="{% url 'delete_product' product.id %}">Yes</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
                                         </div>
 
                                     {% endif %}
@@ -290,19 +324,16 @@
 
             </div>
 
-
-            {% if user.is_superuser %}          
+            {% if request.user.id == review.user.id or request.user.is_superuser %}          
 
                 <button class="edit-review-button" type="button" data-bs-toggle="modal" data-bs-target="#editReview{{ review.id }}">Edit Review</button>
-
-                <a href="{% url 'delete_product_review' review.id %}">Delete Review</a>
 
                 <div class="container">
 
                     <div class="row">
             
                         <div class="col-12">
-             
+            
                             <div class="modal fade" id="editReview{{ review.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             
                                 <div class="modal-dialog">
@@ -348,6 +379,47 @@
             
                     </div>
             
+                </div>
+
+            {% endif %}
+
+            {% if request.user.is_superuser %}
+
+                <!-- Delete Product Review Modal Button --> 
+                <button type="button" class="delete-review-button" data-bs-toggle="modal" data-bs-target="#deleteProductModal{{ review.id }}">
+                    Delete Product Review
+                </button>
+                    
+                <!-- Delete Product Review Modal -->
+                <div class="modal fade" id="deleteProductModal{{ review.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h6 class="modal-title text-danger" id="exampleModalLabel">Delete Product Review</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <h6>Once deleted, this product review will be permanently removed from the database.</h6>
+                                <h6>Are you sure you want to delete this product review?</h6>
+                                
+                            </div>
+
+                            <div class="modal-footer">
+
+                                <button type="button" class="delete-modal-no" data-bs-dismiss="modal">No</button>
+                                <a class="delete-modal-yes" href="{% url 'delete_product_review' review.id %}">Yes</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             {% endif %}

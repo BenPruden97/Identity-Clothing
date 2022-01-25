@@ -170,10 +170,43 @@
                             {% if request.user.is_superuser %}
 
                                 <div class="product-super-user-buttons">
-
+   
+                                    <a class="edit-button-product" href="{% url 'edit_product' product.id %}">Edit Clothing Item</a>
                                     
-                                        <a class="edit-button-product" href="{% url 'edit_product' product.id %}">Edit Clothing Item</a>
-                                        <a class="delete-button-product" href="{% url 'delete_product' product.id %}">Delete Clothing Item</a>
+                                    <!-- Delete Product Modal Button --> 
+                                    <button type="button" class="delete-product-button" data-bs-toggle="modal" data-bs-target="#deleteProductModal{{ product.id }}">
+                                        <span class="text-danger">Delete Clothing Item</span>
+                                    </button>
+                                        
+                                    <!-- Delete Product Modal -->
+                                    <div class="modal fade" id="deleteProductModal{{ product.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                        <div class="modal-dialog">
+
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h6 class="modal-title text-danger" id="exampleModalLabel">Delete Product - {{ product.name }}</h6>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+
+                                                    <h6>Once deleted, this product will be permanently removed from the database.</h6>
+                                                    <h6>Are you sure you want to delete {{ product.name }}?</h6>
+                                                    
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="delete-modal-no" data-bs-dismiss="modal">No</button>
+                                                    <a class="delete-modal-yes" href="{% url 'delete_product' product.id %}">Yes</a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
 

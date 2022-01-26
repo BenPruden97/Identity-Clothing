@@ -3035,8 +3035,12 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 300px;
     }
 
+    .update-link{
+        margin-right: 1rem;
+    }
+
     .remove-item{
-        margin-left: 1rem;
+        margin-right: 2.5rem;
     }
 
     .shopping-cart-total hr{
@@ -3460,10 +3464,16 @@ nav.navbar.navbar-expand-lg.navbar-light{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        width: 100%;
+    }
+
+    .update-link{
+        margin-right: 2.5rem;
     }
 
     .remove-item{
-        margin-left: 1rem;
+        margin-left: 2.5rem;
+        margin-right: 0;
     }
 
     .shop-again a{

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import F, Q
 from django.db.models.functions import Lower
 
 from django.http import HttpResponseRedirect
@@ -28,17 +28,21 @@ def all_products(request):
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'name':
-                sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
+            if sortkey == 'average_rating':
+                products = products.order_by(F(
+                    'average_rating').desc(nulls_last=True))
+            else:
+                if sortkey == 'name':
+                    sortkey = 'lower_name'
+                    products = products.annotate(lower_name=Lower('name'))
+                if sortkey == 'category':
+                    sortkey = 'category__name'
 
-            if 'direction' in request.GET:
-                direction = request.GET['direction']
-                if direction == 'desc':
-                    sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)
+                if 'direction' in request.GET:
+                    direction = request.GET['direction']
+                    if direction == 'desc':
+                        sortkey = f'-{sortkey}'
+                products = products.order_by(sortkey)
             
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
@@ -279,17 +283,21 @@ def products_on_sale(request):
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'name':
-                sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
+            if sortkey == 'average_rating':
+                products = products.order_by(F(
+                    'average_rating').desc(nulls_last=True))
+            else:
+                if sortkey == 'name':
+                    sortkey = 'lower_name'
+                    products = products.annotate(lower_name=Lower('name'))
+                if sortkey == 'category':
+                    sortkey = 'category__name'
 
-            if 'direction' in request.GET:
-                direction = request.GET['direction']
-                if direction == 'desc':
-                    sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)
+                if 'direction' in request.GET:
+                    direction = request.GET['direction']
+                    if direction == 'desc':
+                        sortkey = f'-{sortkey}'
+                products = products.order_by(sortkey)
 
     current_sorting = f'{sort}_{direction}'
 

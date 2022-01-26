@@ -3213,7 +3213,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
         background: rgba(21, 34, 56, 0.5);
     }
 
-    /* ----- Sign In & Sing Up Form Styling for Mobile Devices ----- */
+    /* ----- Sign In & Sign Up Form Styling for Mobile Devices ----- */
 
     .account-header h1{
         font-size: 2rem;
@@ -3406,6 +3406,28 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     .delete-product-detail-button{
+        width: 100%;
+    }
+
+    .product-detail-reviews-header h5{
+        font-size: 2rem;
+    }
+
+    .review-button{
+        width: 100%;
+    }
+
+    .review-text p{
+        font-size: 1.1rem;
+    }
+
+    .edit-review-button{
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .delete-review-button{
+        padding: 0.75rem;
         width: 100%;
     }
 

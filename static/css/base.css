@@ -2187,19 +2187,22 @@ div.product-detail-buttons button:hover{
 
 .add-product-form-buttons{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 1.5rem;
 }
 
 .add-product-form-buttons a{
+    display: block;
+    width: 250px;
     text-decoration: none;
     border: 2px solid #152238;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .add-product-form-buttons a:hover{
@@ -2209,9 +2212,10 @@ div.product-detail-buttons button:hover{
 }
 
 .add-product-form-buttons button{
+    width: 250px;
     background-color: #fafafa;
     border: 2px solid #152238;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem;
     color: #152238;
     font-size: 1rem;
     margin-top: 0.5rem;
@@ -2233,7 +2237,7 @@ div.product-detail-buttons button:hover{
 
 .new-image-section{
     margin-top: 2.5rem;
-    height: 200px;
+    height: 50px;
 }
 
 .new-image-section p{
@@ -2242,13 +2246,16 @@ div.product-detail-buttons button:hover{
 }
 
 .btn-file{
+    display: block;
+    width: 300px;
     position: relative;
     overflow: hidden;
     background-color: #152238;
     border: 2px solid #152238;
-    padding: 0.75rem 3.35rem;
+    padding: 0.75rem;
     color: #fafafa;
     font-size: 1rem;
+    text-align: center;
 }
 
 .btn-file:hover{
@@ -2270,7 +2277,7 @@ div.product-detail-buttons button:hover{
 input#new-image{
     margin: 0;
     width: 350px;
-    height: 100px;
+    height: 50px;
 }
 
 .custom-checkbox .custom-control-label::before{
@@ -3208,6 +3215,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     /* ----- Sign In & Sing Up Form Styling for Mobile Devices ----- */
 
+    .account-header h1{
+        font-size: 2rem;
+    }
+
     .sign-in-form input{
     width: 100%;
     padding: 0.5rem 0.5rem;
@@ -3247,6 +3258,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     /* ----- Contact Page Styling for Tablet Devices ----- */
 
+    .contact-header h1{
+        font-size: 2rem;
+    }
+
     .customer-contact-text h4{
         font-size: 1rem;
     }
@@ -3262,6 +3277,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     .technical-contact-text h6{
         font-size: 0.75rem;
+    }
+
+    .contact-form-text{
+        text-align: left;
     }
 
     .contact-form form{
@@ -3288,6 +3307,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     /* ----- Search Page Styling for Mobile Devices ----- */
+
+    .search-header h1{
+        font-size: 2rem;
+    }
 
     .search-bar::placeholder{
         color: #152238;
@@ -3399,6 +3422,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     /* ----- Product Page Styling for Mobile Devices ----- */
 
+    .current-category-header h1{
+        font-size: 2rem;
+    }
+
     .category-name-buttons a{
         width: 300px;
         margin: 0.25rem 0;
@@ -3406,6 +3433,39 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
     .product-filters{
         margin-top: 0.5rem;
+    }
+
+    .add-product-header h1{
+        font-size: 2rem;
+    }
+
+    .btn-file{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    input#new-image{
+        width: 100%;
+        height: 50px;
+    }
+
+    .add-product-form-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0.75rem;
+    }
+
+    .add-product-form-buttons a{
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .add-product-form-buttons button{
+        width: 100%;
+        margin-left: 0;
     }
 
     /* ----- Shopping Bag Page for Mobile Devices ----- */

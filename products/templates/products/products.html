@@ -240,8 +240,19 @@
 
             var selectedVal = selector.val();
             if (selectedVal != "reset"){
-                var sort = selectedVal.split("_")[0];
-                var direction = selectedVal.split("_")[1];
+                console.log(selectedVal)
+                var sort;
+                var direction; 
+                
+                if (selectedVal.startsWith("average_rating")) {
+                    sort = selectedVal.split('_')
+                    direction = sort[2]
+                    sort = `${sort[0]}_${sort[1]}`;
+                }
+                else {
+                    sort = selectedVal.split("_")[0];
+                    direction = selectedVal.split("_")[1];
+                }
 
                 currentUrl.searchParams.set("sort", sort);
                 currentUrl.searchParams.set("direction", direction);

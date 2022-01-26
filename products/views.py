@@ -29,8 +29,11 @@ def all_products(request):
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'average_rating':
-                products = products.order_by(F(
-                    'average_rating').desc(nulls_last=True))
+                products = products.order_by('-average_rating')
+        
+            if sortkey == 'average_rating2':
+                products = products.order_by('+average_rating')
+ 
             else:
                 if sortkey == 'name':
                     sortkey = 'lower_name'
@@ -50,7 +53,6 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
 
     current_sorting = f'{sort}_{direction}'
-
     context = {
         'products': products,
         'current_categories': categories,
@@ -284,8 +286,11 @@ def products_on_sale(request):
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'average_rating':
-                products = products.order_by(F(
-                    'average_rating').desc(nulls_last=True))
+                products = products.order_by('-average_rating')
+        
+            if sortkey == 'average_rating2':
+                products = products.order_by('+average_rating')
+
             else:
                 if sortkey == 'name':
                     sortkey = 'lower_name'

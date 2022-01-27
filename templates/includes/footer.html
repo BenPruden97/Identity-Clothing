@@ -12,11 +12,11 @@
 
                     <ul>
 
-                        <li><a href="{% url 'home' %}">Home</a></li><strong> |</strong>
+                        <li><a href="{% url 'home' %}">Home</a></li>
 
-                        <li><a href="{% url 'search' %}">Search</a></li><strong> |</strong>
+                        <li><a href="{% url 'search' %}">Search</a></li>
 
-                        <li><a href="{% url 'view_contact' %}">Contact</a></li><strong> |</strong>
+                        <li><a href="{% url 'view_contact' %}">Contact</a></li>
 
                         {% if request.user.is_authenticated %}
 
@@ -24,7 +24,7 @@
 
                         {% else %}                                             
 
-                            <li><a href="{% url 'account_signup' %}">Sign Up</a></li><strong> |</strong>
+                            <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
 
                             <li><a href="{% url 'account_login' %}">Sign In</a></li>
 

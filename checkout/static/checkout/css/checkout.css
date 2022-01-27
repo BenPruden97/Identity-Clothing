@@ -3,7 +3,6 @@
 .checkout-header{
     display: flex;
     justify-content: center;
-    align-items: centre;
     flex-direction: column;
     margin: 2.5rem 0 3rem;
 }
@@ -260,7 +259,6 @@ div.col-4 p{
 .order-confirmation-header{
     display: flex;
     justify-content: center;
-    align-items: centre;
     flex-direction: column;
     margin: 2.5rem 0 3rem;
 }

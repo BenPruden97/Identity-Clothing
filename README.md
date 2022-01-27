@@ -12,6 +12,10 @@
   * [Project Goals](#project-goals)
   * [User Goals](#user-goals)
   * [User Stories](#user-stories)
+* [Five Development Planes](#five-development-planes)
+  * [Strategy Development Plane](#strategy-development-plane)
+
+# UX
 
 # Project Goals
 
@@ -21,10 +25,10 @@ The primary goal of Identity Clothing is to provide an E-Commerce website where 
 
 ### The user is looking to:
 
-* Find all clothing available that is listed on the Identity Clothing website
-* Be able to purchase selected items that was added to shopping cart
+* Find and view all clothing available that is listed on the Identity Clothing website
+* View most popular clothing items
 * Be able to search for specific clothing items
-* Find items for men, women, kids and any clothing on sale
+* Find items for men, women and any clothing items on sale
 * Sign up for an account
 * Sign into their account
 * Contact the developer/ site owner if needed
@@ -62,7 +66,7 @@ The primary goal of Identity Clothing is to provide an E-Commerce website where 
 * View clothing items within my shopping cart
 * Remove clothing items from my shopping cart if I no longer want them.
 * Update a clothing item’s quantity or size within my shopping cart before purchasing.
-* Securely purchase any clothing items within my shopping cart.
+* Securely purchase any clothing items within my shopping bag.
 * Receive an email for confirmation of my order.
 
 ### As a admin, I would like to:
@@ -75,3 +79,49 @@ The primary goal of Identity Clothing is to provide an E-Commerce website where 
 * Be able to shop and purchase clothing items like a regular user
 
 [Back to Table of Contents](#table-of-contents)
+
+# Five Development Planes
+
+1. Strategy Development Planes
+
+Here is how I broke down the strategy development plane for Identity Clothing:
+
+1. Users/ Members
+  * Users (Not Signed Up)
+  * Members (Signed In)
+
+2. Demographic/ Target Audience
+  * Aged 16+
+  * UK Based Customers
+  * Men looking for Hoodies, T-Shirts or Shorts 
+  * Women looking for Hoodies, T-Shirts or Shorts
+  * Clothing Items on Sale
+
+3. The website will need to enable the user to:
+  * Sign up for an account
+  * Find and View clothing items on the website
+  * Find and View clothing items currently on sale on the website
+  * View most popular clothing items
+  * Search for clothing items
+  * Contact the developer
+
+4. The website will need to enable the member to:
+  * Sign into their account
+  * Find and View clothing items on the website
+  * Find and View clothing items currently on sale on the website
+  * View most popular clothing items
+  * Search for clothing items
+  * Add and Edit product reviews (if user only)
+  * Save and Update personal and delivery information
+  * View order history
+  * Contact the developer
+
+With the above strategy options for users and members in mind, I have created a User and Member strategy table (below) to show the importance and viability/ feasibility for all of the following opportunities/ problems:
+
+## User Strategy Table
+
+![User Strategy Table]()
+
+## Member Strategy Table
+
+![Member Strategy Table]()

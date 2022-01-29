@@ -93,6 +93,12 @@
 
                                 <div class="product-image-card">
 
+                                    {% if product.is_on_sale is True %}
+                                        <div class="sale-text">
+                                            Sale
+                                        </div>
+                                    {% endif %}
+
                                     <div>                
                                         {% if product.image %}
                                             <a href="{% url 'product_detail' product.id %}">
@@ -110,21 +116,31 @@
                                 <div class="row product-item-content">
 
                                     <div class="product-image-name">
-
-                                        <h6><strong>{{ product.name }}</strong></h6>
-
+        
+                                        <a href="{% url 'product_detail' product.id %}">
+                                            <h6><strong>{{ product.name }}</strong></h6>
+                                        </a>
+        
                                     </div>
-
-                                    <div class="product-image-content">
-
-                                        <h6>Price: £{{ product.price }}</h6>
-
-                                        {% if product.product_rating %}
-                                            <h6>Rating: <i class="fas fa-star"></i> {{ product.product_rating }}/5</h6>
+        
+                                    <div class="average-product-rating">
+        
+                                        {% if product.average_rating > 0 %}
+                                            {% with ''|center:product.average_rating as range %}
+                                                {% for _ in range %}
+                                                    <h5><i class="fas fa-star"></i></h5>
+                                                {% endfor %}
+                                            {% endwith %}
                                         {% else %}
-                                            <h6>No Rating</h6>
+                                            <h5 class="text-danger"><strong>No Rating</strong></h5>
                                         {% endif %}
-
+        
+                                    </div>
+        
+                                    <div class="product-image-content">
+        
+                                        <h6>Price: £{{ product.price }}</h6>
+        
                                     </div>
 
                                 </div>

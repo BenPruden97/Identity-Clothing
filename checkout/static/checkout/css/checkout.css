@@ -428,6 +428,11 @@ div.col-4 p{
 
 @media screen and (max-width: 768px) {
 
+    .order-confirmation-section{
+        padding: 2rem 0;
+        border: none;
+    }
+
     .checkout-buttons{
         display: flex;
         justify-content: center;
@@ -469,7 +474,29 @@ div.col-4 p{
     }
 
     .order-confirmation-section{
-        padding: 0.5rem;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .order-confirmation-section h4{
+        margin-top: 1rem;
+    }
+
+    .order-info-section h5{
+        margin: 0.75rem 0.75rem 0;
+    }
+
+    .order-details-section h6,
+    .order-details-section p{
+        margin: 0.75rem 0.75rem 0;
+    }
+
+    .delivery-to-section h5{
+        margin: 0.75rem 0.75rem 0;
+    }
+
+    .billing-info-section h5{
+        margin: 0.75rem 0.75rem 0
     }
 
     .order-summary-header p{

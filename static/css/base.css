@@ -2881,6 +2881,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
         width: 100%;
     }
 
+    .reset-password input#id_email{
+        width: 550px;
+    }
+
     /* ----- Contact Page Styling for Tablet Devices ----- */
 
     .customer-contact-text h6{
@@ -3181,10 +3185,6 @@ nav.navbar.navbar-expand-lg.navbar-light{
         font-size: 1.1rem;
         text-align: center;
     }
-
-    .best-sellers-button a{
-        width: 100%;
-    }
     
     div.swiper-button-next{
         display: none;
@@ -3245,6 +3245,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
     }
 
     .sign-out button{
+        width: 100%;
+    }
+
+    .reset-password input#id_email{
         width: 100%;
     }
 

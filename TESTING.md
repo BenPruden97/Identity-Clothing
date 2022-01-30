@@ -9,6 +9,49 @@
 * [Testing Code Validation](#testing-code-validation)
 * [Testing Lighthouse Performance](#testing-lighthouse-performance)
 
+# Testing Code Validation
+
+### HTML Validation
+
+Common errors/ warnings for all pages
+  * Javascript tags - This was because of the Toast Messages JS to display for all pages
+  * Empty Heading tags for <h5> - This was because of the average rating star icons to display the average rating for each product
+  * Search Page - Stray end div tags from line 401 & 403. I was not able to located the stray end divs.
+  * Contact Page - Accordion error. This was due to the FAQ looping for each accordion header and body templating
+  * Sign Up Page - End Tag for body on line 497. Also an unclosed div element on line 261. both of these errors could not be found.
+ 
+ Apart from these errors/ warnings listed. All pages passed the validation.
+
+### CSS Validation
+
+I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate my CSS style sheet.
+
+base.css File
+
+![Base CSS File]()
+
+checkout.css File
+
+![Checkout CSS File]()
+
+profile.css File
+
+![Profile CSS File]()
+
+### JSHint Validation
+ 
+JSHint was used to validation the Javascript across my project. The errors are listed below:
+  * EmailJS & Swal - These are unused variables that are used for a success or error message after the user submits a contact form.
+  * SwiperJS - This is an unused variable for the home page carousel that loops through products to display the most popular items.
+  * Stripe - This is an unused variable for the stripe_elements.js file for Stripe Payments.
+ 
+### Flake8 Validation
+ 
+Some of the common errors for flake8 validation are listed below:
+  * Lines too long - I updated most of the lines of code that were too long. There were some lines that could not be shortened.
+  * Class has no object member - This was not needed
+  * Variables not being used - Those variables were needed to view data within templates for looping and displaying content
+
 # Testing Lighthouse Performance
 
 ### Home Page Desktop Performance
@@ -127,8 +170,8 @@
 
 ### Product Detail Page Mobile Performance
 
-|Performance|Accessibility|Best Practice|SEO|Performance|Accessibility Issue|
-|:-----:|:-----:|:-----:|:-----:|:-----:|
+|Performance|Accessibility|Best Practice|SEO|Performance Issue|Accessibility Issue|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |74|59|87|91|Bootstrap CSS & JS Links & Unused JS which is from Toast Messages|Due to the quantity input and ARIA IDs|
 
 ### Shopping Cart Page Desktop Performance
@@ -139,8 +182,8 @@
 
 ### Shopping Cart Page Mobile Performance
 
-|Performance|Accessibility|Best Practice|SEO|Performance|Accessibility Issue|
-|:-----:|:-----:|:-----:|:-----:|:-----:|
+|Performance|Accessibility|Best Practice|SEO|Performance Issue|Accessibility Issue|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |75|68|100|91|Bootstrap CSS & JS Links & Unused JS which is from Toast Messages|Due to the quantity input and ARIA IDs|
 
 ### Product Management Page Desktop Performance
@@ -152,7 +195,7 @@
 ### Product Management Page Mobile Performance
 
 |Performance|Accessibility|Best Practice|SEO|Performance Issue|Accessibility Issue|
-|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |75|78|100|90|Bootstrap CSS & JS Links & Unused JS which is from Toast Messages|Due to the Select Image Input Field|
 
 ### Profile Page Desktop Performance

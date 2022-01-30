@@ -19,6 +19,8 @@
             
             </div>
 
+            <!-- Search Query Input -->
+
             <div class="col-12">
 
                 <form class="search-bar-form">
@@ -59,6 +61,8 @@
 
     </div>
 
+    <!-- Search Query No Results Section -->
+
     <div class="container">
 
         <div class="row">
@@ -84,6 +88,8 @@
                     </div>
 
                 {% else %}
+
+                    <!-- Products Information Section -->
 
                     {% for product in products %}
 
@@ -162,6 +168,8 @@
         </div>
 
     </div>
+
+            <!-- Products Category Options -->
 
             {% if not search_term or products|length < 1 %}
 

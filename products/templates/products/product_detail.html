@@ -256,6 +256,8 @@
 
     </div>
 
+    <!-- Product Information -->
+
     <div class="container">
 
         <div class="row">
@@ -324,7 +326,9 @@
 
             </div>
 
-            {% if request.user.id == review.user.id or request.user.is_superuser %}          
+            {% if request.user.id == review.user.id or request.user.is_superuser %}
+            
+                <!-- Edit Product Review Form -->
 
                 <button class="edit-review-button" type="button" data-bs-toggle="modal" data-bs-target="#editReview{{ review.id }}">Edit Review</button>
 
@@ -428,6 +432,8 @@
         {% endfor %}
 
     </div>
+
+    <!-- Add product Review Form -->
 
     <div class="container">
 

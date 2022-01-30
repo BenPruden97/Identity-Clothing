@@ -253,7 +253,7 @@ The wireframe mockups for Identity Clothing were created using Figma Design with
 
 Colors Used
 
-![Colors Used]()
+![Colors Used](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/colors.PNG)
 
 Typography
 
@@ -263,7 +263,7 @@ The secondary font used was "Sans-Serif" which would display if the primary font
 
 Images/ Screenshots
 
-The images/ screenshots used within my Identity Clothing project were created using Figma and Paint. I also used Vimeo to screen record my testing videos within my TESTING.md file. There is also a separate IMAGES.md file where all of the image links are listed for all images used within my Identity Clothing project.
+The images/ screenshots used within my Identity Clothing project were created using Figma and Paint. I also used Vimeo to screen record my testing videos within my TESTING.md file. There is also a separate [IMAGES.md File](IMAGES.md) file where all of the image links are listed for all images used within my Identity Clothing project.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -271,7 +271,7 @@ The images/ screenshots used within my Identity Clothing project were created us
 
 The data models used within Identity Clothing can be found below.
 
-![Data Models]()
+![Data Models](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/data-models.PNG)
 
 Here is a breakdown for each data model.
 
@@ -397,7 +397,7 @@ Base Template Example
 
 Here is an example of the base.html template for the Home Page. At the top of the page {% extends "base.html" %} is used to display the content from the base.html as well as {% load static %} to load the CSS file. The Navigation Bar, Burger Menu, Footer Section and Django Toasts are used within all pages for this project. The {% block content %} is then used to display the content from each page between the Navigation Bar, Burger Menu & Footer Section.
 
-![Base Template Example]()
+![Base Template Example](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/base-template.PNG)
 
 ### Navigation Bar Features
 
@@ -580,7 +580,7 @@ I ran into an issue with the toast messages displaying throughout my project. Th
 
 To fix this I had to add some additional code which can be found below that fixed this issue.
 
-![Toast Messages Javascript]()
+![Toast Messages Javascript](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/toast-messages-js.PNG)
 
 3. Signals File For Products
 
@@ -590,7 +590,7 @@ This was a problem until a tutor recommended a signals.py file to calculate the 
 
 The signals.py file code and products page code to display the average rating can be found below.
 
-![Signals.py File]()
+![Signals.py File](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/signals-file.PNG)
 
 4. Favicon
 

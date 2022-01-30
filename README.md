@@ -18,6 +18,14 @@
   * [Structure Development Plane](#structure-development-planes)
   * [Skeleton Development Plane](#skeleton-development-planes)
   * [Surface Development Plane](#surface-development-planes)
+* [Data Models](#data-models)
+* [Project Features](#project-features)
+* [Features To Implement In The Future](#features-to-implement-in-the-future)
+* [Issues And Bugs](#issues-and-bugs)
+* [Technologies Used](#technologies-used)
+* [TESTING.md File](TESTING.md)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
 # UX
 
@@ -574,5 +582,198 @@ This was later fixed and the js elements were fixed. This issue did cause some s
 
 [Django Country Field](https://pypi.org/project/django-countries/)
 * Django Country Field was used to make sure users were selecting the correct country code when making payment.
+
+[Back to Table of Contents](#table-of-contents)
+
+# Testing 
+
+The testing for Identity Clothing was created in a separate file. The TESTING.md file can be found here - [TESTING.md File](TESTING.md)
+
+[Back to Table of Contents](#table-of-contents)
+
+# GitHub Deployment
+
+### Forking A Repository
+  * Log into your GitHub Account
+  * Select your project repository
+  * On the top right of your repository page, click on the 'Fork' Button
+  * You should now have a copy of your GitHub project repository in your GitHub account.
+
+### Cloning A Repository
+  * Log into your GitHub Account
+  * Select your project repository
+  * Click on the green 'GitPod' button on the right hand side of the respository page. This will open up a new GitPod workspace for you to work on.
+
+There are also 3 other options that you can use to clone your repository. Select the 'Code' dropdown button to left of the green 'GitPod' Button.
+  1. To clone your repository using HTTPS, click on the "HTTPS" option and copy the link using the copy button to the right of the https link.
+  2. To clone your repository using a SSH key, click on the "SSH" option and copy the link using the copy button to the right of the SSH link.
+  3. To clone your repository using a GitHub CLI, click on the "GitHub CLI" option and copy the link using the copy button to the right of the GitHub CLI link.
+
+# Local Deployment
+
+### Follow the below steps to deploy locally:
+
+1. Install all project requirements using the below command in the terminal
+
+  * pip3 install -r requirements.txt
+
+2. Create a .gitignore file within the project's root directory
+
+3. Create an env.py file wihin the project's root directory 
+
+4. Add project environment variables to env.py file:
+
+  import os
+
+  os.environ.setdefault("SECRET_KEY", <your_secret_key>)
+  os.environ.setdefault("DEVELOPMENT", '1')
+  os.environ.setdefault("STRIPE_PUBLIC_KEY", <your_key>)
+  os.environ.setdefault("STRIPE_SECRET_KEY", <your_key>)
+  os.environ.setdefault("STRIPE_WH_SECRET", <your_key>)
+
+  You can also add project environment variables by going to GitPod, Account Settings, Variables, New Variables.
+  
+  * "SECRET_KEY" - Can be Generated using 'Django Secret Key Generator'
+  
+  * "STRIPE_PUBLIC_KEY" & "STRIPE_SECRET_KEY" - can be generated after signing up for a Stripe account. Keys can then be found in the 'Developers' Section and 'API Keys'
+  
+  * "STRIPE_WH_SECRET" - Can be generated in the 'Developers' Section | 'Add Endpoint' | 'Enter'
+  * After clicking 'Enter' - Select 'Receive All Events' | 'Add Endpoint' | You Can Then View Your 'STRIPE_WH_SECRET' Key.
+
+5. You will then need to makemigrations and migrate to create a local database. This can be done with the following commands within the terminal:
+  
+  * python3 manage.py makemigrations --dry-run
+  * python3 manage.py makemigrations
+  * python3 manage.py migrate --plan
+  * python3 manage.py migrate
+
+6. You will then need to load the JSON data files that can be located within your fixture folders that host all of the data for different database models. This can be done with the following commands within the terminal
+
+  * python3 manage.py loaddata category
+  * python3 manage.py loaddata products
+  * python3 manage.py faqs
+
+7. A superuser will then need to be created so you have access to the Django Admin Page. This can be done with the following commands within the terminal.
+
+  * python3 manage.py createsuperuser - Create a super user using a username, email and password
+  * python3 manage.py runserver - To run the server locally
+  * Open the server and after the url add admin/
+  * You should then be taken to a login page for Django Administration - Login using the details you entered when creating the superuser and view your database.
+
+After completing all of these steps, you should be able to run your project within your local development environment.
+
+# Heroku App Deployment
+
+Herku is a cloud application platform that supports many programming languages. As this project is using a server, application and database, the developer thought Heroku was the best app to deploy his project.
+
+Before you can deploy your project to Heroku, you must complete the following steps to allow the Heroku app to work.
+
+### Creating a Heroku App Account
+
+You can do this by following the steps below:
+
+1. Sign up for a heroku account
+2. Select the 'New' button at the top right of the page
+3. Select 'Create New App' and give it a unique app name
+4. Then Select 'Create App'
+5. Select the 'Deploy' Tab and click 'Connect To GitHub'
+6. Finally search for your GitHub repository name, select the correct repository and click 'Connect'
+
+### Configure Heroku Variables
+
+Within your Heroku dashboard, select 'Settings' and 'Reveal Config Vars' button to add all of the necessary variables for your project.
+
+|Key|Values|
+|:-----:|:-----:|
+|AWS_ACCESS_KEY_ID|<AWS_ACCESS_KEY_ID>|
+|AWS_SECRET_ACCESS_KEY|<AWS_SECRET_ACCESS_KEY>|
+|DATABASE_URL|<DATABASE_URL>|
+|EMAIL_HOST_PASS|<EMAIL_HOST_PASS>|
+|EMAIL_HOST_USER|<EMAIL_HOST_USER>|
+|SECRET_KEY|<SECRET_KEY>|
+|STRIPE_PUBLIC_KEY|<STRIPE_PUBLIC_KEY>|
+|STRIPE_SECRET_KEY|<STRIPE_SECRET_KEY>|
+|STRIPE_WH_SECRET|<STRIPE_WH_SECRET>|
+|USE_AWS|True|
+
+* Navigate back to the 'Deploy' navaigation link
+* Within the 'Automatic Deploys' section make sure that your main branch is selected and click on 'Enable Automatic Deploys'
+
+### Configure Database
+
+1. Freeze new dependancies by typing the following command line - pip3 freeze > requirements.txt
+2. Create a Procfile so Heroku knows what file to run, you can do this with the following command line - echo web: python3 app.py > Procfile
+3. Push both new files to GitHub. You can do this with the following commands
+  * git add -A
+  * git commit -m "Created requirements.txt and Procfile"
+  * git push
+4. Within the settings.py file. Add the following code 'import dj_database_url' to the top of the file
+5. Find the DATABASE variable and replace with the following code:
+
+  if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+          'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+      }
+  else:
+      DATABASES = {
+          'default': {
+              'ENGINE': 'django.db.backends.sqlite3',
+              'NAME': BASE_DIR / 'db.sqlite3',
+          }
+      }
+      
+6. Login into heroku within the terminal with the following command line
+  * heroku login -i
+  * login with your heroku details
+
+7. Migrate models to Heroku. This can be done with the following command line
+  * python3 manage.py makemigrations --dry-plan
+  * python3 manage.py makemigrations
+  * python3 manage.py migrate --plan
+  * python3 manage.py migrate
+
+8. Create a new superuser for the Heroku App
+
+9. Temporarily disable 'COLLECTSTATIC' to prevent Heroku from collecting static files before setting up AWS. You can do this with the following command line
+  * heroku config:set DISABLE_COLLECTSTATIC=1 --app <your app name>
+ 
+10. Add Heroku App the 'ALLOWED HOSTS' variable within the settings.py file.
+  * ALLOWED_HOSTS = ['127.0.0.1', '<your_app_name>', 'localhost']
+ 
+11. Commit these changes to GitHub.  You can do this with the following commands
+  * git add -A
+  * git commit -m "Commit Message"
+  * git push
+ 
+12. Set up a push to Heroku. You can do this with the following commands
+  * Heroku git: remote -a <your_app_name>
+ 
+13. Push to Heroku App
+  * git push heroku main 
+ 
+[Back to Table of Contents](#table-of-contents)
+ 
+# Credits
+
+### External Websites
+
+Here is a list of the websites that the developer has used for any help or solutions
+
+1. [YouTube](https://www.youtube.com/)
+2. [Bootstrap](https://getbootstrap.com/)
+3. [W3Schools](https://www.w3schools.com/)
+4. [Stack Overflow](https://stackoverflow.com/)
+5. [CSS Tricks](https://css-tricks.com/)
+6. [Django](https://www.djangoproject.com/)
+7. [Python](https://www.python.org/)
+
+### Mentors
+
+Seun has given me support and guidance throughout this project and answered any questions I have had or helped me with any issues or errors I had run into.
+
+### Code Institute
+
+* Tutor support was a massive help when I couldn't get certain parts of code to work.
+* The Boutique Ado Project was used as a reference for me during the development process.
 
 [Back to Table of Contents](#table-of-contents)

@@ -14,6 +14,10 @@
   * [User Stories](#user-stories)
 * [Five Development Planes](#five-development-planes)
   * [Strategy Development Plane](#strategy-development-plane)
+  * [Scope Development Plane](#scope-development-plane)
+  * [Structure Development Plane](#structure-development-plane)
+  * [Skeleton Development Plane](#skeleton-development-plane)
+  * [Surface Development Plane](#surface-development-plane)
 
 # UX
 
@@ -82,7 +86,7 @@ The primary goal of Identity Clothing is to provide an E-Commerce website where 
 
 # Five Development Planes
 
-1. Strategy Development Planes
+### Strategy Development Planes
 
 Here is how I broke down the strategy development plane for Identity Clothing:
 
@@ -120,8 +124,137 @@ With the above strategy options for users and members in mind, I have created a 
 
 ## User Strategy Table
 
-![User Strategy Table]()
+![User Strategy Table](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/user-strategy-table.PNG)
 
 ## Member Strategy Table
 
-![Member Strategy Table]()
+![Member Strategy Table](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/member-strategy-table.PNG)
+
+## Admin Strategy Table
+
+![Admin Strategy Table](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/admin-strategy-table.PNG)
+
+### Scope Development Planes
+
+Here is how I broke down the Scope Development Plane in order to align with the Strategy Development Plane listed above. The Scope Development Plane is broken down into two categories:
+
+1. Content Requirements
+  * Easily readable primary and secondary font
+  * Buttons and links are easily visible and clickable
+  * Headings and text can are easily visible
+  * Aesthetic colors that work well together
+  * Easy Naviagtion
+  * Responsive design for all devices
+  * Home Page
+  * Search Page
+  * Sign Up Page
+  * Sign In Page
+  * Contact Page
+  * Products Page
+  * Product Detail Page
+  * Product Management Page
+  * Profile Page
+  * Shopping Cart Page
+  * Checkout Page
+  * Order Confirmation Page
+
+2. Functionality Requirements
+  * Sign Up for an account
+  * Sign In to your account
+  * Sign Out Functionality
+  * Forgot password functionality
+  * Contact Developer/ Site Owner
+  * Search for products
+  * View products
+  * Add product review
+  * Update or Delete product reviews
+  * Add products to website
+  * Update or Delete products
+  * Add products to shopping cart
+  * Update or Remove product
+  * Add personal, delivery & billing information
+  * Edit Delivery Information on Profile
+  * View order history
+  * Email Confirmation
+
+### Structure Development Plane
+
+Within the Structure Development Plane I have created a hierarchial structure chart to show how the users & members/admin of Identity Clothing can navigate around the site with ease and efficiency, the hierarchial structure chart is displayed below:
+
+#### User Structure Chart
+
+![User Strucutre Chart](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/user-structure-chart.PNG)
+
+#### Member & Admin Structure Chart
+
+![Member & Admin Strucutre Chart](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/member-and-admin-structure-chart.PNG)
+
+### Skeleton Development Plane
+
+The wireframe mockups for Identity Clothing were created using Figma Design with the User Experience and User Interface in mind:
+
+#### Home Page Wireframe
+
+![Home Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/home-page-wireframe.PNG)
+
+#### Search Page Wireframe
+
+![Search Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/search-wireframe.PNG)
+
+#### Contact Page Wireframe
+
+![Contact Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/contact-wireframe.PNG)
+
+#### Sign Up Page Wireframe
+
+![Sign Up Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/sign-up-wireframe.PNG)
+
+#### Sign In Page Wireframe
+
+![Sign In Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/sign-in-wireframe.PNG)
+
+#### Products Page Wireframe
+
+![Products Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/products-wireframe.PNG)
+
+#### Products Detail Page Wireframe
+
+![Products Detail Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/product-detail-wireframe.PNG)
+
+#### Product Management Page Wireframe
+
+![Product Management Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/product-management-wireframe.PNG)
+
+#### Profile Page Wireframe
+
+![Profile Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/my-profile-wireframe.PNG)
+
+#### Shopping Cart Page Wireframe
+
+![Shopping Cart Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/shopping-cart-wireframe.PNG)
+
+#### Checkout Page Wireframe
+
+![Checkout Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/checkout-wireframe.PNG)
+
+#### Order Confirmation Page Wireframe
+
+![Order Confirmation Page Wireframe](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/order-confirmation-wireframe.PNG)
+
+### Surface Development Plane
+
+Colors Used
+
+![Colors Used]()
+
+Typography
+
+The primary font used with BP Workout Plans was "Cabin". I wanted the font to match well with the UI of the website with its simplicity but was also very easy to read and understand.
+
+The secondary font used was "Sans-Serif" which would display if the primary font was not able to load onto the user/ members device.
+
+Images/ Screenshots
+
+The images/ screenshots used within my Identity Clothing project were created using Figma and Paint. I also used Vimeo to screen record my testing videos within my TESTING.md file. There is also a separate IMAGES.md file where all of the image links are listed for all images used within my Identity Clothing project.
+
+[Back to Table of Contents](#table-of-contents)

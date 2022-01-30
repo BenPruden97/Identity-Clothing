@@ -41,12 +41,12 @@ card.addEventListener('change', function (event) {
                 <i class="fas fa-times"></i>
             </span>
             <span>${event.error.message}</span>
-            `
+            `;
         $(errorDiv).html(html);
     } else {
         errorDiv.textContent = '';
     }
-})
+});
 
 // Handle form submit
 
@@ -120,5 +120,5 @@ form.addEventListener('submit', function(ev) {
         });
     }).fail(function() {
         location.reload();
-    })
+    });
 });

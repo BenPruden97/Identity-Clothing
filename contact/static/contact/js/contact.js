@@ -24,7 +24,7 @@ form.addEventListener("submit", function() {
             timer: 3500
         });
 
-        form.reset()
+        form.reset();
 
     }, function(error) {
 
@@ -36,7 +36,7 @@ form.addEventListener("submit", function() {
             timer: 3500
         });
 
-        form.reset()
+        form.reset();
 
     });
 

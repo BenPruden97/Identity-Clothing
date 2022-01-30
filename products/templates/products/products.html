@@ -240,13 +240,13 @@
 
             var selectedVal = selector.val();
             if (selectedVal != "reset"){
-                console.log(selectedVal)
+                console.log(selectedVal);
                 var sort;
                 var direction; 
                 
                 if (selectedVal.startsWith("average_rating")) {
-                    sort = selectedVal.split('_')
-                    direction = sort[2]
+                    sort = selectedVal.split('_');
+                    direction = sort[2];
                     sort = `${sort[0]}_${sort[1]}`;
                 }
                 else {
@@ -264,7 +264,7 @@
 
                 window.location.replace(currentUrl);
             }
-        })
+        });
     </script>
 
 {% endblock %}

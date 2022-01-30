@@ -494,3 +494,85 @@ There was also another error which was due to the JQuery CDN link that was not w
 This was later fixed and the js elements were fixed. This issue did cause some setbacks as I had to wait for the CDN link to work again to see if the code I had added for each section were working and displaying as they should.
 
 [Back to Table of Contents](#table-of-contents)
+
+# Technologies Used
+
+### Languages
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
+
+### Programs
+
+[Git](https://git-scm.com/)
+* Git was used as version control for my project. This was so I could add, commit & push my code to my GitHub Repository.
+
+[GitHub](https://github.com/)
+* GitHub was used as a software hosting platform to host my project. GitHub is where all of my project files, images, screenshots, code and folders are stored.
+
+[GitPod](https://gitpod.io/workspaces)
+* GitPod was used as a development hosting platform for me to create my project code.
+
+[Heroku App](https://www.heroku.com/)
+* The Heroku App was used to be able to deploy my project website.
+
+[Django](https://www.djangoproject.com/)
+* The Heroku App was used to be able to deploy my project website.
+
+[AWS](https://aws.amazon.com/console/)
+* Amazon Web Service s3 Bucket was used to store static and media files.
+
+[Stripe](https://stripe.com/gb)
+* Stripe was used to handle user payments
+
+[Figma](https://www.figma.com/)
+* Figma was used to create the wireframes and screenshots during the design phase of the project.
+
+[Vimeo](https://vimeo.com/)
+* Vimeo was used to take screen recordings for the testing of my project
+
+[Google Fonts](https://fonts.google.com/)
+* Google Fonts was used to display my primary font (Cabin) & secondary font (Sans-Serif)
+
+[Font Awesome](https://fontawesome.com/)
+* Font Awesome was used to display icons used throughout my project
+
+### Libraries
+
+[Bootstrap](https://getbootstrap.com/)
+* Bootstrap was used to implement responsiveness to my project pages and bootstrap classes for design features.
+
+[JQuery](https://jquery.com/)
+* jQuery was used to simplify the JavaScript code used.
+
+[EmailJS](https://www.emailjs.com/)
+* EmailJS was used to allow users/ members to send messages using the contact form directly to the Developer's email address using JavaScript.
+
+[SweetAlert](https://sweetalert.js.org/docs/)
+* SweetAlert was used alongside EmailJS to provide an email validation pop up once the email had been sent. 
+
+[Jinja](https://jinja.palletsprojects.com/en/2.10.x/)
+* Jinja templating was used within the base.html file to display html code throughout the project application.
+
+### Database Management
+
+[Heroku Postgres](https://www.heroku.com/postgres)
+* Heroku Postgres was used as a production database that is provided by Heroku.
+
+### Django Packages
+
+[Django AllAuth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+* AllAuth was the used for user authentication, registration and account management.
+
+[Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+* Django Crispy Forms was used to style Django Forms for easier authenticate and functionality
+
+[Django Pillow](https://pillow.readthedocs.io/en/stable/)
+* Django Pillow was used for image processing on the database.
+
+[Django Country Field](https://pypi.org/project/django-countries/)
+* Django Country Field was used to make sure users were selecting the correct country code when making payment.
+
+[Back to Table of Contents](#table-of-contents)

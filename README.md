@@ -444,5 +444,53 @@ The Burger Navigation Bar Menu:
 
 [Back to Table of Contents](#table-of-contents)
 
+# Issues And Bugs
 
+I ran into some issues during the development of Identity Clothing. The most notable issues or bugs are listed below along with a solution or how I fixed that issue.
 
+1. Page Pagination
+
+I tried to add page pagination to my product pages so they would only display a certain amount of products per page. This would have been used for the following pages
+  * Search Page
+  * Men's Products Page
+  * Women's Products Page
+  * Items on Sale Page
+  * All Products Page
+
+After implementing this into my project, there was an error when moving from page to page as the Men's & Women's product pages are based on the all products view. This would mean when clicking onto the next page of products, it would take the user to the all products page instead of the next page for the products they have quered or categorised for.
+
+A solution to this is to separate each category into its own page, therefore when paginating through products, the pagination stays within the current category or search query and displays the correct amount of products on each page and the actual products displaying are relevant to the category or search query.
+
+2. Toast JS
+
+I ran into an issue with the toast messages displaying throughout my project. The JS code from the Boutique Ado project was not displaying the toast messages for any pages throughout my project.
+
+To fix this I had to add some additional code which can be found below that fixed this issue.
+
+![Toast Messages Javascript]()
+
+3. Signals File For Products
+
+There was an issue with the Product Review functionality, once a user adds a product review to a product, there needed to be an average rating for that product to display to other users. 
+
+This was a problem until a tutor recommended a signals.py file to calculate the average rating for each product after a product review has been added, updated or deleted from the database.
+
+The signals.py file code and products page code to display the average rating can be found below.
+
+![Signals.py File]()
+
+4. Favicon
+
+I have added a favicon to my project that displays within the GitPod Workspace server. However the favicon does not display on the Heroku App. I had contacted tutor support about this but we could not find a reason as to why it was not displaying on my Workspace server but not Heroku App.
+
+The favicon is also added to my AWS S3 Bucket which made no difference.
+
+5. GitPod Workspace crashes and JQuery CDN links
+
+Throughout the development of Identity Clothing, there were many times where GitPod Workspaces would crash and not save any of the code I had implemented. Therefore there maybe times where code has been readded or a mix up of commits due to this.
+
+There was also another error which was due to the JQuery CDN link that was not working. This affected my project as many elements that required the JQuery CDN link were not working as they should be. 
+
+This was later fixed and the js elements were fixed. This issue did cause some setbacks as I had to wait for the CDN link to work again to see if the code I had added for each section were working and displaying as they should.
+
+[Back to Table of Contents](#table-of-contents)

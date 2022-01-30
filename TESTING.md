@@ -9,6 +9,68 @@
 * [Testing Code Validation](#testing-code-validation)
 * [Testing Lighthouse Performance](#testing-lighthouse-performance)
 
+# Testing User Stories
+
+### As a user, I would like to:
+
+* View all clothing items available.
+  * There are product categories for specific products and an all products page where all of the current products are listed.
+* Have a search query, to find a specific clothing items.
+  * There is a search page where users can enter a specific search query to find current products on the website. 
+* Add items to my shopping cart that I would like to purchase.
+  * On the product detail page, there is an add to cart button where the item will be added to the user's cart.
+* Select clothing items for men.
+  * There is a men's category page where only men's products display.
+* Select clothing items for women.
+  * There is a women's category page where only women's products display.
+* Select clothing items that are currently on sale.
+  * There is a item's on sale category page where only item's on sale products display.
+* Select the size of my clothing item.
+  * There is an option field with the following sizes available to users. XXS, XS, S, M, L, XL, XXL.
+* Select the quantity of my clothing item.
+  * There is a quantity field where users can select between a quantity of 1 or 99 for that clothing item.
+* Sign-up for an account.
+  * There is a sign up page where users are able to sign up for an account with Identity Clothing.
+* Contact developer/ site owner if needed.
+  * There is a contact page where users can submit a contact form for any help or advice. There is also a FAQ section for the most frequently asked questions.
+
+### As a registered/ exisiting user, I would like to:
+
+* Sign into my account.
+  * There is a sign in page where registered users are able to sign into their account.
+* View all of my previous orders to keep a record of my transaction.
+  * Registered users can find their order history and previous order's information within their profile page.
+* Be able to add & edit product reviews for products.
+  * There is a product review section within the product detail page. In this page, registered users can add and edit their product reviews.
+* Edit default information if any information needs to be updated.
+  * Registered users can update their delivery and personal information within their profile page.
+* View clothing items within my shopping cart.
+  * Registered users are able to view all items that they have added to their shopping cart.
+* Remove clothing items from my shopping cart if I no longer want them.
+  * There is remove item link that will remove the item from the users shopping cart.
+* Update a clothing item’s quantity within my shopping cart before purchasing.
+  * There is an update item link that will update the quantity of the product within the shopping cart.
+* Securely purchase any clothing items within my shopping bag.
+  * After viewing their shopping cart, registered users can then proceed to checkout to purchase their shopping cart items.
+* Receive an email for confirmation of my order.
+  * After a successful purchase, the registered user will receive a confirmation of their order.
+
+As a admin, I would like to:
+* Sign into my admin account.
+  * Admin users are able to sign into their admin account.
+* Delete products that may need replacing or need to be removed from the website/ database.
+  * Admin users are able to delete products and products on sale from the website.
+* Add products to the website/ database.
+  * Admin users are able to add products and products on sale to the website.
+* Edit products on the website/ database.
+  * Admin users are able to edit & update products and products on sale on the website.
+* Delete member reviews if they are irrelevant to the product from the website/ database.
+  * Only Admin users are able to remove product reviews from the website.
+* Be able to shop and purchase clothing items like a regular user.
+  * Admin users are able to use the Identity Clothing website just like any other user.
+
+[Back To Table Of Contents](#table-of-contents)
+
 # Testing Code Validation
 
 ### HTML Validation
@@ -51,6 +113,8 @@ Some of the common errors for flake8 validation are listed below:
   * Lines too long - I updated most of the lines of code that were too long. There were some lines that could not be shortened.
   * Class has no object member - This was not needed
   * Variables not being used - Those variables were needed to view data within templates for looping and displaying content
+ 
+[Back To Table Of Contents](#table-of-contents)
 
 # Testing Lighthouse Performance
 

@@ -420,7 +420,29 @@ The Burger Navigation Bar Menu:
 
 [Back to Table of Contents](#table-of-contents)
 
+# Features To Implement In The Future
 
+1. Add Kids Clothing and Footwear Products
+
+* To add a kids page to display clothing items for kids and footwear page to display footwear for men, women and kids.
+
+2. Add product stock and out of stock options
+
+* This will be displayed in the product detail page and display the amount of stock that is available for that product. There will be a stock option for each product size and notify the user if that product size is out of stock
+
+3. Page Pagination
+
+* This will paginate each page within the website when a certain amount of products are displayed. I will set it to only 9 products to be displayed per page so the page does not display all products and therefore decrease scroll time and length.
+
+4. Allow availability and delivery internationally
+
+* To widen the spread of the Identity Clothing website, we can deliver or post orders across the world to raise brand awareness and allow everyone to have access to Identity Clothing products/ Items. This can be introduced by adding VAT & a postage/ delivery fee for customers who are out of the UK depending on distance.
+
+5. To Sell More Products and Add More Products For Each Category
+
+* To add more product categories including coats, jeans, pyjamas, socks and underwear. To also increase the amount of products per category, there are 12 products per category at the moment. I would like to increase this to 25 products per category to have more clothing options and items.
+
+[Back to Table of Contents](#table-of-contents)
 
 
 

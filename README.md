@@ -13,11 +13,11 @@
   * [User Goals](#user-goals)
   * [User Stories](#user-stories)
 * [Five Development Planes](#five-development-planes)
-  * [Strategy Development Plane](#strategy-development-plane)
-  * [Scope Development Plane](#scope-development-plane)
-  * [Structure Development Plane](#structure-development-plane)
-  * [Skeleton Development Plane](#skeleton-development-plane)
-  * [Surface Development Plane](#surface-development-plane)
+  * [Strategy Development Plane](#strategy-development-planes)
+  * [Scope Development Plane](#scope-development-planes)
+  * [Structure Development Plane](#structure-development-planes)
+  * [Skeleton Development Plane](#skeleton-development-planes)
+  * [Surface Development Plane](#surface-development-planes)
 
 # UX
 
@@ -258,3 +258,169 @@ Images/ Screenshots
 The images/ screenshots used within my Identity Clothing project were created using Figma and Paint. I also used Vimeo to screen record my testing videos within my TESTING.md file. There is also a separate IMAGES.md file where all of the image links are listed for all images used within my Identity Clothing project.
 
 [Back to Table of Contents](#table-of-contents)
+
+# Data Models
+
+[Back to Table of Contents](#table-of-contents)
+
+# Project Features
+
+Jinja templating was used to extend the base.html template across every page for Identity Clothing. This is to keep the consistency and functionality of each page that extends the base.html template. The sections within the base.html template that are implemented for each page are:
+
+The Navigation Bar (Both User & Member Navigation Bars)
+The Burger Menu - Used to display the Navigation Links on Tablet and Mobile Devices
+The Footer Section - Includes social links
+Django Toast - Used to display toast messages got alerts, warnings, success & errors to let a user/ member know an action they have completed with a message box. (e.g: Success message for signing into your acccount)
+Also includes all Bootstrap CSS & JS links & CDNs. Include javscript script tags for JS elements across all pages.
+
+Base Template Example
+
+Here is an example of the base.html template for the Home Page. At the top of the page {% extends "base.html" %} is used to display the content from the base.html as well as {% load static %} to load the CSS file. The Navigation Bar, Burger Menu, Footer Section and Django Toasts are used within all pages for this project. The {% block content %} is then used to display the content from each page between the Navigation Bar, Burger Menu & Footer Section.
+
+![Home Page Base Template]()
+
+### Navigation Bar Features
+
+The Navigation Bar is split into three sections. Theses sections are listed below:
+
+The User Navigation Bar:
+
+* Home Page
+* Search Page (Allows user to use a search query to find a product)
+* Contact Page (Allows the user to contact the developer/ site owner for any questions, queries or assistance)
+* Sign Up Page (Allows the user to sign up for an account)
+* Sign In Page (Allows the user to log into their account)
+* Shopping Cart (Allows the user to add products to the cart, however they will need to Sign In to be able to make a purchase)
+
+![User Navigation Bar]()
+
+The Member & Admin Navigation Bar:
+
+* Home Page
+* Search Page (Allows user to use a search query to find a product)
+* Contact Page (Allows the user to contact the developer/ site owner for any questions, queries or assistance)
+* Product Management (Allows the admin to add products to the website) - Admin Only
+* Profile (Allows the member or admin to view their information and order history)
+* Shopping Cart (Allows the manage all of the products they have added to their cart. They can also update or remove products)
+
+![Member & Admin Navigation Bar]()
+
+The Burger Navigation Bar Menu:
+
+* Displays the user and member & admin navigation bar for tablet and mobile devices
+
+![User Burger Menu]()
+![Member & Admin Burger Menu]()
+
+### Home Page Features
+
+* User & Member/ Admin Navigation Bar
+* Hero Image Section
+* Most Popular Clothing Items Carousel
+* Mens Clothing Section
+* Womens Clothing Section
+* Items on Sale Section
+* Footer
+
+### Search Page Features
+
+* User & Member/ Admin Navigation Bar
+* Search Bar Input
+* Search Button
+* Mens Category Section
+* Womens Category Section
+* Items on Sale Category Section
+* Footer
+
+### Contact Page Features
+
+* User & Member/ Admin Navigation Bar
+* Identity Clothing Services Section
+* Contact Form
+* FAQs Accordion Section
+* Footer
+
+### Sign Up Page Features
+
+* User & Member/ Admin Navigation Bar
+* Sign Up Form
+* Sign In Button (If already has an account)
+* Footer
+
+### Sign In Page Features
+
+* User & Member/ Admin Navigation Bar
+* Sign In Form
+* Sign Up Button (If does not have an account)
+* Footer
+
+### Products Page Features
+
+* User & Member/ Admin Navigation Bar
+* Product Category Buttons
+* All Products Link
+* Products Filtering Option
+* Product Images & Information
+* Footer
+
+### Product Detail Page Features
+
+* User & Member/ Admin Navigation Bar
+* Product Image
+* Product Information
+* Product Size Selections
+* Product Qty Input Field
+* Back to Products Button
+* Add To Cart Button
+* Edit Clothing Item Button - Admin Only
+* Delete Clothing Item Button - Admin Only
+* Add A Product Review - Members/ Admin Only
+* Edit Product Review - Members Who Created Review Only
+* Delete Product Review - Admin Only
+* Footer
+
+### Shopping Cart Page Features
+
+* User & Member/ Admin Navigation Bar
+* Products in Cart Preview
+* Update Item
+* Remove Item
+* Add More Products button
+* Proceed To Checkout button
+* Footer
+
+### Products Management Page Features - Admin Page Only
+
+* User & Member/ Admin Navigation Bar
+* Add Product Form
+* Footer
+
+### Profile Page Features
+
+* User & Member/ Admin Navigation Bar
+* Update Information Form
+* List Of Order History 
+* Footer
+
+### Checkout Page Features
+
+* User & Member/ Admin Navigation Bar
+* Add Personal Information Form
+* Add Delivery Information Form
+* Add Billing Information and Card Details 
+* Footer
+
+### Email Confirmation Features
+
+* User & Member/ Admin Navigation Bar
+* Add Personal Information
+* Add Delivery Information
+* Add Billing Information
+* Footer
+
+[Back to Table of Contents](#table-of-contents)
+
+
+
+
+

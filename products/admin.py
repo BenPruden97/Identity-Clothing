@@ -1,9 +1,18 @@
+"""
+This is the product admin to create admin
+views for Products, Categories and Product Reviews
+"""
+
 from django.contrib import admin
 from .models import Product, Category, ProductReview
 
 # Register your models here.
 
+
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Create Admin views for products
+    """
     list_display = (
         'name',
         'description',
@@ -16,6 +25,9 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Create Admin views for Catgories
+    """
     list_display = (
         'friendly_name',
         'name'
@@ -23,6 +35,9 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class ProductReviewAdmin(admin.ModelAdmin):
+    """
+    Create Admin views for Product Reviews
+    """
     list_display = (
         'user',
         'product',

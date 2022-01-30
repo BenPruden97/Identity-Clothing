@@ -269,6 +269,118 @@ The images/ screenshots used within my Identity Clothing project were created us
 
 # Data Models
 
+The data models used within Identity Clothing can be found below.
+
+![Data Models]()
+
+Here is a breakdown for each data model.
+
+### UserProfile Model
+
+|Name|Field Type|Validation Type|
+|:-----:|:-----:|:-----:|
+|user|OneToOneField|User, on_delete=models.CASCADE|
+|phone_number|CharField|max_length=20, null=True, blank=True|
+|street_address1|CharField|max_length=80, null=True, blank=True|
+|street_address2|CharField|max_length=80, null=True, blank=True|
+|town_or_city|CharField|max_length=40, null=True, blank=True|
+|county|CharField|max_length=80, null=True, blank=True|
+|postcode|CharField|max_length=20, null=True, blank=True|
+|country|CountryField|blank_label='Country', null=True, blank=True|
+
+### Category Model
+
+|Name|Field Type|Validation Type|
+|:-----:|:-----:|:-----:|
+|name|CharField|max_length=254|
+|friendly_name|CharField|max_length=254, null=True, blank=True|
+
+### Product Model
+
+SIZE_CHOICES = (
+        ('XXSmall','XXS'),
+        ('XSmall','XS'),
+        ('Small','S'),
+        ('Medium','M'),
+        ('Large','L'),
+        ('XLarge','XL'),
+        ('XXLarge','XXL'),
+    )
+    
+The SIZE_CHOICES are an object of different size options for the product_size field.
+
+|Name|Field Type|Validation Type|
+|:-----:|:-----:|:-----:|
+|category|ForeignKey|'Category', null=True, blank=True, on_delete=models.SET_NULL|
+|name|CharField|max_length=254|
+|description|TextField|
+|price|DecimalField|max_digits=6, decimal_places=2|
+|average_rating|IntegerField|default=0|
+|is_on_sale|BooleanField|default=False|
+|sale_percentage|DecimalField|max_digits=6, decimal_places=2, null=True, blank=True|
+|product_size|CharField|max_length=7, choices=SIZE_CHOICES|
+|image|ImageField|null=True, blank=True|
+
+### Product Review Model
+
+PRODUCT_RATING = (
+    (1, '1'),
+    (2, '2'),
+    (3, '3'),
+    (4, '4'),
+    (5, '5'),
+)
+
+The PRODUCT_RATING choices are an object of different rating options for the review_add_rating field.
+
+|Name|Field Type|Validation Type|
+|:-----:|:-----:|:-----:|
+|user|ForeignKey|User, on_delete=models.CASCADE|
+|product|ForeignKey|Product, on_delete=models.CASCADE|
+|review_add_text|TextField|max_length=254|
+|review_add_rating|IntegerField|choices=PRODUCT_RATING|
+|date_created|DateField|auto_now_add=True|
+
+### Order Model
+
+|Name|Field Type|Validation Type|
+|:-----:|:-----:|:-----:|
+|order_number|CharField|max_length=32, null=False, editable=False|
+|user_profile|ForeignKey|UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders')
+|full_name|CharField|max_length=50, null=False, blank=False|
+|email|EmailField|max_length=254, null=False, blank=False|
+|phone_number|CharField|max_length=20, null=False, blank=False|
+|country|CountryField|blank_label="Country", max_length=40, null=False, blank=False|
+|postcode|CharField|max_length=20, null=True, blank=True|
+|town_or_city|CharField|max_length=40, null=False, blank=False|
+|street_address1|CharField|max_length=80, null=False, blank=False|
+|street_address2|CharField|max_length=80, null=True, blank=True|
+|county|CharField|max_length=80, null=True, blank=True|
+|date|DateTimeField|auto_now_add=True|
+|delivery_cost|DecimalField|max_digits=6, decimal_places=2, null=False, default=0|
+|order_total|DecimalField|max_digits=10, decimal_places=2, null=False, default=0|
+|grand_total|DecimalField|max_digits=10, decimal_places=2, null=False, default=0|
+|original_bag|TextField|null=False, blank=False, default=''|
+|stripe_pid|CharField|max_length=254, null=False, blank=False, default=''|
+
+### OrderLineItem Model
+
+|Name|Field Type|Validation Type|
+|:-----:|:-----:|:-----:|
+|order|ForeignKey|Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'|
+|product|ForeignKey|Product, null=False, blank=False, on_delete=models.CASCADE|
+|product_size|CharField|max_length=7, null=True, blank=True|
+|quantity|IntegerField|null=False, blank=False, default=0|
+|lineitem_total|DecimalField|max_digits=6, decimal_places=2, null=False, blank=False, editable=False|
+
+### FAQs Model
+
+|Name|Field Type|Validation Type|
+|:-----:|:-----:|:-----:|
+|question|CharField|max_length=254|
+|answer|TextField|
+
+
 [Back to Table of Contents](#table-of-contents)
 
 # Project Features
@@ -285,7 +397,7 @@ Base Template Example
 
 Here is an example of the base.html template for the Home Page. At the top of the page {% extends "base.html" %} is used to display the content from the base.html as well as {% load static %} to load the CSS file. The Navigation Bar, Burger Menu, Footer Section and Django Toasts are used within all pages for this project. The {% block content %} is then used to display the content from each page between the Navigation Bar, Burger Menu & Footer Section.
 
-![Home Page Base Template]()
+![Base Template Example]()
 
 ### Navigation Bar Features
 
@@ -300,8 +412,6 @@ The User Navigation Bar:
 * Sign In Page (Allows the user to log into their account)
 * Shopping Cart (Allows the user to add products to the cart, however they will need to Sign In to be able to make a purchase)
 
-![User Navigation Bar]()
-
 The Member & Admin Navigation Bar:
 
 * Home Page
@@ -311,14 +421,9 @@ The Member & Admin Navigation Bar:
 * Profile (Allows the member or admin to view their information and order history)
 * Shopping Cart (Allows the manage all of the products they have added to their cart. They can also update or remove products)
 
-![Member & Admin Navigation Bar]()
-
 The Burger Navigation Bar Menu:
 
 * Displays the user and member & admin navigation bar for tablet and mobile devices
-
-![User Burger Menu]()
-![Member & Admin Burger Menu]()
 
 ### Home Page Features
 

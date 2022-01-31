@@ -75,295 +75,295 @@ As a admin, I would like to:
 
 ### User/ Member Navbar Testing
 
-![User Navbar Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/user-navbar-testing.gif)
+![User Navbar Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/user-navbar-testing.gif)
 
 ### Admin Navbar Testing
 
-![Admin Navbar Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/admin-navbar-testing.gif)
+![Admin Navbar Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/admin-navbar-testing.gif)
 
 ### Burger Menu Testing
 
-![Burger Menu Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/navbar-burger-menu-responsive.gif)
+![Burger Menu Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/navbar-burger-menu-responsive.gif)
 
 ### Footer Testing
 
-![Footer Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/footer.gif)
+![Footer Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/footer.gif)
 
 ### Back To Top Button Testing
 
-![Back To Top Button Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/back-to-top-button-testing.gif)
+![Back To Top Button Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/back-to-top-button-testing.gif)
 
 # Home Page Testing
 
 ### Home Page Buttons Testing
 
-![Home Page Buttons Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/home-page-buttons-testing.gif)
+![Home Page Buttons Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/home-page-buttons-testing.gif)
 
 ### Home Page Carousel Testing
 
-![Home Page Carousel Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/home-page-carousel-testing.gif)
+![Home Page Carousel Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/home-page-carousel-testing.gif)
 
 ### Home Page Responsive Testing
 
-![Home Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/home-page-responsive.gif)
+![Home Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/home-page-responsive.gif)
 
 # Search Page Testing
 
 ### Search Page Query Testing
 
-![Search Page Query Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/search-query-testing.gif)
+![Search Page Query Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/search-query-testing.gif)
 
 ### Search Page No Query Testing
 
-![Search Page No Query Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/search-query-no-results.gif)
+![Search Page No Query Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/search-query-no-results.gif)
 
 ### Search Page Category Buttons Testing
 
-![Search Page Category Buttons Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/search-category-options.gif)
+![Search Page Category Buttons Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/search-category-options.gif)
 
 ### Search Page Responsive Testing
 
-![Search Page Category Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/search-page-responsive.gif)
+![Search Page Category Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/search-page-responsive.gif)
 
 # Contact Page Testing
 
 ### Contact Page Services Testing
 
-![Contact Page Services Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/contact-services.gif)
+![Contact Page Services Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/contact-services.gif)
 
 ### Contact Page Form Testing
 
-![Contact Page Form Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/contact-form-testing.gif)
+![Contact Page Form Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/contact-form-testing.gif)
 
 ### Contact Page FAQs Testing
 
-![Contact Page FAQs Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/contact-page-faqs-testing.gif)
+![Contact Page FAQs Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/contact-page-faqs-testing.gif)
 
 ### Contact Page Responsive Testing
 
-![Contact Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/contact-page-responsive.gif)
+![Contact Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/contact-page-responsive.gif)
 
 # Sign Up Page Testing
 
 ### Sign Up Form Testing
 
-![Sign Up Form Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/sign-up-form-testing.mp4)
+![Sign Up Form Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/sign-up-form-testing.mp4)
 
 ### Sign Up Page Responsive Testing
 
-![Sign Up Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/sign-up-page-responsive.mp4)
+![Sign Up Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/sign-up-page-responsive.mp4)
 
-### Sign Up/In Buttons Testing
+### Sign In/Up Buttons Testing
 
-![Sign Up/In Buttons Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/sign-in-up-buttons.gif)
+![Sign Up/In Buttons Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/sign-in-up-buttons.gif)
 
 ### Sign Out Button Testing
 
-![Sign Out Button Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/sign-out-functionality.gif)
+![Sign Out Button Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/sign-out-functionality.gif)
 
 ### Email Confirmation
 
-![Sign Out Button Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/email-confirmation.gif)
+![Email Confirmation Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/email-confirmation.gif)
 
 # Sign In Page Testing
 
 ### Sign In Form Testing
 
-![Sign In Form Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/sign-in-form-testing.gif)
+![Sign In Form Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/sign-in-form-testing.gif)
 
 ### Sign In Page Responsive Testing
 
-![Sign In Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/sign-in-page-responsive.gif)
+![Sign In Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/sign-in-page-responsive.gif)
 
 # Men's Category Clothing Testing
 
 ### Men's Category Buttons Testing
 
-![Men's Category Buttons Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-category-buttons-testing.gif)
+![Men's Category Buttons Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-category-buttons-testing.gif)
 
 ### Men's Products Filtering Testing
 
-![Men's Products Filtering Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-products-filtering.gif)
+![Men's Products Filtering Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-products-filtering.gif)
 
 ### Men's Adding Products Testing
 
-![Men's Adding Products Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-adding-products-to-cart.gif)
+![Men's Adding Products Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-adding-products-to-cart.gif)
 
 ### Men's Hoodie Testing
 
-![Men's Hoodie Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-hoodie-testing.gif)
+![Men's Hoodie Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-hoodie-testing.gif)
 
 ### Men's T-Shirt Testing
 
-![Men's T-Shirt Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-tshirt-testing.gif)
+![Men's T-Shirt Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-tshirt-testing.gif)
 
 ### Men's Short Testing
 
-![Men's Short Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-short-testing.gif)
+![Men's Short Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-short-testing.gif)
 
 ### Men's Products Page Responsive Testing
 
-![Men's Products Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-products-page-responsive.gif)
+![Men's Products Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-products-page-responsive.gif)
 
 # Women's Category Clothing Testing
 
 ### Women's Category Buttons Testing
 
-![Women's Category Buttons Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-category-buttons-testing.gif)
+![Women's Category Buttons Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-category-buttons-testing.gif)
 
 ### Women's Products Filtering Testing
 
-![Women's Category Filtering Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-products-filtering.gif)
+![Women's Category Filtering Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-products-filtering.gif)
 
 ### Women's Adding Products Testing
 
-![Women's Adding Products Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-adding-products-to-cart.mp4)
+![Women's Adding Products Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-adding-products-to-cart.mp4)
 
 ### Women's Hoodie Testing
 
-![Women's Hoodie Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-hoodie-testing.gif)
+![Women's Hoodie Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-hoodie-testing.gif)
 
 ### Women's T-Shirt Testing
 
-![Women's T-Shirt Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-tshirt-testing.gif)
+![Women's T-Shirt Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-tshirt-testing.gif)
 
 ### Women's Short Testing
 
-![Women's Short Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-short-testing.gif)
+![Women's Short Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-short-testing.gif)
 
 ### Women's Products Page Responsive Testing
 
-![Women's Products Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-products-page-responsive.gif)
+![Women's Products Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-products-page-responsive.gif)
 
 # Item's on Sale Category Clothing Testing
 
 ### Item's on Sale Category Buttons Testing
 
-![Items on Sale Category Buttons Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/items-on-sale-category-buttons-testing.gif)
+![Items on Sale Category Buttons Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/items-on-sale-category-buttons-testing.gif)
 
 ### Item's on Sale Products Filtering Testing
 
-![Item's on Sale Category Filtering Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/items-on-sale-products-filtering.gif)
+![Item's on Sale Category Filtering Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/items-on-sale-products-filtering.gif)
 
 ### Item's on Sale Adding Products Testing
 
-![Item's on Sale Adding Products Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/adding-products-on-sale-to-cart.gif)
+![Item's on Sale Adding Products Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/adding-products-on-sale-to-cart.gif)
 
 ### Men's Hoodie Sale Testing
 
-![Men's Hoodie Sale Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-hoodie-sale-testing.gif)
+![Men's Hoodie Sale Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-hoodie-sale-testing.gif)
 
 ### Men's T-Shirt Sale Testing
 
-![Men's T-Shirt Sale Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-tshirt-sale-testing.gif)
+![Men's T-Shirt Sale Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-tshirt-sale-testing.gif)
 
 ### Men's Short Sale Testing
 
-![Men's Short Sale Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/men-short-sale-testing.gif)
+![Men's Short Sale Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/men-short-sale-testing.gif)
 
 ### Women's Hoodie Sale Testing
 
-![Women's Hoodie Sale Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-hoodie-sale-testing.gif)
+![Women's Hoodie Sale Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-hoodie-sale-testing.gif)
 
 ### Women's T-Shirt Sale Testing
 
-![Women's T-Shirt Sale Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-tshirt-sale-testing.gif)
+![Women's T-Shirt Sale Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-tshirt-sale-testing.gif)
 
 ### Women's Short Sale Testing
 
-![Women's Short Sale Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/women-short-sale-testing.gif)
+![Women's Short Sale Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/women-short-sale-testing.gif)
 
 ### Item's on Sale Products Page Responsive Testing
 
-![Item's on Sale Products Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/items-on-sale-page-responsive.gif)
+![Item's on Sale Products Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/items-on-sale-page-responsive.gif)
 
 # All Products Page Testing
 
 ### All Products Page Filtering Testing
 
-![All Products Page Filtering Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/all-products-page-filtering.gif)
+![All Products Page Filtering Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/all-products-page-filtering.gif)
 
 ### All Products Page Responsive Testing
 
-![All Products Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/all-products-page-responsive.gif)
+![All Products Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/all-products-page-responsive.gif)
 
 # Product Management Page Testing
 
 ### Adding A Product Testing
 
-![Adding A Product Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/adding-a-product.gif)
+![Adding A Product Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/adding-a-product.gif)
 
 ### Adding A Product on Sale Testing
 
-![Adding A Product on Sale Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/adding-product-on-sale.gif)
+![Adding A Product on Sale Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/adding-product-on-sale.gif)
 
 ### Editing A Product Testing
 
-![Editing A Product Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/editing-a-product.gif)
+![Editing A Product Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/editing-a-product.gif)
 
 ### Deleting A Product Testing
 
-![Deleting A Product Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/deleting-a-product.gif)
+![Deleting A Product Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/deleting-a-product.gif)
 
 ### Product Management Page Responsive Testing
 
-![Product Management Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/adding-a-product-responsive.gif)
+![Product Management Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/adding-a-product-responsive.gif)
 
 # Profile Page Testing
 
 ### Updating Profile Information Testing
 
-![Updating Profile Information Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/updating-profile-information.gif)
+![Updating Profile Information Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/updating-profile-information.gif)
 
 ### Viewing Order History and Order Testing
 
-![Viewing Order History and Order Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/viewing-order-history-and-order.gif)
+![Viewing Order History and Order Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/viewing-order-history-and-order.gif)
 
 ### Profile Page Responsive Testing
 
-![Profile Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/profile-page-responsive.gif)
+![Profile Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/profile-page-responsive.gif)
 
 # Shopping Cart Page Testing
 
 ### Empty Cart and Adding Product Testing
 
-![Empty Cart and Adding Product Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/empty-cart-and-adding-product.gif)
+![Empty Cart and Adding Product Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/empty-cart-and-adding-product.gif)
 
 ### Cart Updating and Removing A Product Testing
 
-![Cart Updating and Removing A Product Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/cart-updating-and-removing-a-product.gif)
+![Cart Updating and Removing A Product Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/cart-updating-and-removing-a-product.gif)
 
 ### Editing Shopping Cart Testing
 
-![Editing Shopping Cart Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/editing-shopping-cart.gif)
+![Editing Shopping Cart Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/editing-shopping-cart.gif)
 
 ### Shopping Cart Buttons Testing
 
-![Shopping Cart Buttons Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/cart-buttons-testing.gif)
+![Shopping Cart Buttons Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/cart-buttons-testing.gif)
 
 ### Shopping Cart Page Responsive Testing
 
-![Shopping Cart Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/shopping-cart-page-responsive.gif)
+![Shopping Cart Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/shopping-cart-page-responsive.gif)
 
 # Checkout Page Testing
 
 ### Checkout Form and Making Payment Testing
 
-![Checkout Form and Making Payment Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/checkout-form-and-making-payment.gif)
+![Checkout Form and Making Payment Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/checkout-form-and-making-payment.gif)
 
 ### Checkout Fields Missing Testing
 
-![Checkout Fields Missing Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/checkout-fields-missing.gif)
+![Checkout Fields Missing Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/checkout-fields-missing.gif)
 
 ### Checkout Page Responsive Testing
 
-![Checkout Page Responsive Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/checkout-page-responsive.gif)
+![Checkout Page Responsive Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/checkout-page-responsive.gif)
 
 # Order Confirmation Testing
 
 ### Order Confirmation Page Responsive
 
-![Order Confirmation Page Testing](https://identity-clothing.s3.eu-west-2.amazonaws.com/media/Testing/order-confirmation-page-responsive.gif)
+![Order Confirmation Page Testing](https://s3.console.aws.amazon.com/s3/object/identity-clothing?region=eu-west-2&prefix=media/Testing/order-confirmation-page-responsive.gif)
 
 [Back To Table Of Contents](#table-of-contents)
 
@@ -386,15 +386,15 @@ I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to val
 
 base.css File
 
-![Base CSS File]()
+![Base CSS File](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/base-css-validation.PNG)
 
 checkout.css File
 
-![Checkout CSS File]()
+![Checkout CSS File](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/checkout-css-validation.PNG)
 
 profile.css File
 
-![Profile CSS File]()
+![Profile CSS File](https://github.com/BenPruden97/Identity-Clothing/blob/main/media/readme/profile-css-validation.PNG)
 
 ### JSHint Validation
  

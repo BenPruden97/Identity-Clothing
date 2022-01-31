@@ -23,7 +23,7 @@
 * [Features To Implement In The Future](#features-to-implement-in-the-future)
 * [Issues And Bugs](#issues-and-bugs)
 * [Technologies Used](#technologies-used)
-* [TESTING.md File](TESTING.md)
+* [Testing](#testing) - [TESTING.md File](TESTING.md)
 * [Deployment](#deployment)
 * [Credits](#credits)
 

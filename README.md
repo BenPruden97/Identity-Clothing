@@ -65,7 +65,8 @@ The primary goal of Identity Clothing is to provide an E-Commerce website where 
 * Select clothing items for men
 * Select clothing items for women
 * Select clothing items that are currently on sale.
-* Leave product reviews to give my opinion on the product
+* Select the size of my clothing item.
+* Select the quantity of my clothing item.
 * Sign-up for an account
 * Contact developer/ site owner if needed.
 
@@ -73,10 +74,10 @@ The primary goal of Identity Clothing is to provide an E-Commerce website where 
 
 * Sign into my account.
 * View all of my previous orders to keep a record of my transaction.
+* Be able to add & edit product reviews for products.
 * Save default information for future orders.
 * Edit default information if any information needs to be updated.
 * View clothing items within my shopping cart
-* Remove clothing items from my shopping cart if I no longer want them.
 * Update a clothing item’s quantity or size within my shopping cart before purchasing.
 * Securely purchase any clothing items within my shopping bag.
 * Receive an email for confirmation of my order.

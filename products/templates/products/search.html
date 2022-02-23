@@ -71,21 +71,21 @@
 
                 {% if products|length < 1 %}
 
-                    <div class="col-12">
+                <div class="col-12">
 
-                        <div class="no-results">
+                    <div class="no-results">
 
-                            <h2>We're Sorry!</h2>
+                        <h2>We're Sorry!</h2>
 
-                            <h4>We were not able to find any results matching your search query: "{{ search_term }}"</h4>
+                        <h4>We were not able to find any results matching your search query: "{{ search_term }}"</h4>
 
-                            <p>
-                                Please search again or select a clothing category below:
-                            </p>
-
-                        </div>
+                        <p>
+                            Please search again or select a clothing category below:
+                        </p>
 
                     </div>
+
+                </div>
 
                 {% else %}
 
@@ -165,15 +165,11 @@
 
             {% endif %}
 
-        </div>
-
-    </div>
-
             <!-- Products Category Options -->
 
             {% if not search_term or products|length < 1 %}
 
-                <div class="container">
+                <div class="col-12">
 
                     <div class="row">
 

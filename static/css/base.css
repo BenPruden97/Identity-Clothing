@@ -1212,9 +1212,14 @@ button.primaryAction{
     box-shadow: none;
 }
 
-button.accordion-button h5{
+button.accordion-button{
     margin-bottom: 0;
     color: #152238;
+}
+
+button.accordion-button:focus,
+button.accordion-button:active{
+    color: #f68b58;
 }
 
 div.accordion-body{

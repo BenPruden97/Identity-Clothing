@@ -56,7 +56,7 @@
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
         <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/e8142a821e.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/18ba683d20.js" crossorigin="anonymous"></script>
 
         <!-- Stripe Payments -->
         <script src="https://js.stripe.com/v3/"></script>
@@ -235,7 +235,8 @@
         {% endblock %}
 
         {% block postloadjs %}
-            <script type="text/javascript">
+
+            <script>
 
                 // Toast JS to get toasts to display and close as default toast.show() was not working
                 // https://stackoverflow.com/questions/63515279/how-to-initialize-toasts-with-javascript-in-bootstrap-5
@@ -277,6 +278,7 @@
                 }
 
             </script>
+            
         {% endblock %}
 
         {% include 'includes/footer.html' %}

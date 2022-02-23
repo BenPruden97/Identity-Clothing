@@ -56,7 +56,7 @@
                             {% if product.average_rating > 0 %}
                                 {% with ''|center:product.average_rating as range %}
                                     {% for _ in range %}
-                                        <h5><i class="fas fa-star"></i></h5>
+                                        <i class="fas fa-star"></i>
                                     {% endfor %}
                                 {% endwith %}
                             {% else %}
@@ -286,9 +286,9 @@
 
                 <div class="col-12 review-info">
 
-                    <h6><i class="fas fa-user"></i> {{ review.user }}</h6>
+                    <i class="fas fa-user"></i> <p>{{ review.user }}</p>
         
-                    <h6><i class="fas fa-calendar"></i> {{ review.date_created }}</h6>
+                    <i class="fas fa-calendar"></i> {{ review.date_created }}
 
                 </div>
 
@@ -299,15 +299,15 @@
                 <div class="col-12 review-rating">       
 
                     {% if review.review_add_rating == 1 %}
-                        <h6><i class="fas fa-star"></i></h6>
+                        <i class="fas fa-star"></i>
                     {% elif review.review_add_rating == 2 %}
-                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
                     {% elif review.review_add_rating == 3 %}
-                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     {% elif review.review_add_rating == 4 %}
-                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     {% elif review.review_add_rating == 5 %}
-                        <h6><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star"></i></i><i class="fas fa-star"></i></h6>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star"></i></i><i class="fas fa-star"></i>
                     {% else %}
                         <h6>No Rating</h6>
                     {% endif %}

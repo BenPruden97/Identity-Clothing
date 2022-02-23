@@ -376,10 +376,9 @@ Sorry for the inconvenience
 ### HTML Validation
 
 Common errors/ warnings for all pages
-  * Empty Heading tags for <h5> - This was because of the average rating star icons to display the average rating for each product.
   * Contact Page - ID duplication. This is caused by the for loop to loop through the questions and answers for each accordion item and cannot be fixed.
 
- Apart from these errors/ warnings listed. All pages passed the validation.
+This is the only error message to display within my project.
 
 ### CSS Validation
 

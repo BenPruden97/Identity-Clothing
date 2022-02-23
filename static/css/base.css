@@ -433,6 +433,8 @@ body{
 .home-average-rating i{
     color: #efc501;
     padding: 0 0.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .best-sellers-info h6{
@@ -1607,7 +1609,7 @@ select#sort-selector.black{
     font-size: 1.1rem;
 }
 
-.average-product-rating h5 i{
+.average-product-rating i{
     padding: 0;
     font-size: 1.25rem;
     color: #efc501;
@@ -1778,8 +1780,9 @@ div.col-12{
     margin: 0;
 }
 
-.average-product-detail-rating h5 i{
-    padding-top: 0.5rem;
+.average-product-detail-rating i{
+    padding-top: 0.25rem;
+    margin-bottom: 0.5rem;
     font-size: 1.75rem;
     color: #efc501;
 }
@@ -2071,17 +2074,20 @@ div.product-detail-buttons button:hover{
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 0.75rem;
+    color: #152238;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .review-info i{
     padding-right: 0.25rem;
     font-size: 1.25rem;
+    color: #152238;
 }
 
-.review-info h6{
-    font-size: 1.1rem;
-    color: #152238;
-    padding-right: 1.5rem;
+.review-info p{
+    margin-right: 0.75rem;
+    margin-bottom: 0;
 }
 
 .review-rating{
@@ -2093,9 +2099,9 @@ div.product-detail-buttons button:hover{
 .review-rating i{
     color: #efc501;
     font-size: 1.5rem;
-    padding-top: 0.25rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
     padding-right: 0.3rem;
-    padding-bottom: 0.75rem;
 }
 
 .review-text p{
@@ -3348,6 +3354,10 @@ nav.navbar.navbar-expand-lg.navbar-light{
         height: 300px;
         width: 300px;
         border: 1px solid #152238;
+    }
+
+    .sale-text-detail{
+        height: 40px;
     }
 
     .product-detail-item-content span{

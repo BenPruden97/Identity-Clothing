@@ -192,7 +192,9 @@ body{
 }
 
 .error-message a{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     margin-top: 1rem;
     padding: 0.75rem;
@@ -1711,6 +1713,8 @@ div hr{
 
 .product-detail-sale{
     display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .product-detail-sale h5{
@@ -3344,6 +3348,11 @@ nav.navbar.navbar-expand-lg.navbar-light{
         height: 300px;
         width: 300px;
         border: 1px solid #152238;
+    }
+
+    .product-detail-item-content span{
+        width: 300px;
+        text-align: left;
     }
 
     .product-detail-item-content h6{

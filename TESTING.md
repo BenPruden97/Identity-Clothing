@@ -376,12 +376,9 @@ Sorry for the inconvenience
 ### HTML Validation
 
 Common errors/ warnings for all pages
-  * Javascript tags - This was because of the Toast Messages JS to display for all pages
-  * Empty Heading tags for <h5> - This was because of the average rating star icons to display the average rating for each product
-  * Search Page - Stray end div tags from line 401 & 403. I was not able to located the stray end divs.
-  * Contact Page - Accordion error. This was due to the FAQ looping for each accordion header and body templating
-  * Sign Up Page - End Tag for body on line 497. Also an unclosed div element on line 261. both of these errors could not be found.
- 
+  * Empty Heading tags for <h5> - This was because of the average rating star icons to display the average rating for each product.
+  * Contact Page - ID duplication. This is caused by the for loop to loop through the questions and answers for each accordion item and cannot be fixed.
+
  Apart from these errors/ warnings listed. All pages passed the validation.
 
 ### CSS Validation

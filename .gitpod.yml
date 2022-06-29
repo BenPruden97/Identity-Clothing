@@ -1,9 +1,16 @@
 image:
   file: .gitpod.dockerfile
 tasks:
-  - init: . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
+  - before: . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
     command: /home/gitpod/.pg_ctl/bin/pg_start > /dev/null
   - command: . ${GITPOD_REPO_ROOT}/.vscode/uptime.sh &
+  - name: Start server
+    command: |
+      pip install -r requirements.txt
+      find . -name '*.pyc' -type f | xargs rm -f
+      python manage.py migrate
+      python manage.py runserver
+      
 vscode:
   extensions:
     - ms-python.python

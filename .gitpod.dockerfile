@@ -107,3 +107,5 @@ ENV C9_USER="root"
 ENV PORT="8080"
 ENV IP="0.0.0.0"
 ENV C9_HOSTNAME="localhost"
+
+ENV SECRET_KEY=testing
